@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="grid_index">
     <!-- MENU DE NAVEGACION DESPLEGABLE -->
-    <header class="contenedor">
+    <header class="contenedor_nav">
         <nav>
             <ul class="menu">
                 <li><a class="logo" href="./index.html"><img class="inicio" src="./images/logo.png" alt=""></a></li>
@@ -39,7 +39,7 @@
                     <ul class="submenu">
                         <li><a href="./submenu/paises/pais_argentina.html">Argentina</a></li>
                         <li><a href="./submenu/paises/pais_chile.html">Chile</a></li>
-                        <li><a href="./submenu/paises/pais_españa.html">España</a></li>
+                        <li><a href="./submenu/paises/pais_espana.html">España</a></li>
                         <li><a href="./submenu/paises/pais_francia.html">Francia</a></li>
                         <li><a href="./submenu/paises/pais_italia.html">Italia</a></li>
                     </ul>
@@ -59,17 +59,17 @@
         </nav>
     </header>
     <!-- COMIENZO DEL MAIN -->
-    <main>
+    <main class="grid_index-main">
         <!-- TITULO -->
         <section class="titulo_slogan">
             <h1 class="titulo_principal">PERFIL DEL VINO</h1>
             <p class="slogan">&quotGUÍA PARA ENTENDER EL MUNDO DEL VINO&quot</p>
         </section>
+        <!-- PORTADA -->
         <div class="portada_index">
             <img src="./images/portada.png" alt="foto de portada">
         </div>
         <!-- CONTENIDO DEL INDEX -->
-        <section>
             <!-- COMIENZO DEL PRIMER ARTICULO -->
             <article class="articulo1">
                 <p class="titulo_articulo-index">PRIMEROS PASOS</p>
@@ -99,23 +99,24 @@
             </article>
             <!-- FIN DEL PRIMER ARTICULO -->
             <!-- COMIENZO DEL SEGUNDO ARTICULO -->
-            <p class="titulo_articulo-index">ENTENDIENDO LA ETIQUETA</p>
-            <article class="articulo2">
-                <div class="etiqueta_vino">
-                    <img src="./images/etiqueta.svg"  alt="">
-                </div>
-                    <ol class="etiqueta_items">
-                        <li>Variedad de uva: Cepa utilizada para elaborar el vino.</li>
-                        <li>Añada: Año en el que se cosechó la uva.</li>
-                        <li>Crianza: Referencia para saber cuanto tiempo puede guardrase un vino antes de ser consumido.</li>
-                        <li>Región: Orgien de procedencia de las uvas.</li>
-                        <li>Graduación alcoholica: Indica el grado alcohólico del contenido.</li>
-                    </ol>
-            </article>
+            <div class="articulo2">
+                <p class="titulo_articulo-index">ENTENDIENDO LA ETIQUETA</p>
+                <article class="articulo2_contenido">
+                    <div class="etiqueta_vino">
+                        <img src="./images/etiqueta.svg"  alt="">
+                    </div>
+                        <ol class="etiqueta_items">
+                            <li><u>Variedad de uva:</u> Cepa utilizada para elaborar el vino.</li>
+                            <li><u>Añada:</u> Año en el que se cosechó la uva.</li>
+                            <li><u>Crianza:</u> Referencia para saber cuanto tiempo puede guardrase un vino antes de ser consumido.</li>
+                            <li><u>Región:</u> Orgien de procedencia de las uvas.</li>
+                            <li><u>Graduación alcoholica:</u> Indica el grado alcohólico del contenido.</li>
+                        </ol>
+                </article>
+            </div>
             <!-- FIN DEL SEGUNDO ARTICULO -->
-        </section>
     </main>
-<!-- PIE DE PAGINA -->
+    <!-- PIE DE PAGINA -->
     <footer>
         <a href="https://www.instagram.com/perfildelvino/" target="_blank"><img src="./iconos/instagram.svg" alt=""></a>
         <p>Copyright &copy; 2022 "Perfil del vino", todos los derechos reservados.</p>
