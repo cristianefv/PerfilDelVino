@@ -350,7 +350,6 @@ footer a img{
 }
 /* MEDIA QUERIES */
 /* TABLET INDEX */
-
 @media screen and (max-width: 768px) {
     .grid_index{
         grid-template-columns: repeat(3, 1fr);
@@ -397,7 +396,6 @@ footer a img{
     }
 }
 /* TABLET CEPAS */
-
 @media screen and (max-width: 768px) {
     .grid_cepas{
         grid-template-columns: repeat(3, 1fr);
@@ -425,16 +423,11 @@ footer a img{
     }
     .titulo{
         grid-area: titulo;
-        background-color: blue;
     }
     .cepas_contenido{
         grid-area: cepas;
     }
 }
-
-
-
-
 /* CELULAR INDEX */
 @media screen and (max-width: 480px) {
 .grid_index{
@@ -512,8 +505,6 @@ footer{
     font-size: 16px;
 }
 }
-
-
 /* CELULAR CEPAS BLANCAS */
 @media screen and (max-width: 480px) {
     .grid_cepas-blancas{
@@ -541,7 +532,6 @@ footer{
         grid-area: footer;
     }
     
-
     /* MAIN CEPAS */
     .grid_cepas-main{
         display: grid;
@@ -553,7 +543,6 @@ footer{
     }
     .titulo{
         grid-area: titulo;
-        background-color: blue;
     }
     .cepas_contenido{
         grid-area: cepas;
@@ -568,10 +557,7 @@ footer{
         width: 90%;
         margin-left: 15px;
     }
-    
-
 /* CELULAR CEPAS TINTAS */
-
 .grid_cepas-tintas {
     grid-template-columns: 1fr;
     grid-template-rows: 0.60fr 8fr 0.15fr;
@@ -596,7 +582,6 @@ main{
 footer{
     grid-area: footer;
 }
-
 /* MAIN CEPAS */
 .grid_cepas-main{
     display: grid;
@@ -608,7 +593,6 @@ footer{
 }
 .titulo{
     grid-area: titulo;
-    background-color: blue;
 }
 .cepas_contenido{
     grid-area: cepas;
