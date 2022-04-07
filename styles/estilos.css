@@ -152,7 +152,7 @@ nav{
 }
 .primeros_pasos p{
     text-align: justify;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 16px;
     text-indent: 0px;
     margin:  5px 100px 20px ;
@@ -171,100 +171,15 @@ nav{
     margin: 0px 60px;
 }
 .etiqueta_items{
-    height: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-weight: 600;
+    font-weight: 500;
     font-size: x-large;
 }
 .etiqueta_items li{
     font-size: 16px;
-}
-/* GRIDS INDEX */
-.grid_index{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.3fr 7.1fr 0.1fr;
-    grid-template-areas: 
-    "nav nav nav nav"
-    "main main main main"
-    "footer footer footer footer";
-}
-.contenedor_nav{
-    grid-area: nav;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-/* GRIDS INDEX MAIN */
-.grid_index-main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "titulo titulo"
-    "portada portada"
-    "art1 art2";
-}
-.titulo_slogan{
-    grid-area: titulo;
-}
-.portada_index{
-    grid-area: portada;
-}
-.articulo1{
-    grid-area: art1;
-}
-.articulo2{
-    grid-area: art2;
-}
-/* GRIDS CEPAS */
-.grid_cepas{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.3fr 7.1fr 0.1fr;
-    grid-template-areas: 
-    "nav nav nav nav"
-    "main main main main"
-    "footer footer footer footer";
-}
-.contenedor_nav{
-    grid-area: nav;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-.grid_cepas-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 7fr;
-    grid-template-areas: 
-    "titulo"
-    "cepas";
-}
-.titulo{
-    grid-area: titulo;
-}
-.cepas_contenido{
-    grid-area: cepas;
-}
-/* GRIDS CONTACTO */
-.grid_contacto-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 7fr;
-    grid-template-areas: 
-    "titulo"
-    "formulario"
-}
-.formulario{
-    grid-area: formulario;
 }
 /* TITULO DE CADA PAGINA */
 .titulo{
@@ -274,7 +189,7 @@ footer{
     text-align: center;
     font-family: 'merriweather';
     font-style: italic;
-    font-size: 50px;
+    font-size: 30px;
     text-decoration: underline;
     margin: 30px;
 }
@@ -287,8 +202,12 @@ footer{
     height: 100%;
     width: 95%;
 }
+.cepas_contenido ul{
+    margin-bottom: 35px;
+}
 .cepas_contenido ul li .cepas_info{ /* SALTO DE LINEA SIN BR */
     white-space: pre-line;
+    font-size: 16px;
 }
 .cepas_img{
     height: 200px;
@@ -303,7 +222,7 @@ footer{
     text-align: justify;
 }
 a.cepa_name{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     text-decoration: underline;
 }
@@ -315,10 +234,11 @@ img.referencia{
 }
 /* PAGINA DE CONTACTO */
 .formulario{
-    margin-bottom: 24%;
+    margin-bottom: 5%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin-bottom: 177px;
 }
 .indicacion{
     font-size: 25px;
@@ -348,9 +268,49 @@ footer a img{
     height: 30px;
     margin-right: 40px;
 }
-/* MEDIA QUERIES */
-/* TABLET INDEX */
-@media screen and (max-width: 768px) {
+/* --------------> GIRDS <-------------- */
+/* -------------> INDEX <------------- */
+.grid_index{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.main_index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "titulo titulo"
+    "portada portada"
+    "art1 art2";
+}
+.titulo_slogan{
+    grid-area: titulo;
+}
+.portada_index{
+    grid-area: portada;
+}
+.articulo1{
+    grid-area: art1;
+}
+.articulo2{
+    grid-area: art2;
+}
+
+/* --------> MEDIA QUERY: INDEX <------- */
+/* -------------> TABLET <------------- */
+@media screen and (max-width: 768px){
     .grid_index{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -358,7 +318,7 @@ footer a img{
         "main main main"
         "footer footer footer";
     }
-    .contenedor_nav{
+    header{
         grid-area: nav;
     }
     main{
@@ -367,8 +327,7 @@ footer a img{
     footer{
         grid-area: footer;
     }
-        /* MAIN */
-    .grid_index-main{
+    .main_index{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -376,7 +335,6 @@ footer a img{
         "portada portada"
         "art1 art1"
         "art2 art2";
-        width: 100%;
     }
     .titulo_slogan{
         grid-area: titulo;
@@ -384,18 +342,139 @@ footer a img{
     .portada_index{
         grid-area: portada;
     }
-    .portada_index img {
-        width: 100%;
-        height: auto;
-    }
     .articulo1{
         grid-area: art1;
     }
     .articulo2{
         grid-area: art2;
     }
+    .menu .seccion{
+        font-size: 16px;
+        text-align: center;
+    }
 }
-/* TABLET CEPAS */
+/* --------> MEDIA QUERY: INDEX <------- */
+/* -------------> CELULAR <------------- */
+@media screen and (max-width: 480px){
+    .grid_index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    }
+    header{
+        grid-area: nav;
+        position: relative;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+    }
+    footer a img{
+        margin: 0;
+    }
+    footer p{
+        margin-top: 5px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "portada"
+        "art1"
+        "art2";
+        margin-top: 260px;
+    }
+    .titulo_slogan{
+        grid-area: titulo;
+    }
+    .titulo_principal{
+        font-size: 30px;
+    }
+    .slogan{
+        font-size: 20px;
+    }
+    .portada_index{
+        grid-area: portada;
+    }
+    .articulo1{
+        grid-area: art1;
+    }
+    .primeros_pasos p{
+        margin: 5px 30px 20px;
+    }
+    .articulo2{
+        grid-area: art2;
+    }
+    .titulo_articulo-index{
+        text-align: center;
+        width: auto;
+    }
+    .articulo2_contenido{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .titulo_articulo-index{
+        text-align: center;
+    }
+    .etiqueta_vino{
+        margin-bottom: 15px;
+    }
+    .etiqueta_items{
+        text-align: left;
+        height: auto;
+        width: 90%;
+        margin-left: 70px;
+    }
+    .etiqueta_items li{
+        font-size: 16px;
+    }
+}
+/* --------------> GIRDS <-------------- */
+/* -------------> CEPAS <------------- */
+.grid_cepas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.main_cepas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "cepas";
+}
+.titulo{
+    grid-area: titulo;
+}
+.cepas_contenido{
+    grid-area: cepas;
+}
+/* --------> MEDIA QUERY: CEPAS <------- */
+/* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_cepas{
         grid-template-columns: repeat(3, 1fr);
@@ -404,7 +483,7 @@ footer a img{
         "main main main"
         "footer footer footer";
     }
-    .contenedor_nav{
+    header{
         grid-area: nav;
     }
     main{
@@ -413,8 +492,7 @@ footer a img{
     footer{
         grid-area: footer;
     }
-        /* MAIN */
-    .grid_cepas{
+    .main_cepas{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -428,118 +506,46 @@ footer a img{
         grid-area: cepas;
     }
 }
-/* CELULAR INDEX */
-@media screen and (max-width: 480px) {
-.grid_index{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.19fr 7fr 0.15fr;
-    grid-template-areas:
-    "nav"
-    "main"
-    "footer";
-    width: 100%;
-}
-.contenedor_nav{
-    grid-area: nav;
-    position: relative;
-    top: 0;
-    height: auto;
-}
-.contenedor_nav nav ul{
-    flex-direction: column;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-    /* MAIN */
-.grid_index-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "titulo"
-    "portada"
-    "art1"
-    "art2";
-    width: 100%;
-}
-.titulo_slogan{
-    grid-area: titulo;
-}
-.titulo_principal{
-    font-size: 50px;
-}
-.slogan{
-    font-size: 20px;
-}
-.portada_index{
-    grid-area: portada;
-}
-.portada_index img {
-    width: 100%;
-    height: auto;
-}
-.articulo1{
-    grid-area: art1;
-}
-.articulo2{
-    grid-area: art2;
-    justify-content: center;
-}
-/* INDEX - ARTICULO 2 */
-.articulo2_contenido{
-    display: flex;
-    flex-flow: column nowrap;
-}
-.titulo_articulo-index{
-    text-align: center;
-}
-.etiqueta_items{
-    text-align: left;
-    height: auto;
-    width: 90%;
-}
-.etiqueta_items li{
-    font-size: 16px;
-}
-}
-/* CELULAR CEPAS BLANCAS */
-@media screen and (max-width: 480px) {
-    .grid_cepas-blancas{
+/* --------> MEDIA QUERY: CEPAS <------- */
+/* -------------> CELULAR <------------- */
+@media screen and (max-width: 480px){
+    .grid_cepas{
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1.19fr 7fr 0.15fr;
         grid-template-areas:
         "nav"
         "main"
         "footer";
-        width: 100%;
     }
-    .contenedor_nav{
+    header{
         grid-area: nav;
         position: relative;
-        top: 0;
-        height: auto;
-    }
-    .contenedor_nav nav ul{
-        flex-direction: column;
     }
     main{
         grid-area: main;
     }
     footer{
         grid-area: footer;
+        display: flex;
+        flex-direction: column;
     }
-    
-    /* MAIN CEPAS */
-    .grid_cepas-main{
+    footer a img{
+        margin: 0;
+    }
+    footer p{
+        margin-top: 5px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_cepas{
         display: grid;
-        grid-template-rows: 0.1fr 1fr;
-        grid-template-areas: 
+        grid-template-columns: 1fr;
+        grid-template-areas:
         "titulo"
         "cepas";
-        margin-top: 250px;
+        margin-top: 260px;
     }
     .titulo{
         grid-area: titulo;
@@ -557,24 +563,19 @@ footer{
         width: 90%;
         margin-left: 15px;
     }
-/* CELULAR CEPAS TINTAS */
-.grid_cepas-tintas {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.60fr 8fr 0.15fr;
-    grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-    width: 100%;
 }
-.contenedor_nav{
+/* --------------> GIRDS <-------------- */
+/* -------------> CONTACTO <------------- */
+.grid_contacto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
     grid-area: nav;
-    position: relative;
-    top: 0;
-    height: auto;
-}
-.contenedor_nav nav ul{
-    flex-direction: column;
 }
 main{
     grid-area: main;
@@ -582,29 +583,72 @@ main{
 footer{
     grid-area: footer;
 }
-/* MAIN CEPAS */
-.grid_cepas-main{
-    display: grid;
-    grid-template-rows: 0.1fr 1fr;
-    grid-template-areas: 
-    "titulo"
-    "cepas";
-    margin-top: 250px;
+/* --------> MEDIA QUERY: CONTACTO <------- */
+/* -------------> TABLET <------------- */
+@media screen and (max-width: 768px) {
+    .grid_contacto{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+    .header{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        margin-top: 138px;
+    }
 }
-.titulo{
-    grid-area: titulo;
-}
-.cepas_contenido{
-    grid-area: cepas;
-}
-.cepas_contenido ul li{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: left;
-    margin-top: 30px;
-    height: 100%;
-    width: 90%;
-    margin-left: 15px;
-}
+/* --------> MEDIA QUERY: CONTACTO <------- */
+/* -------------> CELULAR <------------- */
+@media screen and (max-width: 480px){
+    .grid_contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    }
+    header{
+        grid-area: nav;
+        position: relative;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+    }
+    footer a img{
+        margin: 0;
+    }
+    footer p{
+        margin-top: 5px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "formulario";
+        margin-top: 260px;
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+    .formulario{
+        grid-area: formulario;
+    }
 }
