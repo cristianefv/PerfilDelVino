@@ -15,9 +15,10 @@ html{
     height: 120px;
 }
 /* MENU STICKY */
-.contenedor_nav{
+header{
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 /* MENU DE NAVEGACION DESPLEGABLE*/
 nav{
@@ -55,6 +56,7 @@ nav{
     width: 200px;
     background-color: #383838;
     z-index: 1;
+    padding-left: 0;
 }
 .menu li p{
     display: block;
@@ -79,13 +81,14 @@ nav{
     font-size: 17px;
     font-weight: bold;
     z-index: 1;
+    width: 100%;
 }
 /* EFECTOS PARA EL MENU DE NAVEGACION */
 .menu li:hover .submenu{
     display: block;
     transition: all .3s;
 }
-.menu li:hover{
+.submenu li:hover{
     background-color: #0000008a;
     transition: all .3s;
 }
@@ -102,6 +105,7 @@ nav{
     align-items: center;
     width: 100%;
 }
+/* TITULO PRINCIPAL INDEX */
 .titulo_slogan{
     margin: 0;
     background-image: linear-gradient(black, #610808c4);
@@ -132,7 +136,7 @@ nav{
     color: #EEEBDD;
 }
 /* FOTO DE PORTADA INDEX */
-.portada_index img{
+    .carousel-item{
     width: 100%;
     height: auto;
 }
@@ -264,7 +268,6 @@ footer{
     font-weight: bolder;
     background-color: black;
     color: #EEEBDD;
-    /* position: absolute; */
     width: 100%;
 }
 footer a img{
@@ -274,6 +277,9 @@ footer a img{
     width: 30px;
     height: 30px;
     margin-right: 40px;
+}
+.footer_txt{
+    margin: 0;
 }
 /* --------------> GIRDS <-------------- */
 /* -------------> INDEX <------------- */
