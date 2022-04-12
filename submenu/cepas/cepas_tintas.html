@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/estilos.css">
-    <title>Perfil del vino</title>
-    <!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
-</head>
-<body class="grid_cepas">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- VIEWPORT -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil del vino</title>
+        <!-- FUENTES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- MIS ESTILOS CSS -->
+        <link rel="stylesheet" href="../../styles/estilos.css">
+        <!-- ANIMACIONES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+<body class="container-fluid">
     <!-- MENU DE NAVEGACION DESPLEGABLE -->
-    <header>
+    <header class="row">
         <nav>
-            <ul class="menu">
+            <ul class="menu d-flex justify-content-evenly">
                 <li><a class="logo" href="../../index.html"><img class="inicio" src="../../images/logo.png" alt=""></a></li>
                 <li>
                     <p class="seccion" href="">Variedades de uva</a>
@@ -59,15 +65,15 @@
         </nav>
     </header>
     <!-- COMIENZO DEL MAIN -->
-    <main class="main_cepas">
+    <main class="row main_cepas">
         <!-- TITULO -->
-        <h1 class="titulo">CEPAS TINTAS</h1>
+        <h1 class="titulo col-12 d-flex justify-content-center">CEPAS TINTAS</h1>
     <!-- CEPAS TINTAS MAS CONOCIDAS, AGREGAR EL RESTO CON LOS DEMAS PAISES -->
-        <div class="cepas_contenido">
+        <div class="col-12 cepas_contenido">
             <ul>
-                <li>
-                    <img class="cepas_img" src="../../images/malbec.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Malbec</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/malbec.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Malbec</a> 
                         <b>ORIGEN: </b>Nacida en el sudoeste francés, en donde suele formar parte del corte de los vinos. Como varietal se elabora en Cahors, pero sus características son distintas a las del malbec argentino.
                         Es la cepa tinta más extendida y característica de nuestra vitivinicultura.
 
@@ -76,9 +82,9 @@
                         <b>REGIONES DE CULTIVO: </b>Francia, Italia, Chile, Estados Unidos, Perú, Uruguay, Australia, Nueva Zelanda.
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/cabernet_sauvignon.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Cabernet Sauvignon</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/cabernet_sauvignon.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Cabernet Sauvignon</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -86,9 +92,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/merlot.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Merlot</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/merlot.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Merlot</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -96,9 +102,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/bonarda.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Bonarda</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/bonarda.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Bonarda</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -106,9 +112,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/cabernet_franc.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Cabernet Franc</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/cabernet_franc.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Cabernet Franc</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -116,9 +122,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/syrah.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Syrah</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/syrah.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Syrah</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -126,9 +132,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/pinot_noir.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Pinot Noir</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/pinot_noir.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Pinot Noir</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -136,9 +142,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/criolla.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Criolla</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/criolla.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Criolla</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -146,9 +152,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/tannat.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Tannat</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/tannat.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Tannat</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -156,9 +162,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/zinfandel.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Zinfandel</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/zinfandel.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Zinfandel</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -166,9 +172,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/petitverdot.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Petit Verdot</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/petitverdot.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Petit Verdot</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -176,9 +182,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/sangiovese.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Tempranillo</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/tempranillo.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Tempranillo</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -186,9 +192,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/garnacha.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Garnacha</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/garnacha.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Garnacha</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -196,9 +202,9 @@
                         <b>REGIONES DE CULTIVO: </b> 
                     </p>
                 </li>
-                <li>
-                    <img class="cepas_img" src="../../images/sangiovese.svg" alt="">
-                    <p class="cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Sangiovese</a> 
+                <li class="d-flex justify-content-start">
+                    <img class="col-2 cepas_img" src="../../images/sangiovese.svg" alt="">
+                    <p class="col-10 cepas_info"><img class="uva_icono" src="../../iconos/uva_tinta.svg" alt=""><a class="cepa_name">Sangiovese</a> 
                         <b>ORIGEN: </b> 
                         
                         <b>CARACTERISTICAS: </b>
@@ -210,9 +216,11 @@
         </div>
     </main>
 <!-- PIE DE PAGINA -->
-    <footer>
-        <a href="https://www.instagram.com/perfildelvino/" target="_blank"><img src="../../iconos/instagram.svg" alt=""></a>
-        <p>Copyright &copy; 2022 "Perfil del vino", todos los derechos reservados.</p>
-    </footer>
+<footer class="row">
+    <a class="d-flex justify-content-center" href="https://www.instagram.com/perfildelvino/" target="_blank"><img class="col-1" src="../../iconos/instagram.svg" alt=""></a>
+    <p class="col-8 footer_txt">Copyright &copy; 2022 "Perfil del vino", todos los derechos reservados.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -32,9 +32,9 @@ nav{
 }
 .menu{
     list-style: none;
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: row; */
     align-items: center;
     background-color: black;
 }
@@ -193,10 +193,10 @@ nav{
 }
 /* TITULO DE CADA PAGINA */
 .titulo{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
     font-family: 'merriweather';
     font-style: italic;
     font-size: 30px;
@@ -205,15 +205,16 @@ nav{
 }
 /* ESTILO PARA CEPAS */
 .cepas_contenido ul li{
-    display: flex;
+    /* display: flex;
     flex-flow: row nowrap;
-    justify-content: left;
+    justify-content: left; */
     margin-top: 30px;
     height: 100%;
     width: 95%;
 }
 .cepas_contenido ul{
     margin-bottom: 35px;
+    list-style: none;
 }
 .cepas_contenido ul li .cepas_info{ /* SALTO DE LINEA SIN BR */
     white-space: pre-line;
@@ -240,6 +241,7 @@ a.cepa_name{
     font-size: 20px;
     font-weight: 800;
     text-decoration: underline;
+    color: black;
 }
 img.uva_icono{
     width: 25px;
@@ -329,8 +331,7 @@ footer{
 .articulo2{
     grid-area: art2;
 } */
-/* --------------> BOOTSTRAP <-------------- */
-/* -------------> INDEX <------------- */
+
 
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
@@ -467,7 +468,7 @@ footer{
 }
 /* --------------> GRIDS <-------------- */
 /* -------------> CEPAS <------------- */
-.grid_cepas{
+/* .grid_cepas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
@@ -496,7 +497,7 @@ footer{
 }
 .cepas_contenido{
     grid-area: cepas;
-}
+} */
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
