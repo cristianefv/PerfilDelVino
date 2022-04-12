@@ -5,6 +5,7 @@
 body{
     background-color: #EEEBDD;
     margin: 0;
+    padding: 0;
     font-family: 'Oswald', sans-serif;
 }
 html{
@@ -256,7 +257,7 @@ img.referencia{
     margin: 10px 0px;
 }
 /* PIE DE PAGINA */
-footer{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -269,6 +270,10 @@ footer{
     background-color: black;
     color: #EEEBDD;
     width: 100%;
+}
+footer a{
+    width: 30px;
+    height: 30px;
 }
 footer a img{
     display: flex;
@@ -283,7 +288,7 @@ footer a img{
 }
 /* --------------> GRIDS <-------------- */
 /* -------------> INDEX <------------- */
-.grid_index{
+/* .grid_index{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
@@ -319,7 +324,9 @@ footer{
 }
 .articulo2{
     grid-area: art2;
-}
+} */
+/* --------------> BOOTSTRAP <-------------- */
+/* -------------> INDEX <------------- */
 
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
@@ -454,7 +461,7 @@ footer{
         font-size: 16px;
     }
 }
-/* --------------> GIRDS <-------------- */
+/* --------------> GRIDS <-------------- */
 /* -------------> CEPAS <------------- */
 .grid_cepas{
     display: grid;
@@ -577,7 +584,7 @@ footer{
         margin-left: 15px;
     }
 }
-/* --------------> GIRDS <-------------- */
+/* --------------> GRIDS <-------------- */
 /* -------------> CONTACTO <------------- */
 .grid_contacto{
     display: grid;
