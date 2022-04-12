@@ -137,9 +137,12 @@ nav{
     color: #EEEBDD;
 }
 /* FOTO DE PORTADA INDEX */
-    .carousel-item{
+.carousel-item{
     width: 100%;
     height: auto;
+}
+.carousel_contenedor{
+    padding: 0;
 }
 /* CONTENIDO DEL INDEX */
 .titulo_articulo-index{
@@ -168,8 +171,8 @@ nav{
     white-space: pre-line; /* SALTO DE LINEA */
 }
 .articulo2_contenido{
-    display: flex;
-    flex-flow: row nowrap;
+    /* display: flex;
+    flex-flow: row nowrap; */
     justify-content: left;
     align-items: center;
     margin-bottom: 30px;
@@ -269,11 +272,11 @@ footer {
     font-weight: bolder;
     background-color: black;
     color: #EEEBDD;
-    width: 100%;
 }
 footer a{
     width: 30px;
-    height: 30px;
+    height: 40px;
+    padding: 0;
 }
 footer a img{
     display: flex;
@@ -281,10 +284,11 @@ footer a img{
     align-items: center;
     width: 30px;
     height: 30px;
-    margin-right: 40px;
 }
 .footer_txt{
     margin: 0;
+    padding: 0;
+    width: 380px;
 }
 /* --------------> GRIDS <-------------- */
 /* -------------> INDEX <------------- */
