@@ -331,7 +331,8 @@ footer{
 .articulo2{
     grid-area: art2;
 } */
-
+/* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
+/* --------------------> TABLET <------------------- */
 
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
@@ -378,9 +379,17 @@ footer{
         text-align: center;
     }
 }
+/* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
+/* --------------------> CELULAR <------------------- */
+@media (max-width: 500px) and (min-width: 100px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
     .grid_index{
         display: grid;
         grid-template-columns: 1fr;
@@ -465,7 +474,7 @@ footer{
     .etiqueta_items li{
         font-size: 16px;
     }
-}
+} */
 /* --------------> GRIDS <-------------- */
 /* -------------> CEPAS <------------- */
 /* .grid_cepas{
