@@ -381,12 +381,7 @@ footer{
 }
 /* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
 /* --------------------> CELULAR <------------------- */
-@media (max-width: 500px) and (min-width: 100px){
-    .menu{
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> CELULAR <------------- */
 /* @media screen and (max-width: 480px){
