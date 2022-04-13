@@ -8,9 +8,9 @@ body{
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
-html{
+/* html{
     position: relative;
-}
+} */
 .inicio{
     width: 85px;
     height: 120px;
@@ -27,8 +27,7 @@ nav{
     background-color: black;
     font-size: 20px;
     margin-top: 0px;
-    height: 130px;
-    padding: 10px 0px 0px 0px
+    padding: 10px 0px 0px 0px;
 }
 .menu{
     list-style: none;
@@ -36,7 +35,7 @@ nav{
     justify-content: space-around;
     flex-direction: row; */
     align-items: center;
-    background-color: black;
+    background-color: black;;
 }
 .menu .logo{
     padding-bottom: 0px;
@@ -336,7 +335,7 @@ footer{
 
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     .grid_index{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -378,7 +377,7 @@ footer{
         font-size: 16px;
         text-align: center;
     }
-}
+} */
 /* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
 /* --------------------> CELULAR <------------------- */
 
@@ -504,7 +503,7 @@ footer{
 } */
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> TABLET <------------- */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .grid_cepas{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -537,7 +536,7 @@ footer{
 }
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
     .grid_cepas{
         display: grid;
         grid-template-columns: 1fr;
@@ -592,10 +591,10 @@ footer{
         width: 90%;
         margin-left: 15px;
     }
-}
+} */
 /* --------------> GRIDS <-------------- */
 /* -------------> CONTACTO <------------- */
-.grid_contacto{
+/* .grid_contacto{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
@@ -611,10 +610,10 @@ main{
 }
 footer{
     grid-area: footer;
-}
+} */
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> TABLET <------------- */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .grid_contacto{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -632,10 +631,10 @@ footer{
         grid-area: footer;
         margin-top: 138px;
     }
-}
+} */
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
     .grid_contacto{
         display: grid;
         grid-template-columns: 1fr;
@@ -679,5 +678,42 @@ footer{
     }
     .formulario{
         grid-area: formulario;
+    }
+} */
+@media (max-width: 576px){
+    header{
+        position: relative;
+        width: 100%;
+    }
+    .titulo_principal{
+        font-size: 30px;
+    }
+    .slogan{
+        font-size: 20px;
+    }
+    .primeros_pasos p{
+        margin: 5px 30px 20px;
+    }
+    .titulo_articulo-index{
+        text-align: center;
+        width: auto;
+    }
+    .articulo2_contenido{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .titulo_articulo-index{
+        text-align: center;
+    }
+    .etiqueta_vino{
+        margin-bottom: 15px;
+    }
+    .etiqueta_items{
+        text-align: left;
+        height: auto;
+        width: 90%;
+    }
+    .etiqueta_items li{
+        font-size: 16px;
     }
 }
