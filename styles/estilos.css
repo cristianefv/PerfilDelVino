@@ -214,6 +214,7 @@ nav{
 .cepas_contenido ul{
     margin-bottom: 35px;
     list-style: none;
+    padding: 0;
 }
 .cepas_contenido ul li .cepas_info{ /* SALTO DE LINEA SIN BR */
     white-space: pre-line;
@@ -227,8 +228,8 @@ nav{
     transition: all 2s;
 }
 .cepas_img:hover{  /* ANIMACION PARA LAS CEPAS */
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
 }
 .cepas_info{
     font-size: 20px;
@@ -680,10 +681,12 @@ footer{
         grid-area: formulario;
     }
 } */
+@media (max-width: 768){
+    
+}
 @media (max-width: 576px){
     header{
         position: relative;
-        width: 100%;
     }
     .titulo_principal{
         font-size: 30px;
@@ -716,4 +719,17 @@ footer{
     .etiqueta_items li{
         font-size: 16px;
     }
+    .titulo{
+        font-size: 25px;
+    }
+    /* .cepas_contenido ul li{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: left;
+        margin-top: 30px;
+        height: 100%;
+        width: 90%;
+        margin-left: 15px;
+    } */
 }
