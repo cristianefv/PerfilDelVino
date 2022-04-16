@@ -205,7 +205,7 @@ nav{
     text-decoration: underline;
     margin: 30px;
 }
-/* ESTILO PARA CEPAS */
+/* PAGINA DE CEPAS */
 .cepas_contenido ul li{
     display: flex;
     flex-flow: row nowrap;
@@ -252,13 +252,23 @@ img.uva_icono{
 img.referencia{
     width: 25px;
 }
+/* PAGINA ELABORACION TINTO */
+.proceso_tinto{
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2%;
+}
+.carousel_transTinto{
+    width: 650px;
+    height: 370px;
+}
+
 /* PAGINA DE CONTACTO */
 .formulario{
-    margin-bottom: 5%;
+    margin-bottom: 2.1%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-bottom: 177px;
 }
 .indicacion{
     font-size: 25px;
@@ -287,8 +297,8 @@ footer a img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 .footer_txt{
     margin: 0;
@@ -297,58 +307,6 @@ footer a img{
 }
 /* --------> GRIDS: INDEX <------- */
 .grid_index{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-}
-header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-.main_index{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "titulo titulo titulo titulo"
-    "carousel carousel carousel carousel"
-    /* "art1 art1 art1 art1"
-    "art2 art2 art2 art2"; */
-}
-.titulo_slogan{
-    grid-area: titulo;
-}
-.carousel_contenedor{
-    grid-area: carousel;
-}
-/* .articulo1{
-    grid-area: art1;
-}
-.articulo2{
-    grid-area: art2;
-} */
-.contenedor_articulos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "art1 art1 art2 art2"
-    "art1 art1 art2 art2";
-}
-.articulo1{
-    grid-area: art1;
-}
-.articulo2{
-    grid-area: art2;
-}
-/* --------> GRIDS: CEPAS <------- */
-.grid_cepas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -380,59 +338,107 @@ footer a{
 .footer_txt{
     grid-area: txt;
 }
-/* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
-@media (max-width: 1400){
-
+.main_index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "titulo titulo"
+    "carousel carousel"
+    "arts arts";
 }
-@media (max-width: 576px){
-    header{
-        position: relative;
-    }
-    .titulo_principal{
-        font-size: 30px;
-    }
-    .slogan{
-        font-size: 20px;
-    }
-    .primeros_pasos p{
-        margin: 5px 30px 20px;
-    }
-    .titulo_articulo-index{
-        text-align: center;
-        width: auto;
-    }
-    .articulo2_contenido{
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    .titulo_articulo-index{
-        text-align: center;
-    }
-    .etiqueta_vino{
-        margin-bottom: 15px;
-    }
-    .etiqueta_items{
-        text-align: left;
-        height: auto;
-        width: 90%;
-    }
-    .etiqueta_items li{
-        font-size: 16px;
-    }
-    .titulo{
-        font-size: 25px;
-        margin: 20px 0 0 0;
-    }
-
+.titulo_slogan{
+    grid-area: titulo;
+}
+.carousel_contenedor{
+    grid-area: carousel;
+}
+.contenedor_articulos{
+    grid-area: arts;
+}
+.contenedor_articulos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "art1 art2"
+    "art1 art2";
     
-    /* .cepas_contenido ul li{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: left;
-        margin-top: 30px;
-        height: 100%;
-        width: 90%;
-        margin-left: 15px;
-    } */
+}
+.articulo1{
+    grid-area: art1;
+}
+.articulo2{
+    grid-area: art2;
+}
+/* --------> GRIDS: CEPAS <------- */
+.grid_cepas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+/* --------> GRIDS: ELABORACION - TINTO <------- */
+.grid_elaboracionTinto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.proceso_tinto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "img1 img1 info1 info1"
+    "info2 info2 car1 car1";
+}
+.et_img1{
+    grid-area: img1;
+}
+.et_info1{
+    grid-area: info1;
+}
+.carousel_transTinto{
+    grid-area: car1;
+}
+.et_info2{
+    grid-area: info2;
+}
+/* --------> GRIDS: CONTACTO <------- */
+.grid_contacto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
 }
