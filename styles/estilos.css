@@ -31,11 +31,13 @@ nav{
 }
 .menu{
     list-style: none;
-    /* display: flex;
+    display: flex;
     justify-content: space-around;
-    flex-direction: row; */
+    flex-direction: row;
     align-items: center;
-    background-color: black;;
+    background-color: black;
+    padding: 0;
+    margin: 0;
 }
 .menu .logo{
     padding-bottom: 0px;
@@ -134,6 +136,7 @@ nav{
     font-size: 25px;
     width: 100%;
     color: #EEEBDD;
+    margin: 0;
 }
 /* FOTO DE PORTADA INDEX */
 .carousel-item{
@@ -192,10 +195,10 @@ nav{
 }
 /* TITULO DE CADA PAGINA */
 .titulo{
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center; */
+    text-align: center;
     font-family: 'merriweather';
     font-style: italic;
     font-size: 30px;
@@ -204,11 +207,11 @@ nav{
 }
 /* ESTILO PARA CEPAS */
 .cepas_contenido ul li{
-    /* display: flex;
+    display: flex;
     flex-flow: row nowrap;
-    justify-content: left; */
+    justify-content: left;
     margin-top: 30px;
-    height: 100%;
+    /* height: 100%; */
     width: 95%;
 }
 .cepas_contenido ul{
@@ -228,8 +231,8 @@ nav{
     transition: all 2s;
 }
 .cepas_img:hover{  /* ANIMACION PARA LAS CEPAS */
-    height: 300px;
-    width: 300px;
+    height: 270px;
+    width: 270px;
 }
 .cepas_info{
     font-size: 20px;
@@ -292,18 +295,17 @@ footer a img{
     padding: 0;
     width: 380px;
 }
-/* --------------> GRIDS <-------------- */
-/* -------------> INDEX <------------- */
-/* .grid_index{
+/* --------> GRIDS: INDEX <------- */
+.grid_index{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "nav nav nav nav"
+    grid-template-areas:
+    "header header header header"
     "main main main main"
     "footer footer footer footer";
 }
 header{
-grid-area: nav;
+    grid-area: header;
 }
 main{
     grid-area: main;
@@ -315,173 +317,47 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "titulo titulo"
-    "portada portada"
-    "art1 art2";
+    "titulo titulo titulo titulo"
+    "carousel carousel carousel carousel"
+    /* "art1 art1 art1 art1"
+    "art2 art2 art2 art2"; */
 }
 .titulo_slogan{
     grid-area: titulo;
 }
-.portada_index{
-    grid-area: portada;
+.carousel_contenedor{
+    grid-area: carousel;
+}
+/* .articulo1{
+    grid-area: art1;
+}
+.articulo2{
+    grid-area: art2;
+} */
+.contenedor_articulos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "art1 art1 art2 art2"
+    "art1 art1 art2 art2";
 }
 .articulo1{
     grid-area: art1;
 }
 .articulo2{
     grid-area: art2;
-} */
-/* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
-/* --------------------> TABLET <------------------- */
-
-/* --------> MEDIA QUERY: INDEX <------- */
-/* -------------> TABLET <------------- */
-/* @media screen and (max-width: 768px){
-    .grid_index{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-    }
-    header{
-        grid-area: nav;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-    .main_index{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "titulo titulo"
-        "portada portada"
-        "art1 art1"
-        "art2 art2";
-    }
-    .titulo_slogan{
-        grid-area: titulo;
-    }
-    .portada_index{
-        grid-area: portada;
-    }
-    .articulo1{
-        grid-area: art1;
-    }
-    .articulo2{
-        grid-area: art2;
-    }
-    .menu .seccion{
-        font-size: 16px;
-        text-align: center;
-    }
-} */
-/* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
-/* --------------------> CELULAR <------------------- */
-
-/* --------> MEDIA QUERY: INDEX <------- */
-/* -------------> CELULAR <------------- */
-/* @media screen and (max-width: 480px){
-    .grid_index{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-    }
-    header{
-        grid-area: nav;
-        position: relative;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-    }
-    footer a img{
-        margin: 0;
-    }
-    footer p{
-        margin-top: 5px;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-    }
-    .main_index{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "titulo"
-        "portada"
-        "art1"
-        "art2";
-        margin-top: 260px;
-    }
-    .titulo_slogan{
-        grid-area: titulo;
-    }
-    .titulo_principal{
-        font-size: 30px;
-    }
-    .slogan{
-        font-size: 20px;
-    }
-    .portada_index{
-        grid-area: portada;
-    }
-    .articulo1{
-        grid-area: art1;
-    }
-    .primeros_pasos p{
-        margin: 5px 30px 20px;
-    }
-    .articulo2{
-        grid-area: art2;
-    }
-    .titulo_articulo-index{
-        text-align: center;
-        width: auto;
-    }
-    .articulo2_contenido{
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    .titulo_articulo-index{
-        text-align: center;
-    }
-    .etiqueta_vino{
-        margin-bottom: 15px;
-    }
-    .etiqueta_items{
-        text-align: left;
-        height: auto;
-        width: 90%;
-        margin-left: 70px;
-    }
-    .etiqueta_items li{
-        font-size: 16px;
-    }
-} */
-/* --------------> GRIDS <-------------- */
-/* -------------> CEPAS <------------- */
-/* .grid_cepas{
+}
+/* --------> GRIDS: CEPAS <------- */
+.grid_cepas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "nav nav nav nav"
+    grid-template-areas:
+    "header header header header"
     "main main main main"
     "footer footer footer footer";
 }
 header{
-    grid-area: nav;
+    grid-area: header;
 }
 main{
     grid-area: main;
@@ -489,200 +365,24 @@ main{
 footer{
     grid-area: footer;
 }
-.main_cepas{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "titulo"
-    "cepas";
-}
-.titulo{
-    grid-area: titulo;
-}
-.cepas_contenido{
-    grid-area: cepas;
-} */
-/* --------> MEDIA QUERY: CEPAS <------- */
-/* -------------> TABLET <------------- */
-/* @media screen and (max-width: 768px) {
-    .grid_cepas{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-    }
-    header{
-        grid-area: nav;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-    .main_cepas{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "titulo"
-        "cepas";
-    }
-    .titulo{
-        grid-area: titulo;
-    }
-    .cepas_contenido{
-        grid-area: cepas;
-    }
-}
-/* --------> MEDIA QUERY: CEPAS <------- */
-/* -------------> CELULAR <------------- */
-/* @media screen and (max-width: 480px){
-    .grid_cepas{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-    }
-    header{
-        grid-area: nav;
-        position: relative;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-    }
-    footer a img{
-        margin: 0;
-    }
-    footer p{
-        margin-top: 5px;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-    }
-    .main_cepas{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "titulo"
-        "cepas";
-        margin-top: 260px;
-    }
-    .titulo{
-        grid-area: titulo;
-    }
-    .cepas_contenido{
-        grid-area: cepas;
-    }
-    .cepas_contenido ul li{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: left;
-        margin-top: 30px;
-        height: 100%;
-        width: 90%;
-        margin-left: 15px;
-    }
-} */
-/* --------------> GRIDS <-------------- */
-/* -------------> CONTACTO <------------- */
-/* .grid_contacto{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "nav nav nav nav"
-    "main main main main"
-    "footer footer footer footer";
-}
-header{
-    grid-area: nav;
-}
-main{
-    grid-area: main;
-}
 footer{
-    grid-area: footer;
-} */
-/* --------> MEDIA QUERY: CONTACTO <------- */
-/* -------------> TABLET <------------- */
-/* @media screen and (max-width: 768px) {
-    .grid_contacto{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-    }
-    .header{
-        grid-area: nav;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-        margin-top: 138px;
-    }
-} */
-/* --------> MEDIA QUERY: CONTACTO <------- */
-/* -------------> CELULAR <------------- */
-/* @media screen and (max-width: 480px){
-    .grid_contacto{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-    }
-    header{
-        grid-area: nav;
-        position: relative;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-    }
-    footer a img{
-        margin: 0;
-    }
-    footer p{
-        margin-top: 5px;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-    }
-    .main_contacto{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "titulo"
-        "formulario";
-        margin-top: 260px;
-    }
-    .titulo{
-        grid-area: titulo;
-    }
-    .formulario{
-        grid-area: formulario;
-    }
-} */
-@media (max-width: 768){
-    
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "logo"
+    "txt";
+}
+footer a{
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+}
+.footer_txt{
+    grid-area: txt;
+}
+/* --------> MEDIA QUERIES BOOTSTRAP: INDEX <------- */
+@media (max-width: 1400){
+
 }
 @media (max-width: 576px){
     header{
@@ -721,7 +421,10 @@ footer{
     }
     .titulo{
         font-size: 25px;
+        margin: 20px 0 0 0;
     }
+
+    
     /* .cepas_contenido ul li{
         display: flex;
         flex-flow: column nowrap;

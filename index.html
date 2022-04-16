@@ -17,11 +17,11 @@
     <!-- ANIMACIONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body class="container-fluid">
+<body class="grid_index">
     <!-- MENU DE NAVEGACION DESPLEGABLE -->
-    <header class="row">
-        <nav class="col-lg-12 col-md-12 col-sm-12">
-            <ul class="menu d-flex justify-content-evenly flex-column flex-md-row">
+    <header>
+        <nav>
+            <ul class="menu">
                 <li><a class="logo" href="./index.html"><img class="inicio" src="./images/logo.png" alt=""></a></li>
                 <li>
                     <p class="seccion" href="">Variedades de uva</p>
@@ -65,16 +65,16 @@
         </nav>
     </header>
     <!-- COMIENZO DEL MAIN -->
-    <main class="row main_index">
+    <main class="main_index">
                 <!-- TITULO -->
-        <section class="col-lg-12 col-md-12 col-sm-12 titulo_slogan">
+        <section class="titulo_slogan">
             <h1 class="titulo_principal animate__animated animate__backInLeft">PERFIL DEL VINO</h1>
             <p class="slogan">&quotGUÍA PARA ENTENDER EL MUNDO DEL VINO&quot</p>
         </section>
         <!-- PORTADA -->
         <!-- CAROUSEL -->
         <section class="carousel_contenedor">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div>
                 <div id="carouselExampleSlidesOnly" class="carousel slide portada_index" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="4000">
@@ -91,56 +91,58 @@
             </div>
         </section>
         <!-- CONTENIDO DEL INDEX -->
+        <section class="contenedor_articulos">
         <!-- COMIENZO DEL PRIMER ARTICULO -->
-        <article class="col-lg-6 col-md-12 col-sm-12 articulo1">
-            <p class="d-flex justify-content-left titulo_articulo-index">PRIMEROS PASOS</p>
-            <dl class="primeros_pasos">
-                <li>¿Qué es el vino?
-                    <p>El vino es una bebida alcohólica elaborada con uvas fermentadas. Técnicamente, el vino se puede hacer con cualquier fruta, pero la mayoría del vino se hace con uvas para vino.</p>
-                </li>
-                <li>Uvas para vino
-                    <p>Las uvas de vino son diferentes a las uvas de mesa (las que encontramos en los mercados).
-                        Son más pequeñas, más dulces, contienen semillas y tienen una piel más gruesa. Estos rasgos han demostrado ser mejores para hacer vino.</p>
-                </li>
-                <li>La vid
-                    <p>La vid es la planta que produce las uvas. Existen muchas especies de vid, de las cuales, la Vitis Vinifera es la más importante para la elaboración de vinos.</p>
-                </li>
-                <li>Vitis Vinifera
-                    <p>Hay miles de variedades de vino diferentes y la mayoría son cultivares de una sola especie de vid: Vitis Vinifera.</p>
-                </li>
-                <li>Característica principal
-                    <p>Las vides son plantas leñosas que duran mucho tiempo y producen una cosecha una vez al año. Los diferentes climas donde crecen las uvas afectan el sabor dulce (o ácido) del vino resultante.</p>
-                </li>
-                <li>Tipos de vinos
-                        <p><u>Varietal:</u> es un vino elaborado principalmente con una sola variedad de uva (<img class="referencia" src="./iconos/uva_tinta.svg">Malbec, <img class="referencia" src="./iconos/uva_blanca.svg">Chardonnay, etc.).
-                            <u>Blend:</u> se elabora mezclando varios vinos varietales.
-                            <u>Co-fermentado:</u> se elabora con diferentes variedades que se cosechan y vinifican juntas. </p>
-                </li>
-            </dl>
-        </article>
-        <!-- FIN DEL PRIMER ARTICULO -->
-        <!-- COMIENZO DEL SEGUNDO ARTICULO -->
-        <div class="col-lg-6 col-md-12 col-sm-12 articulo2">
-            <p class="d-flex justify-content-left titulo_articulo-index">ENTENDIENDO LA ETIQUETA</p>
-            <article class="d-flex justify-content-left articulo2_contenido">
-                <div class="etiqueta_vino">
-                    <img src="./images/etiqueta.svg"  alt="">
-                </div>
-                    <ol class="etiqueta_items">
-                        <li><b><u>Variedad de uva:</u></b> Cepa utilizada para elaborar el vino.</li>
-                        <li><b><u>Añada:</u></b> Año en el que se cosechó la uva.</li>
-                        <li><b><u>Crianza:</u></b> Referencia para saber cuanto tiempo puede guardrase un vino antes de ser consumido.</li>
-                        <li><b><u>Región:</u></b> Orgien de procedencia de las uvas.</li>
-                        <li><b><u>Graduación alcoholica:</u></b> Indica el grado alcohólico del contenido.</li>
-                    </ol>
+            <article class="articulo1">
+                <p class="titulo_articulo-index">PRIMEROS PASOS</p>
+                <dl class="primeros_pasos">
+                    <li>¿Qué es el vino?
+                        <p>El vino es una bebida alcohólica elaborada con uvas fermentadas. Técnicamente, el vino se puede hacer con cualquier fruta, pero la mayoría del vino se hace con uvas para vino.</p>
+                    </li>
+                    <li>Uvas para vino
+                        <p>Las uvas de vino son diferentes a las uvas de mesa (las que encontramos en los mercados).
+                            Son más pequeñas, más dulces, contienen semillas y tienen una piel más gruesa. Estos rasgos han demostrado ser mejores para hacer vino.</p>
+                    </li>
+                    <li>La vid
+                        <p>La vid es la planta que produce las uvas. Existen muchas especies de vid, de las cuales, la Vitis Vinifera es la más importante para la elaboración de vinos.</p>
+                    </li>
+                    <li>Vitis Vinifera
+                        <p>Hay miles de variedades de vino diferentes y la mayoría son cultivares de una sola especie de vid: Vitis Vinifera.</p>
+                    </li>
+                    <li>Característica principal
+                        <p>Las vides son plantas leñosas que duran mucho tiempo y producen una cosecha una vez al año. Los diferentes climas donde crecen las uvas afectan el sabor dulce (o ácido) del vino resultante.</p>
+                    </li>
+                    <li>Tipos de vinos
+                            <p><u>Varietal:</u> es un vino elaborado principalmente con una sola variedad de uva (<img class="referencia" src="./iconos/uva_tinta.svg">Malbec, <img class="referencia" src="./iconos/uva_blanca.svg">Chardonnay, etc.).
+                                <u>Blend:</u> se elabora mezclando varios vinos varietales.
+                                <u>Co-fermentado:</u> se elabora con diferentes variedades que se cosechan y vinifican juntas. </p>
+                    </li>
+                </dl>
             </article>
-        </div>
+            <!-- FIN DEL PRIMER ARTICULO -->
+            <!-- COMIENZO DEL SEGUNDO ARTICULO -->
+            <div class="articulo2">
+                <p class="titulo_articulo-index">ENTENDIENDO LA ETIQUETA</p>
+                <article class="articulo2_contenido">
+                    <div class="etiqueta_vino">
+                        <img src="./images/etiqueta.svg"  alt="">
+                    </div>
+                        <ol class="etiqueta_items">
+                            <li><b><u>Variedad de uva:</u></b> Cepa utilizada para elaborar el vino.</li>
+                            <li><b><u>Añada:</u></b> Año en el que se cosechó la uva.</li>
+                            <li><b><u>Crianza:</u></b> Referencia para saber cuanto tiempo puede guardrase un vino antes de ser consumido.</li>
+                            <li><b><u>Región:</u></b> Orgien de procedencia de las uvas.</li>
+                            <li><b><u>Graduación alcoholica:</u></b> Indica el grado alcohólico del contenido.</li>
+                        </ol>
+                </article>
+            </div>
+        </section>
         <!-- FIN DEL SEGUNDO ARTICULO -->
     </main>
     <!-- PIE DE PAGINA -->
-    <footer class="row">
-            <a class="d-flex justify-content-center" href="https://www.instagram.com/perfildelvino/" target="_blank"><img class="co-lg-1 col-md-1 col-sm-1" src="./iconos/instagram.svg" alt=""></a>
-            <p class="col-lg-8 col-md-8 col-sm-8 footer_txt">Copyright &copy; 2022 "Perfil del vino", todos los derechos reservados.</p>
+    <footer>
+            <a href="https://www.instagram.com/perfildelvino/" target="_blank"><img src="./iconos/instagram.svg" alt=""></a>
+            <p class="footer_txt">Copyright &copy; 2022 "Perfil del vino", todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
