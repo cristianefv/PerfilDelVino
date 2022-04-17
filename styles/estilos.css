@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
     background-color: #EEEBDD;
@@ -120,7 +121,7 @@ nav{
     text-align: center;
     font-family: 'playfair display';
     font-style: italic;
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bolder ;
     width: 100%;
     color: #EEEBDD;
@@ -134,9 +135,37 @@ nav{
     font-family: 'oswald';
     font-style: italic;
     font-size: 25px;
-    width: 100%;
+    width: 1700px;
     color: #EEEBDD;
     margin: 0;
+    animation-name: sloganTranslate;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes sloganTranslate{
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(50px);
+    }
+    40%{
+        transform: translateX(75px);
+    }
+    60%{
+        transform: translateX(100px);
+    }
+    75%{
+        transform: translateX(75px);
+    }
+    90%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 /* FOTO DE PORTADA INDEX */
 .carousel-item{
@@ -173,8 +202,8 @@ nav{
     white-space: pre-line; /* SALTO DE LINEA */
 }
 .articulo2_contenido{
-    /* display: flex;
-    flex-flow: row nowrap; */
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: left;
     align-items: center;
     margin-bottom: 30px;
@@ -201,7 +230,7 @@ nav{
     text-align: center;
     font-family: 'merriweather';
     font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: underline;
     margin: 30px;
 }
@@ -230,7 +259,7 @@ nav{
     margin-right: 15px;
     transition: all 2s;
 }
-.cepas_img:hover{  /* ANIMACION PARA LAS CEPAS */
+.cepas_img:hover{  /* EFECTO PARA LAS CEPAS */
     height: 270px;
     width: 270px;
 }
@@ -252,20 +281,65 @@ img.uva_icono{
 img.referencia{
     width: 25px;
 }
-/* PAGINA ELABORACION TINTO */
+                /* PAGINA ELABORACION TINTO */
 .proceso_tinto{
-    align-items: center;
+    align-items:  center;
     justify-items: center;
     margin-bottom: 2%;
+}
+.carousel_cosechaTinto{
+    width: 650px;
+    height: 370px;
 }
 .carousel_transTinto{
     width: 650px;
     height: 370px;
 }
+.carousel_despaTinto{
+    width: 650px;
+    height: 370px;
+}
+.et_tittle{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    font-size: 1.5rem;
+    animation: moverTexto 5s infinite;
+}
+        /* ANIMACION PARA TITULO-INFO */
+@keyframes moverTexto{
+    0%{
+        color: red;
+        transform: translateX(0);
+        margin: 0;
+    }
+    25%{
+        transform: translatex(100%);
+        margin: 0;
+    }
+    50%{
+        transform: translateX(100%) translatey(100%);
+        margin: 0;
+    }
+    75%{
+        transform: translateX(0%) translatey(100%);
+        margin: 0;
+    }
+    100%{
+        transform: translateX(0%) translatey(0%);
+        margin: 0;
+    }
+}
 
+
+.et_txt{
+    margin: 3rem;
+}
 /* PAGINA DE CONTACTO */
 .formulario{
-    margin-bottom: 2.1%;
+    margin-bottom: 1.5%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -280,7 +354,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    bottom: 0;
+    bottom: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 12px;
@@ -407,23 +481,38 @@ footer{
 }
 .proceso_tinto{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "img1 img1 info1 info1"
-    "info2 info2 car1 car1";
-}
-.et_img1{
-    grid-area: img1;
+    "car1 info1"
+    "info2 car2"
+    "img1 info3"
+    "info4 car3";
 }
 .et_info1{
     grid-area: info1;
 }
-.carousel_transTinto{
+.carousel_cosechaTinto{
     grid-area: car1;
 }
 .et_info2{
     grid-area: info2;
 }
+.carousel_transTinto{
+    grid-area: car2;
+}
+.et_info3{
+    grid-area: info3;
+}
+.et_img1{
+    grid-area: img1;
+}
+.et_info4{
+    grid-area: info4;
+}
+.carousel_despaTinto{
+    grid-area: car3;
+}
+
 /* --------> GRIDS: CONTACTO <------- */
 .grid_contacto{
     display: grid;
