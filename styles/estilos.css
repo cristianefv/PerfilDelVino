@@ -77,6 +77,9 @@ nav{
     font-weight: 800;
     font-size: 17px;
 }
+.seccion{
+    margin: 0;
+}
 .submenu li a{
     display: block;
     color: white;
@@ -332,8 +335,6 @@ img.referencia{
         margin: 0;
     }
 }
-
-
 .et_txt{
     margin: 3rem;
 }
@@ -531,3 +532,394 @@ main{
 footer{
     grid-area: footer;
 }
+/* --------> MEDIA QUERY: INDEX <------- */
+/* -------------> TABLET <------------- */
+@media (max-width: 768px){
+    .grid_index{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+    header{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .main_index{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "titulo titulo"
+        "portada portada"
+        "arts arts";
+    }
+    .titulo_slogan{
+        grid-area: titulo;
+    }
+    .titulo_principal{
+        text-align: center;
+        margin: 0;
+        font-size: 50px;
+    }
+    .slogan{
+        width: 750px;
+    }
+    .carousel_contenedor{
+        grid-area: portada;
+    }
+    .contenedor_articulos{
+        grid-area: arts;
+    }
+    .menu .seccion{
+        font-size: 16px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .contenedor_articulos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "art1 art2"
+        "art1 art2"
+        "art1 art2";
+    }
+    .articulo1{
+        grid-area: art1;
+    }
+    .titulo_articulo-index{
+        text-align: center;
+    }
+    .primeros_pasos li{
+        list-style-type: upper-roman;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        text-indent: 0px;
+    }
+    .primeros_pasos p{
+        text-align: justify;
+        font-weight: 500;
+        font-size: 16px;
+        width: 50%;
+        text-indent: 0px;
+        margin:  5px 100px 20px ;
+        line-height: 1.5;
+        letter-spacing: 0.5px ;
+        white-space: pre-line; /* SALTO DE LINEA */
+    }
+    .articulo2{
+        grid-area: art2;
+    }
+    .articulo2_contenido{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+    /* --------> MEDIA QUERY: INDEX <------- */
+/* -------------> CELULAR <------------- */
+/* @media screen and (max-width: 480px){
+    .grid_index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    }
+    header{
+        grid-area: nav;
+        position: relative;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+    }
+    footer a img{
+        margin: 0;
+    }
+    footer p{
+        margin-top: 5px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "portada"
+        "art1"
+        "art2";
+        margin-top: 260px;
+    }
+    .titulo_slogan{
+        grid-area: titulo;
+    }
+    .titulo_principal{
+        font-size: 30px;
+    }
+    .slogan{
+        font-size: 20px;
+    }
+    .portada_index{
+        grid-area: portada;
+    }
+    .articulo1{
+        grid-area: art1;
+    }
+    .primeros_pasos p{
+        margin: 5px 30px 20px;
+    }
+    .articulo2{
+        grid-area: art2;
+    }
+    .titulo_articulo-index{
+        text-align: center;
+        width: auto;
+    }
+    .articulo2_contenido{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .titulo_articulo-index{
+        text-align: center;
+    }
+    .etiqueta_vino{
+        margin-bottom: 15px;
+    }
+    .etiqueta_items{
+        text-align: left;
+        height: auto;
+        width: 90%;
+        margin-left: 70px;
+    }
+    .etiqueta_items li{
+        font-size: 16px;
+    }
+} */
+/* --------------> GRIDS <-------------- */
+/* -------------> CEPAS <------------- */
+/* .grid_cepas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.main_cepas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "cepas";
+}
+.titulo{
+    grid-area: titulo;
+}
+.cepas_contenido{
+    grid-area: cepas;
+} */
+/* --------> MEDIA QUERY: CEPAS <------- */
+/* -------------> TABLET <------------- */
+/* @media screen and (max-width: 768px) {
+    .grid_cepas{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+    header{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .main_cepas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo"
+        "cepas";
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+    .cepas_contenido{
+        grid-area: cepas;
+    }
+}
+/* --------> MEDIA QUERY: CEPAS <------- */
+/* -------------> CELULAR <------------- */
+/* @media screen and (max-width: 480px){
+    .grid_cepas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    }
+    header{
+        grid-area: nav;
+        position: relative;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+    }
+    footer a img{
+        margin: 0;
+    }
+    footer p{
+        margin-top: 5px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_cepas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "cepas";
+        margin-top: 260px;
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+    .cepas_contenido{
+        grid-area: cepas;
+    }
+    .cepas_contenido ul li{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: left;
+        margin-top: 30px;
+        height: 100%;
+        width: 90%;
+        margin-left: 15px;
+    }
+} */
+/* --------------> GRIDS <-------------- */
+/* -------------> CONTACTO <------------- */
+/* .grid_contacto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+} */
+/* --------> MEDIA QUERY: CONTACTO <------- */
+/* -------------> TABLET <------------- */
+/* @media screen and (max-width: 768px) {
+    .grid_contacto{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+    .header{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        margin-top: 138px;
+    }
+} */
+/* --------> MEDIA QUERY: CONTACTO <------- */
+/* -------------> CELULAR <------------- */
+/* @media screen and (max-width: 480px){
+    .grid_contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    }
+    header{
+        grid-area: nav;
+        position: relative;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+    }
+    footer a img{
+        margin: 0;
+    }
+    footer p{
+        margin-top: 5px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "formulario";
+        margin-top: 260px;
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+    .formulario{
+        grid-area: formulario;
+    }
+} */
