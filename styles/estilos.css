@@ -522,7 +522,7 @@ footer{
 }
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .grid_index{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -710,7 +710,7 @@ footer{
         grid-area: footer;
     }
 }
-/*  .main_cepas{
+    .main_cepas{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -780,28 +780,9 @@ footer{
     }
 }
 
-/* --------------> GRIDS <-------------- */
-/* -------------> CONTACTO <------------- */
-/* .grid_contacto{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "nav nav nav nav"
-    "main main main main"
-    "footer footer footer footer";
-}
-header{
-    grid-area: nav;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-} */
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> TABLET <------------- */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .grid_contacto{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -817,12 +798,17 @@ footer{
     }
     footer{
         grid-area: footer;
-        margin-top: 138px;
     }
-} */
+    .formulario{
+        margin-bottom: 16%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> CELULAR <------------- */
-/* @media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     .grid_contacto{
         display: grid;
         grid-template-columns: 1fr;
@@ -833,21 +819,12 @@ footer{
     }
     header{
         grid-area: nav;
-        position: relative;
     }
     main{
         grid-area: main;
     }
     footer{
         grid-area: footer;
-        display: flex;
-        flex-direction: column;
-    }
-    footer a img{
-        margin: 0;
-    }
-    footer p{
-        margin-top: 5px;
     }
     .menu{
         display: flex;
@@ -859,7 +836,6 @@ footer{
         grid-template-areas:
         "titulo"
         "formulario";
-        margin-top: 260px;
     }
     .titulo{
         grid-area: titulo;
@@ -867,4 +843,4 @@ footer{
     .formulario{
         grid-area: formulario;
     }
-} */
+}
