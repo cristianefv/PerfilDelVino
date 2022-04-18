@@ -55,6 +55,10 @@ nav {
     font-size: 17px; }
   .menu li .seccion {
     margin: 0; }
+    .menu li .seccion:hover {
+      color: #f80808dc;
+      transition: all .3s;
+      font-size: 20px; }
   .menu li .submenu {
     position: absolute;
     display: none;
@@ -71,3 +75,9 @@ nav {
       font-weight: bold;
       z-index: 1;
       width: 100%; }
+    .menu li .submenu li:hover {
+      background-color: #0000008a;
+      transition: all .3s; }
+  .menu li:hover .submenu {
+    display: block;
+    transition: all .3s; }

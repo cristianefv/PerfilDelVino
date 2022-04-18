@@ -59,6 +59,11 @@ nav{
         }
         .seccion{
             margin: 0;
+            &:hover{
+                color: #f80808dc;
+                transition: all .3s;
+                font-size: 20px;
+            }
         }
         .submenu{
             position: absolute;
@@ -78,7 +83,15 @@ nav{
                     z-index: 1;
                     width: 100%;
                 }
+                &:hover{
+                    background-color: #0000008a;
+                    transition: all .3s;
+                }
             }
+        }
+        &:hover .submenu{
+            display: block;
+            transition: all .3s;
         }
     }
 }

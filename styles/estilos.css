@@ -1,17 +1,3 @@
-/* EFECTOS PARA EL MENU DE NAVEGACION */
-.menu li:hover .submenu{
-    display: block;
-    transition: all .3s;
-}
-.submenu li:hover{
-    background-color: #0000008a;
-    transition: all .3s;
-}
-.menu li .seccion:hover{
-    color: #f80808dc;
-    transition: all .3s;
-    font-size: 20px;
-}
 /* PORTADA PRINCIPAL */
 .portada_index{
     display: flex;
