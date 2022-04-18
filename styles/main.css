@@ -81,3 +81,63 @@ nav {
   .menu li:hover .submenu {
     display: block;
     transition: all .3s; }
+
+/* PORTADA PRINCIPAL */
+.portada_index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+/* TITULO PRINCIPAL INDEX */
+.titulo_slogan {
+  margin: 0;
+  background-image: linear-gradient(black, #610808c4);
+  z-index: 0; }
+
+.titulo_principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'playfair display';
+  font-style: italic;
+  font-size: 100px;
+  font-weight: bolder;
+  width: 100%;
+  color: #EEEBDD; }
+
+/* SLOGAN DE LA PAGINA */
+.slogan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'oswald';
+  font-style: italic;
+  font-size: 25px;
+  width: 1600px;
+  color: #EEEBDD;
+  margin: 0;
+  animation-name: sloganTranslate;
+  animation-delay: 2s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes sloganTranslate {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(100px); }
+  100% {
+    transform: translateX(0px); } }
+
+/* FOTO DE PORTADA INDEX */
+.carousel-item {
+  width: 100%;
+  height: auto; }
+
+.carousel_contenedor {
+  padding: 0; }
