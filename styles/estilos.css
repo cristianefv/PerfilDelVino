@@ -690,95 +690,9 @@ footer{
         margin-right: 20px;
     }
 }
-
-    /* }
-    .main_index{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "titulo"
-        "portada"
-        "art1"
-        "art2";
-        margin-top: 260px;
-    }
-    .titulo_slogan{
-        grid-area: titulo;
-    }
-    .titulo_principal{
-        font-size: 30px;
-    }
-    .portada_index{
-        grid-area: portada;
-    }
-    .articulo1{
-        grid-area: art1;
-    }
-    .primeros_pasos p{
-        margin: 5px 30px 20px;
-    }
-    .articulo2{
-        grid-area: art2;
-    }
-    .titulo_articulo-index{
-        text-align: center;
-        width: auto;
-    }
-    .articulo2_contenido{
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    .titulo_articulo-index{
-        text-align: center;
-    }
-    .etiqueta_vino{
-        margin-bottom: 15px;
-    }
-    .etiqueta_items{
-        text-align: left;
-        height: auto;
-        width: 90%;
-        margin-left: 70px;
-    }
-    .etiqueta_items li{
-        font-size: 16px;
-    } */
-
-/* --------------> GRIDS <-------------- */
-/* -------------> CEPAS <------------- */
-/* .grid_cepas{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "nav nav nav nav"
-    "main main main main"
-    "footer footer footer footer";
-}
-header{
-    grid-area: nav;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-.main_cepas{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "titulo"
-    "cepas";
-}
-.titulo{
-    grid-area: titulo;
-}
-.cepas_contenido{
-    grid-area: cepas;
-} */
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> TABLET <------------- */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .grid_cepas{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -795,7 +709,8 @@ footer{
     footer{
         grid-area: footer;
     }
-    .main_cepas{
+}
+/*  .main_cepas{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -808,10 +723,10 @@ footer{
     .cepas_contenido{
         grid-area: cepas;
     }
-}
+
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> CELULAR <------------- */
-/* @media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     .grid_cepas{
         display: grid;
         grid-template-columns: 1fr;
@@ -829,8 +744,6 @@ footer{
     }
     footer{
         grid-area: footer;
-        display: flex;
-        flex-direction: column;
     }
     footer a img{
         margin: 0;
@@ -848,7 +761,6 @@ footer{
         grid-template-areas:
         "titulo"
         "cepas";
-        margin-top: 260px;
     }
     .titulo{
         grid-area: titulo;
@@ -866,7 +778,8 @@ footer{
         width: 90%;
         margin-left: 15px;
     }
-} */
+}
+
 /* --------------> GRIDS <-------------- */
 /* -------------> CONTACTO <------------- */
 /* .grid_contacto{
