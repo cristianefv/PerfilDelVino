@@ -158,3 +158,95 @@ nav{
 .carousel_contenedor{
     padding: 0;
 }
+/* CONTENIDO DEL INDEX */
+.titulo_articulo-index{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 25px;
+    text-indent: 30px;
+    margin: 60px 0px 20px;
+    text-decoration: underline;
+}
+.primeros_pasos{
+    li{
+        list-style-type: upper-roman;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        text-indent: 70px;
+        p{
+            text-align: justify;
+            font-weight: 500;
+            font-size: 16px;
+            text-indent: 0px;
+            margin:  5px 100px 20px ;
+            line-height: 1.5;
+            letter-spacing: 0.5px ;
+            white-space: pre-line; /* SALTO DE LINEA */
+        }
+    }
+}
+.articulo2_contenido{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 30px;
+    .etiqueta_vino{
+        margin: 0px 60px;
+    }
+    .etiqueta_items{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-weight: 500;
+        font-size: x-large;
+        .etiqueta_items li{
+            font-size: 16px;
+        }
+    }
+}
+/* TITULO DE CADA PAGINA */
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'merriweather';
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 30px;
+}
+/* PIE DE PAGINA */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: black;
+    color: #EEEBDD;
+    a{
+        width: 30px;
+        height: 40px;
+        padding: 0;
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .footer_txt{
+        margin: 0;
+        padding: 0;
+        width: 380px;
+    }
+}
