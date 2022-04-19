@@ -1,0 +1,152 @@
+/* --------> GRIDS: INDEX <------- */
+.grid_index{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+.main_index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "titulo titulo"
+    "carousel carousel"
+    "arts arts";
+    .titulo_slogan{
+        grid-area: titulo;
+    }
+    .carousel_contenedor{
+        grid-area: carousel;
+    }
+    .contenedor_articulos{
+        grid-area: arts;
+    }
+}
+.contenedor_articulos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "art1 art2"
+    "art1 art2";
+    .articulo1{
+        grid-area: art1;
+    }
+    .articulo2{
+        grid-area: art2;
+    }
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "logo"
+    "txt";
+    a{
+        grid-area: logo;
+        align-self: center;
+        justify-self: center;
+    }
+    .footer_txt{
+        grid-area: txt;
+        align-self: center;
+        justify-self: center;
+    }
+}
+/* --------> GRIDS: CEPAS <------- */
+.grid_cepas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+/* --------> GRIDS: ELABORACION - TINTO <------- */
+.grid_elaboracionTinto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+.proceso_tinto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "car1 info1"
+    "info2 car2"
+    "img1 info3"
+    "info4 car3";
+    .et_info1{
+        grid-area: info1;
+    }
+    .carousel_cosechaTinto{
+        grid-area: car1;
+    }
+    .et_info2{
+        grid-area: info2;
+    }
+    .carousel_transTinto{
+        grid-area: car2;
+    }
+    .et_info3{
+        grid-area: info3;
+    }
+    .et_img1{
+        grid-area: img1;
+    }
+    .et_info4{
+        grid-area: info4;
+    }
+    .carousel_despaTinto{
+        grid-area: car3;
+    }
+}
+/* --------> GRIDS: CONTACTO <------- */
+.grid_contacto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}

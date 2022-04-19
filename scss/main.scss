@@ -1,3 +1,7 @@
+@import "cepas";
+@import "elaboracionTinto";
+@import "contacto";
+@import "grids";
 *{
     margin:0;
     padding:0;
@@ -221,10 +225,6 @@ nav{
 }
 /* PIE DE PAGINA */
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     bottom: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
