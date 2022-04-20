@@ -271,11 +271,11 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
     .grid_index header {
-      grid-area: nav; }
+      grid-area: nav;
+      position: relative; }
       .grid_index header .menu {
         display: flex;
-        flex-direction: column;
-        position: relative; }
+        flex-direction: column; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -311,6 +311,186 @@ footer {
         width: 85%;
         margin-left: 20px;
         margin-right: 20px; } }
+
+/* --------> MEDIA QUERY: CEPAS <------- */
+/* -------------> TABLET <------------- */
+@media screen and (max-width: 768px) {
+  .grid_cepas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
+    .grid_cepas header {
+      grid-area: nav; }
+    .grid_cepas main {
+      grid-area: main; }
+    .grid_cepas footer {
+      grid-area: footer; }
+  .main_cepas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "cepas"; }
+    .main_cepas .titulo {
+      grid-area: titulo; }
+    .main_cepas .cepas_contenido {
+      grid-area: cepas; } }
+
+/* --------> MEDIA QUERY: CEPAS <------- */
+/* -------------> CELULAR <------------- */
+@media screen and (max-width: 480px) {
+  .grid_cepas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer"; }
+    .grid_cepas header {
+      grid-area: nav;
+      position: relative; }
+      .grid_cepas header .menu {
+        display: flex;
+        flex-direction: column; }
+    .grid_cepas main {
+      grid-area: main; }
+    .grid_cepas footer {
+      grid-area: footer; }
+      .grid_cepas footer a img {
+        margin: 0; }
+      .grid_cepas footer .footer_txt {
+        margin-top: 5px; }
+  .main_cepas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "cepas"; }
+    .main_cepas .titulo {
+      grid-area: titulo; }
+    .main_cepas .cepas_contenido {
+      grid-area: cepas; }
+      .main_cepas .cepas_contenido ul li {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: left;
+        margin-top: 30px;
+        height: 100%;
+        width: 90%;
+        margin-left: 15px; } }
+
+/* --------> MEDIA QUERY: ELABORACION <------- */
+/* -------------> TABLET <------------- */
+@media screen and (max-width: 768px) {
+  .grid_elaboracionTinto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
+    .grid_elaboracionTinto header {
+      grid-area: nav; }
+    .grid_elaboracionTinto main {
+      grid-area: main; }
+    .grid_elaboracionTinto footer {
+      grid-area: footer; }
+  .main_elabTinto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "proceso"; }
+    .main_elabTinto .titulo {
+      grid-area: titulo; }
+    .main_elabTinto .proceso_tinto {
+      grid-area: proceso;
+      display: flex;
+      flex-flow: column nowrap; } }
+
+/* --------> MEDIA QUERY: ELABORACION <------- */
+/* -------------> CELULAR <------------- */
+@media screen and (max-width: 488px) {
+  .grid_elaboracionTinto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer"; }
+    .grid_elaboracionTinto header {
+      grid-area: nav; }
+    .grid_elaboracionTinto main {
+      grid-area: main; }
+    .grid_elaboracionTinto footer {
+      grid-area: footer; }
+  .main_elabTinto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "proceso"; }
+    .main_elabTinto .titulo {
+      grid-area: titulo;
+      font-size: 20px; }
+    .main_elabTinto .proceso_tinto {
+      grid-area: proceso;
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100vw; }
+      .main_elabTinto .proceso_tinto .et_tittle {
+        font-size: 20px;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        animation: moverTexto 5s infinite; }
+  @keyframes moverTexto {
+    0% {
+      color: red;
+      transform: translateX(0);
+      margin: 0; }
+    25% {
+      transform: translatex(50%);
+      margin: 0; }
+    50% {
+      transform: translateX(50%) translatey(50%);
+      margin: 0; }
+    75% {
+      transform: translateX(0%) translatey(50%);
+      margin: 0; }
+    100% {
+      transform: translateX(0%) translatey(0%);
+      margin: 0; } }
+      .main_elabTinto .proceso_tinto .et_txt {
+        width: 90vw; } }
+
+/* --------> MEDIA QUERY: CONTACTO <------- */
+/* -------------> TABLET <------------- */
+@media screen and (max-width: 768px) {
+  .grid_contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
+    .grid_contacto header {
+      grid-area: nav; }
+    .grid_contacto main {
+      grid-area: main; }
+      .grid_contacto main .formulario {
+        margin-bottom: 18.8%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center; }
+    .grid_contacto footer {
+      grid-area: footer; } }
+
+/* --------> MEDIA QUERY: CONTACTO <------- */
+/* -------------> CELULAR <------------- */
+@media screen and (max-width: 480px) {
+  .grid_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer"; }
+    .grid_contacto header {
+      grid-area: nav;
+      position: relative; }
+      .grid_contacto header .menu {
+        display: flex;
+        flex-direction: column; }
+    .grid_contacto main {
+      grid-area: main; }
+    .grid_contacto footer {
+      grid-area: footer; }
+  .main_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "formulario"; }
+    .main_contacto .titulo {
+      grid-area: titulo; }
+    .main_contacto .formulario {
+      grid-area: formulario; } }
 
 * {
   margin: 0;
