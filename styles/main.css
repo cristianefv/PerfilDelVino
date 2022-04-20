@@ -189,6 +189,129 @@ footer {
   .grid_contacto footer {
     grid-area: footer; }
 
+/* --------> MEDIA QUERY: INDEX <------- */
+/* -------------> TABLET <------------- */
+@media screen and (max-width: 768px) {
+  .menu .seccion {
+    font-size: 16px;
+    display: flex;
+    flex-flow: row nowrap; }
+  .grid_index {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
+    .grid_index header {
+      grid-area: nav; }
+    .grid_index main {
+      grid-area: main; }
+    .grid_index footer {
+      grid-area: footer; }
+  .main_index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titulo titulo" "portada portada" "arts arts"; }
+    .main_index .titulo_slogan {
+      grid-area: titulo; }
+      .main_index .titulo_slogan .titulo_principal {
+        text-align: center;
+        margin: 0;
+        font-size: 70px; }
+      .main_index .titulo_slogan .slogan {
+        width: 700px;
+        font-size: 20px; }
+    .main_index .carousel_contenedor {
+      grid-area: portada; }
+    .main_index .contenedor_articulos {
+      grid-area: arts; }
+  .contenedor_articulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "art1 art2" "art1 art2" "art1 art2"; }
+    .contenedor_articulos .articulo1 {
+      grid-area: art1; }
+      .contenedor_articulos .articulo1 .titulo_articulo-index {
+        text-align: center; }
+      .contenedor_articulos .articulo1 .primeros_pasos li {
+        list-style-type: upper-roman;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        text-indent: 0px; }
+        .contenedor_articulos .articulo1 .primeros_pasos li p {
+          text-align: justify;
+          font-weight: 500;
+          font-size: 16px;
+          width: 90%;
+          text-indent: 0px;
+          margin: 5px 20px 20px;
+          line-height: 1.5;
+          letter-spacing: 0.5px;
+          white-space: pre-line;
+          /* SALTO DE LINEA */ }
+    .contenedor_articulos .articulo2 {
+      grid-area: art2; }
+      .contenedor_articulos .articulo2 .titulo_articulo-index {
+        text-align: center; }
+      .contenedor_articulos .articulo2 .articulo2_contenido {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px; }
+        .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items {
+          margin-left: 20px;
+          margin-right: 20px; }
+          .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items li {
+            font-size: 16px; } }
+
+/* --------> MEDIA QUERY: INDEX <------- */
+/* -------------> CELULAR <------------- */
+@media screen and (max-width: 480px) {
+  .grid_index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer"; }
+    .grid_index header {
+      grid-area: nav; }
+      .grid_index header .menu {
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+    .grid_index main {
+      grid-area: main; }
+    .grid_index footer {
+      grid-area: footer; }
+  .main_index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo titulo" "portada portada" "arts arts"; }
+    .main_index .titulo_slogan {
+      grid-area: titulo; }
+      .main_index .titulo_slogan .titulo_principal {
+        font-size: 50px; }
+      .main_index .titulo_slogan .slogan {
+        font-size: 16px;
+        width: 390px; }
+    .main_index .carousel_contenedor {
+      grid-area: portada; }
+    .main_index .contenedor_articulos {
+      grid-area: arts; }
+  .contenedor_articulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "art1" "art2"; }
+    .contenedor_articulos .articulo1 {
+      grid-area: art1; }
+      .contenedor_articulos .articulo1 .primeros_pasos li p {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px; }
+    .contenedor_articulos .articulo2 {
+      grid-area: art2; }
+      .contenedor_articulos .articulo2 .etiqueta_items {
+        width: 85%;
+        margin-left: 20px;
+        margin-right: 20px; } }
+
 * {
   margin: 0;
   padding: 0;
