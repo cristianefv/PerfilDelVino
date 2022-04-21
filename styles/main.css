@@ -624,7 +624,7 @@ nav {
   0% {
     transform: translateX(0px); }
   50% {
-    transform: translateX(100px); }
+    transform: translateX(220px); }
   100% {
     transform: translateX(0px); } }
 
