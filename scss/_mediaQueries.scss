@@ -322,6 +322,11 @@
         "footer";
         header{
             grid-area: nav;
+            position: relative;
+            .menu{
+                display: flex;
+                flex-direction: column;
+            }
         }
         main{
             grid-area: main;
@@ -350,30 +355,30 @@
                 width: 300px;
                 height: 50px;
                 text-align: center;
-                animation: moverTexto 5s infinite;
-                @keyframes moverTexto{
-                    0%{
-                        color: red;
-                        transform: translateX(0);
-                        margin: 0;
-                    }
-                    25%{
-                        transform: translatex(50%);
-                        margin: 0;
-                    }
-                    50%{
-                        transform: translateX(50%) translatey(50%);
-                        margin: 0;
-                    }
-                    75%{
-                        transform: translateX(0%) translatey(50%);
-                        margin: 0;
-                    }
-                    100%{
-                        transform: translateX(0%) translatey(0%);
-                        margin: 0;
-                    }
-                }
+                // animation: moverTexto 5s infinite;
+                // @keyframes moverTexto{
+                //     0%{
+                //         color: red;
+                //         transform: translateX(0);
+                //         margin: 0;
+                //     }
+                //     25%{
+                //         transform: translatex(50%);
+                //         margin: 0;
+                //     }
+                //     50%{
+                //         transform: translateX(50%) translatey(50%);
+                //         margin: 0;
+                //     }
+                //     75%{
+                //         transform: translateX(0%) translatey(50%);
+                //         margin: 0;
+                //     }
+                //     100%{
+                //         transform: translateX(0%) translatey(0%);
+                //         margin: 0;
+                //     }
+                // }
             }
             .et_txt{
                 width: 90vw;

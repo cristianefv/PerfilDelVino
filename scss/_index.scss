@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEEBDD;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.inicio{
+    width: 85px;
+    height: 120px;
+}
+/* MENU STICKY */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    margin: auto;
+    background-color: black;
+    font-size: 20px;
+    margin-top: 0px;
+    padding: 10px 0px 0px 0px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    li{
+        .logo{
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+        a{
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 800;
+            padding: 15px 15px 15px 20px;
+        }
+        p{
+            display: block;
+            color: white;
+            padding: 15px 15px 15px 20px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 17px;
+        }
+        .seccion{
+            margin: 0;
+            &:hover{
+                color: #f80808dc;
+                transition: all .3s;
+                font-size: 20px;
+            }
+        }
+        .submenu{
+            position: absolute;
+            display: none;
+            list-style: none;
+            width: 200px;
+            background-color: #383838;
+            z-index: 1;
+            padding-left: 0;
+            li{
+                a{
+                    display: block;
+                    color: white;
+                    text-align: left;
+                    font-size: 17px;
+                    font-weight: bold;
+                    z-index: 1;
+                    width: 100%;
+                }
+                &:hover{
+                    background-color: #0000008a;
+                    transition: all .3s;
+                }
+            }
+        }
+        &:hover .submenu{
+            display: block;
+            transition: all .3s;
+        }
+    }
+}
+/* PORTADA PRINCIPAL */
+.portada_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* TITULO PRINCIPAL INDEX */
+.titulo_slogan{
+    margin: 0;
+    background-image: linear-gradient(black, #610808c4);
+    z-index: 0;
+}
+.titulo_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'playfair display';
+    font-style: italic;
+    font-size: 100px;
+    font-weight: bolder ;
+    width: 100%;
+    color: #EEEBDD;
+}
+/* SLOGAN DE LA PAGINA */
+.slogan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'oswald';
+    font-style: italic;
+    font-size: 25px;
+    width: 1600px;
+    color: #EEEBDD;
+    margin: 0;
+    animation-name: sloganTranslate;
+    animation-delay: 2s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    @keyframes sloganTranslate{
+        0%{
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(220px);
+        } 
+        100%{
+            transform: translateX(0px);
+        }
+    }
+}
+/* FOTO DE PORTADA INDEX */
+.carousel-item{
+    width: 100%;
+    height: auto;
+}
+.carousel_contenedor{
+    padding: 0;
+}
+/* CONTENIDO DEL INDEX */
+.titulo_articulo-index{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 25px;
+    text-indent: 30px;
+    margin: 60px 0px 20px;
+    text-decoration: underline;
+}
+.primeros_pasos{
+    li{
+        list-style-type: upper-roman;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        text-indent: 70px;
+        p{
+            text-align: justify;
+            font-weight: 500;
+            font-size: 16px;
+            text-indent: 0px;
+            margin:  5px 100px 20px ;
+            line-height: 1.5;
+            letter-spacing: 0.5px ;
+            white-space: pre-line; /* SALTO DE LINEA */
+        }
+    }
+}
+.articulo2_contenido{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 30px;
+    .etiqueta_vino{
+        margin: 0px 60px;
+    }
+    .etiqueta_items{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-weight: 500;
+        font-size: x-large;
+        .etiqueta_items li{
+            font-size: 16px;
+        }
+    }
+}
+/* TITULO DE CADA PAGINA */
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'merriweather';
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 30px;
+}
+/* PIE DE PAGINA */
+footer {
+    bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: black;
+    color: #EEEBDD;
+    a{
+        width: 30px;
+        height: 40px;
+        padding: 0;
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .footer_txt{
+        margin: 0;
+        padding: 0;
+        width: 380px;
+    }
+}
