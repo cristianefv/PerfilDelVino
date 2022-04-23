@@ -23,7 +23,7 @@ nav{
     margin: auto;
     background-color: $colorPrincipal;
     font-size: 20px;
-    margin-top: 0px;
+    margin: 0;
     padding: 10px 0px 0px 0px;
 }
 .menu{
@@ -37,27 +37,14 @@ nav{
     margin: 0;
     li{
         .logo{
-            padding-bottom: 0px;
-            padding-top: 0px;
-        }
-        a{
-            display: block;
-            padding: 10px 20px;
-            color: $colorTextoNav;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: 800;
-            padding: 15px 15px 15px 20px;
-        }
-        p{
-            display: block;
-            color: $colorTextoNav;
-            padding: 15px 15px 15px 20px;
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 17px;
+            padding: 0px;
         }
         .seccion{
+            display: block;
+            color: $colorTextoNav;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 17px;
             margin: 0;
             &:hover{
                 color: #f80808dc;
@@ -74,14 +61,16 @@ nav{
             z-index: 1;
             padding-left: 0;
             li{
-                a{
+                .sm_item{
                     display: block;
-                    color: white;
+                    color: $colorTextoNav;
                     text-align: left;
                     font-size: 17px;
                     font-weight: bold;
                     z-index: 1;
                     width: 100%;
+                    text-decoration: none;
+                    padding: 15px 15px 15px 20px;
                 }
                 &:hover{
                     background-color: #0000008a;
@@ -202,7 +191,7 @@ nav{
         justify-content: space-evenly;
         font-weight: 500;
         font-size: x-large;
-        .etiqueta_items li{
+        li{
             font-size: 16px;
         }
     }
@@ -227,7 +216,7 @@ footer {
     font-size: 12px;
     font-weight: bolder;
     background-color: $colorPrincipal;
-    color: #EEEBDD;
+    color: $colorTerciario;
     a{
         width: 30px;
         height: 40px;

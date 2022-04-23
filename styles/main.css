@@ -23,7 +23,7 @@ nav {
   margin: auto;
   background-color: black;
   font-size: 20px;
-  margin-top: 0px;
+  margin: 0;
   padding: 10px 0px 0px 0px; }
 
 .menu {
@@ -36,24 +36,13 @@ nav {
   padding: 0;
   margin: 0; }
   .menu li .logo {
-    padding-bottom: 0px;
-    padding-top: 0px; }
-  .menu li a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 800;
-    padding: 15px 15px 15px 20px; }
-  .menu li p {
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 17px; }
+    padding: 0px; }
   .menu li .seccion {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 17px;
     margin: 0; }
     .menu li .seccion:hover {
       color: #f80808dc;
@@ -67,14 +56,16 @@ nav {
     background-color: #383838;
     z-index: 1;
     padding-left: 0; }
-    .menu li .submenu li a {
+    .menu li .submenu li .sm_item {
       display: block;
       color: white;
       text-align: left;
       font-size: 17px;
       font-weight: bold;
       z-index: 1;
-      width: 100%; }
+      width: 100%;
+      text-decoration: none;
+      padding: 15px 15px 15px 20px; }
     .menu li .submenu li:hover {
       background-color: #0000008a;
       transition: all .3s; }
@@ -183,7 +174,7 @@ nav {
     justify-content: space-evenly;
     font-weight: 500;
     font-size: x-large; }
-    .articulo2_contenido .etiqueta_items .etiqueta_items li {
+    .articulo2_contenido .etiqueta_items li {
       font-size: 16px; }
 
 /* TITULO DE CADA PAGINA */
@@ -255,8 +246,6 @@ footer {
         font-weight: 800;
         text-decoration: underline;
         color: black; }
-        .cepas_contenido ul li .cepas_info .cepa_name img.uva_icono {
-          width: 25px; }
       .cepas_contenido ul li .cepas_info .referencia {
         width: 25px; }
 
