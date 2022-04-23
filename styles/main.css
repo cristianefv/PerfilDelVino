@@ -261,33 +261,20 @@ footer {
         width: 25px; }
 
 .proceso_tinto {
+  display: flex;
   align-items: center;
   justify-items: center;
   margin-bottom: 2%; }
   .proceso_tinto .carousel.slide {
-    width: 80%; }
-  .proceso_tinto .et_img1 {
-    width: 80%;
-    display: flex;
-    align-items: center; }
+    width: 70%; }
+  .proceso_tinto .et_img.n1 {
+    width: 70%; }
   .proceso_tinto .et_tittle {
     text-align: center;
     width: auto;
     height: 50px;
     font-size: 1.5rem;
     animation: moverTexto 5s infinite; }
-
-@keyframes moverTexto {
-  0% {
-    color: red;
-    transform: translateX(-10%);
-    margin: 0; }
-  50% {
-    transform: translatex(10%);
-    margin: 0; }
-  100% {
-    transform: translateX(-10%);
-    margin: 0; } }
   .proceso_tinto .et_txt {
     margin: 3rem; }
 
@@ -373,19 +360,19 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "car1 info1" "info2 car2" "img1 info3" "info4 car3"; }
-  .proceso_tinto .et_info1 {
+  .proceso_tinto .et_info.n1 {
     grid-area: info1; }
   .proceso_tinto .ct1 {
     grid-area: car1; }
-  .proceso_tinto .et_info2 {
+  .proceso_tinto .et_info.n2 {
     grid-area: info2; }
   .proceso_tinto .ct2 {
     grid-area: car2; }
-  .proceso_tinto .et_info3 {
+  .proceso_tinto .et_info.n3 {
     grid-area: info3; }
-  .proceso_tinto .et_img1 {
+  .proceso_tinto .et_img.n1 {
     grid-area: img1; }
-  .proceso_tinto .et_info4 {
+  .proceso_tinto .et_info.n4 {
     grid-area: info4; }
   .proceso_tinto .ct3 {
     grid-area: car3; }
@@ -613,19 +600,7 @@ footer {
         width: auto;
         margin: 0;
         height: 50px;
-        text-align: center;
-        animation: moverTexto 5s infinite; }
-  @keyframes moverTexto {
-    0% {
-      color: red;
-      transform: translateX(-10%);
-      margin: 0; }
-    50% {
-      transform: translatex(10%);
-      margin: 0; }
-    100% {
-      transform: translateX(-10%);
-      margin: 0; } } }
+        text-align: center; } }
 
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
@@ -654,28 +629,20 @@ footer {
     .main_elabTinto .proceso_tinto {
       grid-area: proceso;
       display: flex;
-      flex-flow: column nowrap;
+      align-items: center;
+      justify-items: center;
       width: 100vw; }
       .main_elabTinto .proceso_tinto .et_tittle {
         font-size: 20px;
         width: auto;
         margin: 0;
         height: 50px;
-        text-align: center;
-        animation: moverTexto 5s infinite; }
-  @keyframes moverTexto {
-    0% {
-      color: red;
-      transform: translateX(-10%);
-      margin: 0; }
-    50% {
-      transform: translatex(10%);
-      margin: 0; }
-    100% {
-      transform: translateX(-10%);
-      margin: 0; } }
-      .main_elabTinto .proceso_tinto .et_txt {
-        width: 90vw; } }
+        text-align: center; }
+      .main_elabTinto .proceso_tinto .et_img.n1 {
+        width: 70%; }
+      .main_elabTinto .proceso_tinto .et_info {
+        width: 90vw;
+        margin: 0; } }
 
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> TABLET <------------- */

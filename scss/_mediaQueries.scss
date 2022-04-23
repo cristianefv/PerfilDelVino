@@ -313,22 +313,22 @@
                 margin: 0;
                 height: 50px;
                 text-align: center;
-                animation: moverTexto 5s infinite;
-                @keyframes moverTexto{
-                    0%{
-                        color: red;
-                        transform: translateX(-10%);
-                        margin: 0;
-                    }
-                    50%{
-                        transform: translatex(10%);
-                        margin: 0;
-                    }
-                    100%{
-                        transform: translateX(-10%);
-                        margin: 0;
-                    }
-                }
+                // animation: moverTexto 5s infinite;
+                // @keyframes moverTexto{
+                //     0%{
+                //         color: red;
+                //         transform: translateX(-10%);
+                //         margin: 0;
+                //     }
+                //     50%{
+                //         transform: translatex(10%);
+                //         margin: 0;
+                //     }
+                //     100%{
+                //         transform: translateX(-10%);
+                //         margin: 0;
+                //     }
+                // }
             }
         }
     }
@@ -371,7 +371,8 @@
         .proceso_tinto{
             grid-area: proceso;
             display: flex;
-            flex-flow: column nowrap;
+            align-items:  center;
+            justify-items: center;
             width: 100vw;
             .et_tittle{
                 font-size: 20px;
@@ -379,25 +380,31 @@
                 margin: 0;
                 height: 50px;
                 text-align: center;
-                animation: moverTexto 5s infinite;
-                @keyframes moverTexto{
-                    0%{
-                        color: red;
-                        transform: translateX(-10%);
-                        margin: 0;
-                    }
-                    50%{
-                        transform: translatex(10%);
-                        margin: 0;
-                    }
-                    100%{
-                        transform: translateX(-10%);
-                        margin: 0;
-                    }
-                }
+                // animation: moverTexto 5s infinite;
+                // @keyframes moverTexto{
+                //     0%{
+                //         color: red;
+                //         transform: translateX(-10%);
+                //         margin: 0;
+                //     }
+                //     50%{
+                //         transform: translatex(10%);
+                //         margin: 0;
+                //     }
+                //     100%{
+                //         transform: translateX(-10%);
+                //         margin: 0;
+                //     }
+                // }
             }
-            .et_txt{
+            .et_img.n1{
+                width: 70%;
+            }
+            
+            
+            .et_info{
                 width: 90vw;
+                margin: 0;
             }
         }
     }

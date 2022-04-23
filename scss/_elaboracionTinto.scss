@@ -1,15 +1,17 @@
 .proceso_tinto{
+    display: flex;
     align-items:  center;
     justify-items: center;
     margin-bottom: 2%;
     .carousel.slide{
-        width: 80%;
+        width: 70%;
         // height: 370px;
     }
-    .et_img1{
-        width: 80%;
-        display: flex;
-        align-items: center;
+    .et_img.n1{
+        width: 70%;
+        // display: flex;
+        // justify-content: center;
+
     }
     .et_tittle{
         text-align: center;
@@ -17,21 +19,21 @@
         height: 50px;
         font-size: 1.5rem;
         animation: moverTexto 5s infinite;
-        @keyframes moverTexto{
-            0%{
-                color: red;
-                transform: translateX(-10%);
-                margin: 0;
-            }
-            50%{
-                transform: translatex(10%);
-                margin: 0;
-            }
-            100%{
-                transform: translateX(-10%);
-                margin: 0;
-            }
-        }
+        // @keyframes moverTexto{
+        //     0%{
+        //         color: red;
+        //         transform: translateX(-10%);
+        //         margin: 0;
+        //     }
+        //     50%{
+        //         transform: translatex(10%);
+        //         margin: 0;
+        //     }
+        //     100%{
+        //         transform: translateX(-10%);
+        //         margin: 0;
+        //     }
+        // }
     }
     .et_txt{
         margin: 3rem;

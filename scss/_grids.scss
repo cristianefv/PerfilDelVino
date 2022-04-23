@@ -107,25 +107,25 @@ footer{
     "info2 car2"
     "img1 info3"
     "info4 car3";
-    .et_info1{
+    .et_info.n1{
         grid-area: info1;
     }
     .ct1{
         grid-area: car1;
     }
-    .et_info2{
+    .et_info.n2{
         grid-area: info2;
     }
     .ct2{
         grid-area: car2;
     }
-    .et_info3{
+    .et_info.n3{
         grid-area: info3;
     }
-    .et_img1{
+    .et_img.n1{
         grid-area: img1;
     }
-    .et_info4{
+    .et_info.n4{
         grid-area: info4;
     }
     .ct3{
