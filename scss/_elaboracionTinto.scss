@@ -2,13 +2,14 @@
     align-items:  center;
     justify-items: center;
     margin-bottom: 2%;
-    .carousel_cosechaTinto{
-        width: 650px;
-        height: 370px;
+    .carousel.slide{
+        width: 80%;
+        // height: 370px;
     }
-    .carousel_transTinto{
-        width: 650px;
-        height: 370px;
+    .et_img1{
+        width: 80%;
+        display: flex;
+        align-items: center;
     }
     .et_tittle{
         text-align: center;
@@ -31,10 +32,6 @@
                 margin: 0;
             }
         }
-    }
-    .carousel_despaTinto{
-        width: 650px;
-        height: 370px;
     }
     .et_txt{
         margin: 3rem;

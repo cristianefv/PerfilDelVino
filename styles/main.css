@@ -264,12 +264,12 @@ footer {
   align-items: center;
   justify-items: center;
   margin-bottom: 2%; }
-  .proceso_tinto .carousel_cosechaTinto {
-    width: 650px;
-    height: 370px; }
-  .proceso_tinto .carousel_transTinto {
-    width: 650px;
-    height: 370px; }
+  .proceso_tinto .carousel.slide {
+    width: 80%; }
+  .proceso_tinto .et_img1 {
+    width: 80%;
+    display: flex;
+    align-items: center; }
   .proceso_tinto .et_tittle {
     text-align: center;
     width: auto;
@@ -288,9 +288,6 @@ footer {
   100% {
     transform: translateX(-10%);
     margin: 0; } }
-  .proceso_tinto .carousel_despaTinto {
-    width: 650px;
-    height: 370px; }
   .proceso_tinto .et_txt {
     margin: 3rem; }
 
@@ -378,11 +375,11 @@ footer {
   grid-template-areas: "car1 info1" "info2 car2" "img1 info3" "info4 car3"; }
   .proceso_tinto .et_info1 {
     grid-area: info1; }
-  .proceso_tinto .carousel_cosechaTinto {
+  .proceso_tinto .ct1 {
     grid-area: car1; }
   .proceso_tinto .et_info2 {
     grid-area: info2; }
-  .proceso_tinto .carousel_transTinto {
+  .proceso_tinto .ct2 {
     grid-area: car2; }
   .proceso_tinto .et_info3 {
     grid-area: info3; }
@@ -390,7 +387,7 @@ footer {
     grid-area: img1; }
   .proceso_tinto .et_info4 {
     grid-area: info4; }
-  .proceso_tinto .carousel_despaTinto {
+  .proceso_tinto .ct3 {
     grid-area: car3; }
 
 /* --------> GRIDS: CONTACTO <------- */
