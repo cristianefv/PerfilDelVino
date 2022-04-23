@@ -271,12 +271,23 @@ footer {
     width: 650px;
     height: 370px; }
   .proceso_tinto .et_tittle {
-    display: grid;
-    align-items: center;
     text-align: center;
-    width: 350px;
+    width: auto;
     height: 50px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    animation: moverTexto 5s infinite; }
+
+@keyframes moverTexto {
+  0% {
+    color: red;
+    transform: translateX(-10%);
+    margin: 0; }
+  50% {
+    transform: translatex(10%);
+    margin: 0; }
+  100% {
+    transform: translateX(-10%);
+    margin: 0; } }
   .proceso_tinto .carousel_despaTinto {
     width: 650px;
     height: 370px; }
@@ -599,11 +610,29 @@ footer {
     .main_elabTinto .proceso_tinto {
       grid-area: proceso;
       display: flex;
-      flex-flow: column nowrap; } }
+      flex-flow: column nowrap; }
+      .main_elabTinto .proceso_tinto .et_tittle {
+        font-size: 20px;
+        width: auto;
+        margin: 0;
+        height: 50px;
+        text-align: center;
+        animation: moverTexto 5s infinite; }
+  @keyframes moverTexto {
+    0% {
+      color: red;
+      transform: translateX(-10%);
+      margin: 0; }
+    50% {
+      transform: translatex(10%);
+      margin: 0; }
+    100% {
+      transform: translateX(-10%);
+      margin: 0; } } }
 
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 488px) {
+@media screen and (max-width: 480px) {
   .grid_elaboracionTinto {
     display: grid;
     grid-template-columns: 1fr;
@@ -632,9 +661,22 @@ footer {
       width: 100vw; }
       .main_elabTinto .proceso_tinto .et_tittle {
         font-size: 20px;
-        width: 300px;
+        width: auto;
+        margin: 0;
         height: 50px;
-        text-align: center; }
+        text-align: center;
+        animation: moverTexto 5s infinite; }
+  @keyframes moverTexto {
+    0% {
+      color: red;
+      transform: translateX(-10%);
+      margin: 0; }
+    50% {
+      transform: translatex(10%);
+      margin: 0; }
+    100% {
+      transform: translateX(-10%);
+      margin: 0; } }
       .main_elabTinto .proceso_tinto .et_txt {
         width: 90vw; } }
 

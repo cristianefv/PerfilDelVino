@@ -307,12 +307,35 @@
             grid-area: proceso;
             display: flex;
             flex-flow: column nowrap;
+            .et_tittle{
+                font-size: 20px;
+                width: auto;
+                margin: 0;
+                height: 50px;
+                text-align: center;
+                animation: moverTexto 5s infinite;
+                @keyframes moverTexto{
+                    0%{
+                        color: red;
+                        transform: translateX(-10%);
+                        margin: 0;
+                    }
+                    50%{
+                        transform: translatex(10%);
+                        margin: 0;
+                    }
+                    100%{
+                        transform: translateX(-10%);
+                        margin: 0;
+                    }
+                }
+            }
         }
     }
 }
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 488px) {
+@media screen and (max-width: 480px) {
     .grid_elaboracionTinto{
         display: grid;
         grid-template-columns: 1fr;
@@ -352,33 +375,26 @@
             width: 100vw;
             .et_tittle{
                 font-size: 20px;
-                width: 300px;
+                width: auto;
+                margin: 0;
                 height: 50px;
                 text-align: center;
-                // animation: moverTexto 5s infinite;
-                // @keyframes moverTexto{
-                //     0%{
-                //         color: red;
-                //         transform: translateX(0);
-                //         margin: 0;
-                //     }
-                //     25%{
-                //         transform: translatex(50%);
-                //         margin: 0;
-                //     }
-                //     50%{
-                //         transform: translateX(50%) translatey(50%);
-                //         margin: 0;
-                //     }
-                //     75%{
-                //         transform: translateX(0%) translatey(50%);
-                //         margin: 0;
-                //     }
-                //     100%{
-                //         transform: translateX(0%) translatey(0%);
-                //         margin: 0;
-                //     }
-                // }
+                animation: moverTexto 5s infinite;
+                @keyframes moverTexto{
+                    0%{
+                        color: red;
+                        transform: translateX(-10%);
+                        margin: 0;
+                    }
+                    50%{
+                        transform: translatex(10%);
+                        margin: 0;
+                    }
+                    100%{
+                        transform: translateX(-10%);
+                        margin: 0;
+                    }
+                }
             }
             .et_txt{
                 width: 90vw;

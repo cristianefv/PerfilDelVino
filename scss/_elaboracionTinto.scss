@@ -11,36 +11,26 @@
         height: 370px;
     }
     .et_tittle{
-        display: grid;
-        align-items: center;
         text-align: center;
-        width: 350px;
+        width: auto;
         height: 50px;
         font-size: 1.5rem;
-        // animation: moverTexto 5s infinite;
-        // @keyframes moverTexto{
-        //     0%{
-        //         color: red;
-        //         transform: translateX(0);
-        //         margin: 0;
-        //     }
-        //     25%{
-        //         transform: translatex(100%);
-        //         margin: 0;
-        //     }
-        //     50%{
-        //         transform: translateX(100%) translatey(100%);
-        //         margin: 0;
-        //     }
-        //     75%{
-        //         transform: translateX(0%) translatey(100%);
-        //         margin: 0;
-        //     }
-        //     100%{
-        //         transform: translateX(0%) translatey(0%);
-        //         margin: 0;
-        //     }
-        // }
+        animation: moverTexto 5s infinite;
+        @keyframes moverTexto{
+            0%{
+                color: red;
+                transform: translateX(-10%);
+                margin: 0;
+            }
+            50%{
+                transform: translatex(10%);
+                margin: 0;
+            }
+            100%{
+                transform: translateX(-10%);
+                margin: 0;
+            }
+        }
     }
     .carousel_despaTinto{
         width: 650px;
