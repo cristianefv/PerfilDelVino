@@ -9,10 +9,6 @@ body {
   padding: 0;
   font-family: 'Oswald', sans-serif; }
 
-.inicio {
-  width: 85px;
-  height: 120px; }
-
 /* MENU NAV */
 header {
   position: sticky;
@@ -31,6 +27,9 @@ header {
     margin: 0; }
     header nav .menu li .logo {
       padding: 0px; }
+      header nav .menu li .logo .inicio {
+        width: 85px;
+        height: 120px; }
     header nav .menu li .seccion {
       display: block;
       color: white;
@@ -101,22 +100,9 @@ header {
   font-family: 'oswald';
   font-style: italic;
   font-size: 25px;
-  width: 1600px;
+  width: 90vw;
   color: #EEEBDD;
-  margin: 0;
-  animation-name: sloganTranslate;
-  animation-delay: 2s;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
-
-@keyframes sloganTranslate {
-  0% {
-    transform: translateX(0px); }
-  50% {
-    transform: translateX(220px); }
-  100% {
-    transform: translateX(0px); } }
+  margin: 0; }
 
 /* FOTO DE PORTADA INDEX */
 .carousel-item {
@@ -457,7 +443,7 @@ footer {
       position: relative; }
       .grid_index header .menu {
         display: flex;
-        flex-direction: column; }
+        flex-flow: column nowrap; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -469,10 +455,10 @@ footer {
     .main_index .titulo_slogan {
       grid-area: titulo; }
       .main_index .titulo_slogan .titulo_principal {
-        font-size: 50px; }
+        font-size: 40px; }
       .main_index .titulo_slogan .slogan {
-        font-size: 16px;
-        width: 390px; }
+        font-size: 12px;
+        width: auto; }
     .main_index .carousel_contenedor {
       grid-area: portada; }
     .main_index .contenedor_articulos {

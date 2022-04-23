@@ -9,10 +9,6 @@ body{
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
-.inicio{
-    width: 85px;
-    height: 120px;
-}
 /* MENU NAV */
 header{
     position: sticky;
@@ -33,6 +29,10 @@ header{
             li{
                 .logo{
                     padding: 0px;
+                    .inicio{
+                        width: 85px;
+                        height: 120px;
+                    }
                 }
                 .seccion{
                     display: block;
@@ -85,9 +85,9 @@ header{
 
 
 /* MAIN */
-.main_index{
+// .main_index{
 
-}
+// }
 
 
 
@@ -127,25 +127,25 @@ header{
     font-family: 'oswald';
     font-style: italic;
     font-size: 25px;
-    width: 1600px;
+    width: 90vw;
     color: $colorTerciario;
     margin: 0;
-    animation-name: sloganTranslate;
-    animation-delay: 2s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    @keyframes sloganTranslate{
-        0%{
-            transform: translateX(0px);
-        }
-        50%{
-            transform: translateX(220px);
-        } 
-        100%{
-            transform: translateX(0px);
-        }
-    }
+    // animation-name: sloganTranslate;
+    // animation-delay: 2s;
+    // animation-duration: 7s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: ease-in-out;
+    // @keyframes sloganTranslate{
+    //     0%{
+    //         transform: translateX(0px);
+    //     }
+    //     50%{
+    //         transform: translateX(5%);
+    //     } 
+    //     100%{
+    //         transform: translateX(0px);
+    //     }
+    // }
 }
 /* FOTO DE PORTADA INDEX */
 .carousel-item{

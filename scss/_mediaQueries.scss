@@ -120,7 +120,7 @@
             position: relative;
             .menu{
                 display: flex;
-                flex-direction: column;
+                flex-flow: column nowrap;
             }
         }
         main{
@@ -140,11 +140,11 @@
         .titulo_slogan{
             grid-area: titulo;
             .titulo_principal{
-                font-size: 50px;
+                font-size: 40px;
             }
             .slogan{
-                font-size: 16px;
-                width: 390px;
+                font-size: 12px;
+                width: auto;
             }
         }
         .carousel_contenedor{
