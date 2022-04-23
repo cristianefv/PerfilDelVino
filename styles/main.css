@@ -275,8 +275,8 @@ footer {
     height: 50px;
     font-size: 1.5rem;
     animation: moverTexto 5s infinite; }
-  .proceso_tinto .et_txt {
-    margin: 3rem; }
+  .proceso_tinto .et_info {
+    margin: 0; }
 
 .formulario {
   margin-bottom: 2.8%;
@@ -638,8 +638,6 @@ footer {
         margin: 0;
         height: 50px;
         text-align: center; }
-      .main_elabTinto .proceso_tinto .et_img.n1 {
-        width: 70%; }
       .main_elabTinto .proceso_tinto .et_info {
         width: 90vw;
         margin: 0; } }
