@@ -13,67 +13,61 @@ body {
   width: 85px;
   height: 120px; }
 
-/* MENU STICKY */
+/* MENU NAV */
 header {
   position: sticky;
   top: 0;
-  z-index: 1; }
-
-nav {
-  margin: auto;
+  z-index: 1;
   background-color: black;
-  font-size: 20px;
-  margin: 0;
   padding: 10px 0px 0px 0px; }
-
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-  background-color: black;
-  padding: 0;
-  margin: 0; }
-  .menu li .logo {
-    padding: 0px; }
-  .menu li .seccion {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 17px;
-    margin: 0; }
-    .menu li .seccion:hover {
-      color: #f80808dc;
-      transition: all .3s;
-      font-size: 20px; }
-  .menu li .submenu {
-    position: absolute;
-    display: none;
+  header nav .menu {
     list-style: none;
-    width: 200px;
-    background-color: #383838;
-    z-index: 1;
-    padding-left: 0; }
-    .menu li .submenu li .sm_item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    margin: 0; }
+    header nav .menu li .logo {
+      padding: 0px; }
+    header nav .menu li .seccion {
       display: block;
       color: white;
-      text-align: left;
-      font-size: 17px;
-      font-weight: bold;
-      z-index: 1;
-      width: 100%;
       text-decoration: none;
-      padding: 15px 15px 15px 20px; }
-    .menu li .submenu li:hover {
-      background-color: #0000008a;
+      font-weight: 800;
+      font-size: 17px;
+      margin: 0; }
+      header nav .menu li .seccion:hover {
+        color: #f80808dc;
+        transition: all .3s;
+        font-size: 20px; }
+    header nav .menu li .submenu {
+      position: absolute;
+      display: none;
+      list-style: none;
+      width: 200px;
+      background-color: #383838;
+      z-index: 1;
+      padding-left: 0; }
+      header nav .menu li .submenu li .sm_item {
+        display: block;
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-weight: bold;
+        z-index: 1;
+        width: 100%;
+        text-decoration: none;
+        padding: 15px 15px 15px 20px; }
+      header nav .menu li .submenu li:hover {
+        background-color: #0000008a;
+        transition: all .3s; }
+    header nav .menu li:hover .submenu {
+      display: block;
       transition: all .3s; }
-  .menu li:hover .submenu {
-    display: block;
-    transition: all .3s; }
 
-/* PORTADA PRINCIPAL */
+/* MAIN */
 .portada_index {
   display: flex;
   flex-direction: column;
@@ -96,7 +90,6 @@ nav {
   font-style: italic;
   font-size: 100px;
   font-weight: bolder;
-  width: 100%;
   color: #EEEBDD; }
 
 /* SLOGAN DE LA PAGINA */
