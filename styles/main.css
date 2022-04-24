@@ -292,7 +292,7 @@ footer {
       .main_index .titulo_slogan .slogan {
         width: 700px;
         font-size: 20px; }
-    .main_index .carousel_contenedor {
+    .main_index .portada_index {
       grid-area: portada; }
     .main_index .contenedor_articulos {
       grid-area: arts; }
@@ -325,16 +325,16 @@ footer {
       grid-area: art2; }
       .contenedor_articulos .articulo2 .titulo_articulo-index {
         text-align: center; }
-      .contenedor_articulos .articulo2 .articulo2_contenido {
+      .contenedor_articulos .articulo2 .etiqueta_vino {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px; }
-        .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items {
+        .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items {
           margin-left: 20px;
           margin-right: 20px; }
-          .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items li {
+          .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items li {
             font-size: 16px; } }
 
 /* --------> MEDIA QUERY: INDEX <------- */
