@@ -1,71 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background-color: #EEEBDD;
-  margin: 0;
-  padding: 0;
-  font-family: 'Oswald', sans-serif; }
-
-/* HEADER */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: black;
-  padding: 10px 0px 0px 0px; }
-  header nav .menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    background-color: black;
-    padding: 0;
-    margin: 0; }
-    header nav .menu li .logo {
-      padding: 0px; }
-      header nav .menu li .logo .inicio {
-        width: 85px;
-        height: 120px; }
-    header nav .menu li .seccion {
-      display: block;
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 17px;
-      margin: 0; }
-      header nav .menu li .seccion:hover {
-        color: #f80808dc;
-        transition: all .3s;
-        font-size: 20px; }
-    header nav .menu li .submenu {
-      position: absolute;
-      display: none;
-      list-style: none;
-      width: 200px;
-      background-color: #383838;
-      z-index: 1;
-      padding-left: 0; }
-      header nav .menu li .submenu li .sm_item {
-        display: block;
-        color: white;
-        text-align: left;
-        font-size: 17px;
-        font-weight: bold;
-        z-index: 1;
-        width: 100%;
-        text-decoration: none;
-        padding: 15px 15px 15px 20px; }
-      header nav .menu li .submenu li:hover {
-        background-color: #0000008a;
-        transition: all .3s; }
-    header nav .menu li:hover .submenu {
-      display: block;
-      transition: all .3s; }
-
 /* MAIN */
 .main_index .titulo_slogan {
   margin: 0;
@@ -96,7 +28,7 @@ header {
 .main_index .portada_index .carousel.slider {
   width: 100vw; }
 
-.titulo_articulo-index {
+.main_index .contenedor_articulos .articulo1 .titulo_articulo-index {
   text-align: left;
   font-weight: bolder;
   font-size: 25px;
@@ -104,13 +36,13 @@ header {
   margin: 60px 0px 20px;
   text-decoration: underline; }
 
-.primeros_pasos li {
+.main_index .contenedor_articulos .articulo1 .primeros_pasos li {
   list-style-type: upper-roman;
   text-align: left;
   font-weight: bold;
   font-size: 20px;
   text-indent: 70px; }
-  .primeros_pasos li p {
+  .main_index .contenedor_articulos .articulo1 .primeros_pasos li p {
     text-align: justify;
     font-weight: 500;
     font-size: 16px;
@@ -121,59 +53,31 @@ header {
     white-space: pre-line;
     /* SALTO DE LINEA */ }
 
-.articulo2_contenido {
+.main_index .contenedor_articulos .articulo2 .titulo_articulo-index {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 25px;
+  text-indent: 30px;
+  margin: 60px 0px 20px;
+  text-decoration: underline; }
+
+.main_index .contenedor_articulos .articulo2 .articulo2_contenido {
   display: flex;
   flex-flow: row nowrap;
   justify-content: left;
   align-items: center;
   margin-bottom: 30px; }
-  .articulo2_contenido .etiqueta_vino {
+  .main_index .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_vino {
     margin: 0px 60px; }
-  .articulo2_contenido .etiqueta_items {
+  .main_index .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items {
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-weight: 500;
     font-size: x-large; }
-    .articulo2_contenido .etiqueta_items li {
+    .main_index .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items li {
       font-size: 16px; }
-
-/* TITULO DE CADA PAGINA */
-.titulo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  font-family: 'merriweather';
-  font-style: italic;
-  font-size: 40px;
-  text-decoration: underline;
-  margin: 30px; }
-
-/* PIE DE PAGINA */
-footer {
-  bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 12px;
-  font-weight: bolder;
-  background-color: black;
-  color: #EEEBDD; }
-  footer a {
-    width: 30px;
-    height: 40px;
-    padding: 0; }
-    footer a img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px; }
-  footer .footer_txt {
-    margin: 0;
-    padding: 0;
-    width: 380px; }
 
 .cepas_contenido ul {
   margin-bottom: 35px;
@@ -637,3 +541,107 @@ footer {
       grid-area: titulo; }
     .main_contacto .formulario {
       grid-area: formulario; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #EEEBDD;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif; }
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  padding: 10px 0px 0px 0px; }
+  header nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    margin: 0; }
+    header nav .menu li .logo {
+      padding: 0px; }
+      header nav .menu li .logo .inicio {
+        width: 85px;
+        height: 120px; }
+    header nav .menu li .seccion {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 17px;
+      margin: 0; }
+      header nav .menu li .seccion:hover {
+        color: #f80808dc;
+        transition: all .3s;
+        font-size: 20px; }
+    header nav .menu li .submenu {
+      position: absolute;
+      display: none;
+      list-style: none;
+      width: 200px;
+      background-color: #383838;
+      z-index: 1;
+      padding-left: 0; }
+      header nav .menu li .submenu li .sm_item {
+        display: block;
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        font-weight: bold;
+        z-index: 1;
+        width: 100%;
+        text-decoration: none;
+        padding: 15px 15px 15px 20px; }
+      header nav .menu li .submenu li:hover {
+        background-color: #0000008a;
+        transition: all .3s; }
+    header nav .menu li:hover .submenu {
+      display: block;
+      transition: all .3s; }
+
+/* FOOTER */
+footer {
+  bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: bolder;
+  background-color: black;
+  color: #EEEBDD; }
+  footer a {
+    width: 30px;
+    height: 40px;
+    padding: 0; }
+    footer a img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px; }
+  footer .footer_txt {
+    margin: 0;
+    padding: 0;
+    width: 380px; }
+
+/* TITULO DE CADA PAGINA */
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'merriweather';
+  font-style: italic;
+  font-size: 40px;
+  text-decoration: underline;
+  margin: 30px; }
