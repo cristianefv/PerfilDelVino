@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: 'Oswald', sans-serif; }
 
-/* MENU NAV */
+/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -67,52 +67,35 @@ header {
       transition: all .3s; }
 
 /* MAIN */
-.portada_index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-
-/* TITULO PRINCIPAL INDEX */
-.titulo_slogan {
+.main_index .titulo_slogan {
   margin: 0;
   background-image: linear-gradient(black, #610808c4);
   z-index: 0; }
+  .main_index .titulo_slogan .titulo_principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'playfair display';
+    font-style: italic;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #EEEBDD; }
+  .main_index .titulo_slogan .slogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'oswald';
+    font-style: italic;
+    font-size: 25px;
+    width: 90vw;
+    color: #EEEBDD;
+    margin: 0; }
 
-.titulo_principal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  font-family: 'playfair display';
-  font-style: italic;
-  font-size: 100px;
-  font-weight: bolder;
-  color: #EEEBDD; }
+.main_index .portada_index .carousel.slider {
+  width: 100vw; }
 
-/* SLOGAN DE LA PAGINA */
-.slogan {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  font-family: 'oswald';
-  font-style: italic;
-  font-size: 25px;
-  width: 90vw;
-  color: #EEEBDD;
-  margin: 0; }
-
-/* FOTO DE PORTADA INDEX */
-.carousel-item {
-  width: 100%;
-  height: auto; }
-
-.carousel_contenedor {
-  padding: 0; }
-
-/* CONTENIDO DEL INDEX */
 .titulo_articulo-index {
   text-align: left;
   font-weight: bolder;
@@ -273,7 +256,7 @@ footer {
   grid-template-areas: "titulo titulo" "carousel carousel" "arts arts"; }
   .main_index .titulo_slogan {
     grid-area: titulo; }
-  .main_index .carousel_contenedor {
+  .main_index .portada_index {
     grid-area: carousel; }
   .main_index .contenedor_articulos {
     grid-area: arts; }

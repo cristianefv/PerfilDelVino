@@ -9,7 +9,7 @@ body{
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
-/* MENU NAV */
+/* HEADER */
 header{
     position: sticky;
     top: 0;
@@ -85,77 +85,65 @@ header{
 
 
 /* MAIN */
-// .main_index{
-
-// }
-
-
-
-
-
-.portada_index{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.main_index{
+    .titulo_slogan{
+        margin: 0;
+        background-image: linear-gradient($colorPrincipal, $colorSecundario);
+        z-index: 0;
+        .titulo_principal{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            font-family: 'playfair display';
+            font-style: italic;
+            font-size: 100px;
+            font-weight: bolder ;
+            // width: 100vw;
+            color: $colorTerciario;
+        }
+        .slogan{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            font-family: 'oswald';
+            font-style: italic;
+            font-size: 25px;
+            width: 90vw;
+            color: $colorTerciario;
+            margin: 0;
+            // animation-name: sloganTranslate;
+            // animation-delay: 2s;
+            // animation-duration: 7s;
+            // animation-iteration-count: infinite;
+            // animation-timing-function: ease-in-out;
+            // @keyframes sloganTranslate{
+            //     0%{
+            //         transform: translateX(0px);
+            //     }
+            //     50%{
+            //         transform: translateX(5%);
+            //     } 
+            //     100%{
+            //         transform: translateX(0px);
+            //     }
+            // }
+        }
+    }
+    .portada_index{
+        .carousel.slider{
+        width: 100vw;
+        }
+    }
 }
-/* TITULO PRINCIPAL INDEX */
-.titulo_slogan{
-    margin: 0;
-    background-image: linear-gradient($colorPrincipal, $colorSecundario);
-    z-index: 0;
-}
-.titulo_principal{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-family: 'playfair display';
-    font-style: italic;
-    font-size: 100px;
-    font-weight: bolder ;
-    // width: 100vw;
-    color: $colorTerciario;
-}
-/* SLOGAN DE LA PAGINA */
-.slogan{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-family: 'oswald';
-    font-style: italic;
-    font-size: 25px;
-    width: 90vw;
-    color: $colorTerciario;
-    margin: 0;
-    // animation-name: sloganTranslate;
-    // animation-delay: 2s;
-    // animation-duration: 7s;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: ease-in-out;
-    // @keyframes sloganTranslate{
-    //     0%{
-    //         transform: translateX(0px);
-    //     }
-    //     50%{
-    //         transform: translateX(5%);
-    //     } 
-    //     100%{
-    //         transform: translateX(0px);
-    //     }
-    // }
-}
-/* FOTO DE PORTADA INDEX */
-.carousel-item{
-    width: 100%;
-    height: auto;
-}
-.carousel_contenedor{
-    padding: 0;
-}
-/* CONTENIDO DEL INDEX */
+
+
+
+
+
+
+
 .titulo_articulo-index{
     text-align: left;
     font-weight: bolder;
