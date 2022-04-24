@@ -147,7 +147,7 @@
                 width: auto;
             }
         }
-        .carousel_contenedor{
+        .portada_index{
             grid-area: portada;
         }
         .contenedor_articulos{
@@ -164,10 +164,10 @@
             grid-area: art1;
             .primeros_pasos{
                 li{
+                    width: 100vw;
                     p{
                         width: 90%;
-                        margin-left: 20px;
-                        margin-right: 20px;
+                        margin: 0;
                     }
                 }
             }

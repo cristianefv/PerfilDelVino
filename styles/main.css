@@ -137,7 +137,9 @@
   margin-bottom: 2.8%;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; }
+  align-items: center;
+  margin: 0;
+  width: 100%; }
   .formulario .indicacion {
     font-size: 25px;
     margin: 10px 0px; }
@@ -244,6 +246,15 @@ footer {
   .grid_contacto footer {
     grid-area: footer; }
 
+.main_contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "titulo titulo titulo titulo" "form form form form"; }
+  .main_contacto .titulo {
+    grid-area: titulo; }
+  .main_contacto .formulario {
+    grid-area: form; }
+
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
@@ -346,7 +357,7 @@ footer {
       .main_index .titulo_slogan .slogan {
         font-size: 12px;
         width: auto; }
-    .main_index .carousel_contenedor {
+    .main_index .portada_index {
       grid-area: portada; }
     .main_index .contenedor_articulos {
       grid-area: arts; }
@@ -356,10 +367,11 @@ footer {
     grid-template-areas: "art1" "art2"; }
     .contenedor_articulos .articulo1 {
       grid-area: art1; }
-      .contenedor_articulos .articulo1 .primeros_pasos li p {
-        width: 90%;
-        margin-left: 20px;
-        margin-right: 20px; }
+      .contenedor_articulos .articulo1 .primeros_pasos li {
+        width: 100vw; }
+        .contenedor_articulos .articulo1 .primeros_pasos li p {
+          width: 90%;
+          margin: 0; }
     .contenedor_articulos .articulo2 {
       grid-area: art2; }
       .contenedor_articulos .articulo2 .etiqueta_items {
