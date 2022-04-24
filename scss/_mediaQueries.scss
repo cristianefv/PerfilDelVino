@@ -134,9 +134,9 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-        "titulo titulo"
-        "portada portada"
-        "arts arts";
+        "titulo"
+        "portada"
+        "arts";
         .titulo_slogan{
             grid-area: titulo;
             .titulo_principal{
@@ -162,22 +162,27 @@
         "art2";
         .articulo1{
             grid-area: art1;
+            .titulo_articulo-index{
+                display: flex;
+                justify-content: center;
+            }
             .primeros_pasos{
                 li{
                     width: 100vw;
                     p{
-                        width: 90%;
-                        margin: 0;
+                        width: 90vw;
+                        margin: 5px;
                     }
                 }
             }
         }
         .articulo2{
             grid-area: art2;
-            .etiqueta_items{
-                width: 85%;
-                margin-left: 20px;
-                margin-right: 20px;
+            display: flex;
+            flex-flow: column nowrap;
+            .titulo_articulo-index{
+                display: flex;
+                justify-content: center;
             }
         }
     }
@@ -230,7 +235,7 @@
             position: relative;
             .menu{
                 display: flex;
-                flex-direction: column;
+                flex-flow: column nowrap;
             }
         }
         main{

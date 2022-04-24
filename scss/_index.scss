@@ -52,8 +52,10 @@
     }
     .contenedor_articulos{
         .articulo1{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
             .titulo_articulo-index{
-                text-align: left;
                 font-weight: bolder;
                 font-size: 25px;
                 text-indent: 30px;
@@ -61,50 +63,55 @@
                 text-decoration: underline;
             }
             .primeros_pasos{
+                display: flex;
+                flex-direction: column;
                 li{
                     list-style-type: upper-roman;
                     text-align: left;
                     font-weight: bold;
                     font-size: 20px;
-                    text-indent: 70px;
+                    text-indent: 40px;
+                    width: auto;
                     p{
                         text-align: justify;
                         font-weight: 500;
                         font-size: 16px;
-                        text-indent: 0px;
-                        margin:  5px 100px 20px ;
+                        text-indent: 10px;
                         line-height: 1.5;
                         letter-spacing: 0.5px ;
                         white-space: pre-line; /* SALTO DE LINEA */
+                        width: 90%;
+                        margin: 2%;
                     }
                 }
             }
         }
         .articulo2{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
             .titulo_articulo-index{
-                text-align: left;
                 font-weight: bolder;
                 font-size: 25px;
                 text-indent: 30px;
                 margin: 60px 0px 20px;
                 text-decoration: underline;
             }
-            .articulo2_contenido{
+            .etiqueta_vino{
                 display: flex;
-                flex-flow: row nowrap;
-                justify-content: left;
+                flex-flow: column nowrap;
                 align-items: center;
-                margin-bottom: 30px;
-                .etiqueta_vino{
-                    margin: 0px 60px;
+                .etiqueta{
+                    width: 40%;
                 }
                 .etiqueta_items{
-                    height: 300px;
                     display: flex;
                     flex-direction: column;
+                    height: 300px;
                     justify-content: space-evenly;
                     font-weight: 500;
                     font-size: x-large;
+                    width: 90%;
                     li{
                         font-size: 16px;
                     }

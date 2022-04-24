@@ -28,56 +28,64 @@
 .main_index .portada_index .carousel.slider {
   width: 100vw; }
 
-.main_index .contenedor_articulos .articulo1 .titulo_articulo-index {
-  text-align: left;
-  font-weight: bolder;
-  font-size: 25px;
-  text-indent: 30px;
-  margin: 60px 0px 20px;
-  text-decoration: underline; }
-
-.main_index .contenedor_articulos .articulo1 .primeros_pasos li {
-  list-style-type: upper-roman;
-  text-align: left;
-  font-weight: bold;
-  font-size: 20px;
-  text-indent: 70px; }
-  .main_index .contenedor_articulos .articulo1 .primeros_pasos li p {
-    text-align: justify;
-    font-weight: 500;
-    font-size: 16px;
-    text-indent: 0px;
-    margin: 5px 100px 20px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    white-space: pre-line;
-    /* SALTO DE LINEA */ }
-
-.main_index .contenedor_articulos .articulo2 .titulo_articulo-index {
-  text-align: left;
-  font-weight: bolder;
-  font-size: 25px;
-  text-indent: 30px;
-  margin: 60px 0px 20px;
-  text-decoration: underline; }
-
-.main_index .contenedor_articulos .articulo2 .articulo2_contenido {
+.main_index .contenedor_articulos .articulo1 {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: left;
-  align-items: center;
-  margin-bottom: 30px; }
-  .main_index .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_vino {
-    margin: 0px 60px; }
-  .main_index .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items {
-    height: 300px;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .main_index .contenedor_articulos .articulo1 .titulo_articulo-index {
+    font-weight: bolder;
+    font-size: 25px;
+    text-indent: 30px;
+    margin: 60px 0px 20px;
+    text-decoration: underline; }
+  .main_index .contenedor_articulos .articulo1 .primeros_pasos {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-weight: 500;
-    font-size: x-large; }
-    .main_index .contenedor_articulos .articulo2 .articulo2_contenido .etiqueta_items li {
-      font-size: 16px; }
+    flex-direction: column; }
+    .main_index .contenedor_articulos .articulo1 .primeros_pasos li {
+      list-style-type: upper-roman;
+      text-align: left;
+      font-weight: bold;
+      font-size: 20px;
+      text-indent: 40px;
+      width: auto; }
+      .main_index .contenedor_articulos .articulo1 .primeros_pasos li p {
+        text-align: justify;
+        font-weight: 500;
+        font-size: 16px;
+        text-indent: 10px;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        white-space: pre-line;
+        /* SALTO DE LINEA */
+        width: 90%;
+        margin: 2%; }
+
+.main_index .contenedor_articulos .articulo2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .main_index .contenedor_articulos .articulo2 .titulo_articulo-index {
+    font-weight: bolder;
+    font-size: 25px;
+    text-indent: 30px;
+    margin: 60px 0px 20px;
+    text-decoration: underline; }
+  .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta {
+      width: 40%; }
+    .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items {
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      justify-content: space-evenly;
+      font-weight: 500;
+      font-size: x-large;
+      width: 90%; }
+      .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items li {
+        font-size: 16px; }
 
 .cepas_contenido ul {
   margin-bottom: 35px;
@@ -349,7 +357,7 @@ footer {
   .main_index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo titulo" "portada portada" "arts arts"; }
+    grid-template-areas: "titulo" "portada" "arts"; }
     .main_index .titulo_slogan {
       grid-area: titulo; }
       .main_index .titulo_slogan .titulo_principal {
@@ -367,17 +375,21 @@ footer {
     grid-template-areas: "art1" "art2"; }
     .contenedor_articulos .articulo1 {
       grid-area: art1; }
+      .contenedor_articulos .articulo1 .titulo_articulo-index {
+        display: flex;
+        justify-content: center; }
       .contenedor_articulos .articulo1 .primeros_pasos li {
         width: 100vw; }
         .contenedor_articulos .articulo1 .primeros_pasos li p {
-          width: 90%;
-          margin: 0; }
+          width: 90vw;
+          margin: 5px; }
     .contenedor_articulos .articulo2 {
-      grid-area: art2; }
-      .contenedor_articulos .articulo2 .etiqueta_items {
-        width: 85%;
-        margin-left: 20px;
-        margin-right: 20px; } }
+      grid-area: art2;
+      display: flex;
+      flex-flow: column nowrap; }
+      .contenedor_articulos .articulo2 .titulo_articulo-index {
+        display: flex;
+        justify-content: center; } }
 
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> TABLET <------------- */
@@ -412,7 +424,7 @@ footer {
       position: relative; }
       .grid_cepas header .menu {
         display: flex;
-        flex-direction: column; }
+        flex-flow: column nowrap; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
