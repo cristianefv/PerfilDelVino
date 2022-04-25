@@ -1,3 +1,8 @@
+.main_elabTinto{
+    .titulo{
+        margin-bottom: 15px;
+    }
+}
 .proceso_tinto{
     display: flex;
     align-items:  center;
@@ -5,37 +10,39 @@
     margin-bottom: 2%;
     .carousel.slide{
         width: 70%;
-        // height: 370px;
     }
     .et_img.n1{
         width: 70%;
-        // display: flex;
-        // justify-content: center;
-
-    }
-    .et_tittle{
-        text-align: center;
-        width: auto;
-        height: 50px;
-        font-size: 1.5rem;
-        animation: moverTexto 5s infinite;
-        // @keyframes moverTexto{
-        //     0%{
-        //         color: red;
-        //         transform: translateX(-10%);
-        //         margin: 0;
-        //     }
-        //     50%{
-        //         transform: translatex(10%);
-        //         margin: 0;
-        //     }
-        //     100%{
-        //         transform: translateX(-10%);
-        //         margin: 0;
-        //     }
-        // }
     }
     .et_info{
         margin: 0;
+        .et_tittle{
+            text-align: center;
+            width: auto;
+            height: 50px;
+            font-size: map-get($textSize, tituloArticulo);
+            animation: moverTexto 5s infinite;
+            // @keyframes moverTexto{
+            //     0%{
+            //         color: red;
+            //         transform: translateX(-10%);
+            //         margin: 0;
+            //     }
+            //     50%{
+            //         transform: translatex(10%);
+            //         margin: 0;
+            //     }
+            //     100%{
+            //         transform: translateX(-10%);
+            //         margin: 0;
+            //     }
+            // }
+        }
+        .et_txt{
+            font-size: map-get($textSize , textInfo);
+            width: 90%;
+            text-align: center;
+            margin: 0 20px;
+        }
     }
 }

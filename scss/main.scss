@@ -46,12 +46,12 @@ header{
                     color: $colorTextoNav;
                     text-decoration: none;
                     font-weight: 800;
-                    font-size: 17px;
+                    font-size: map-get($textSize , textNav);
                     margin: 0;
                     &:hover{
                         color: #f80808dc;
-                        transition: all .3s;
-                        font-size: 20px;
+                        font-size: 24px;
+                        transition: all .5s;
                     }
                 }
                 .submenu{
@@ -76,13 +76,12 @@ header{
                         }
                         &:hover{
                             background-color: #0000008a;
-                            transition: all .3s;
+                            transition: all .9s;
                         }
                     }
                 }
                 &:hover .submenu{
                     display: block;
-                    transition: all .3s;
                 }
             }
         }
@@ -123,7 +122,7 @@ footer {
     text-align: center;
     font-family: 'merriweather';
     font-style: italic;
-    font-size: 40px;
+    font-size: map-get($textSize , tituloPagina);
     text-decoration: underline;
-    margin: 30px;
+    margin-top: 10px;
 }

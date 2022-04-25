@@ -104,10 +104,10 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "car1 info1"
-    "info2 car2"
-    "img1 info3"
-    "info4 car3";
+    "info1 car1"
+    "car2 info2"
+    "info3 img1"
+    "car3 info4";
     .et_info.n1{
         grid-area: info1;
     }

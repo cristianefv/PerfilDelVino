@@ -34,7 +34,7 @@
   align-items: center; }
   .main_index .contenedor_articulos .articulo1 .titulo_articulo-index {
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 22px;
     text-indent: 30px;
     margin: 60px 0px 20px;
     text-decoration: underline; }
@@ -45,7 +45,7 @@
       list-style-type: upper-roman;
       text-align: left;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       text-indent: 40px;
       width: auto; }
       .main_index .contenedor_articulos .articulo1 .primeros_pasos li p {
@@ -66,7 +66,7 @@
   align-items: center; }
   .main_index .contenedor_articulos .articulo2 .titulo_articulo-index {
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 22px;
     text-indent: 30px;
     margin: 60px 0px 20px;
     text-decoration: underline; }
@@ -80,12 +80,11 @@
       display: flex;
       flex-direction: column;
       height: 300px;
-      justify-content: space-evenly;
-      font-weight: 500;
-      font-size: x-large;
-      width: 90%; }
+      justify-content: space-evenly; }
       .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items li {
-        font-size: 16px; }
+        font-size: 16px;
+        font-weight: 500;
+        width: 95%; }
 
 .cepas_contenido ul {
   margin-bottom: 35px;
@@ -110,17 +109,20 @@
     .cepas_contenido ul li .cepas_info {
       /* SALTO DE LINEA SIN BR */
       white-space: pre-line;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0.5px;
       text-align: justify; }
       .cepas_contenido ul li .cepas_info .cepa_name {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 800;
         text-decoration: underline;
         color: black; }
       .cepas_contenido ul li .cepas_info .referencia {
         width: 25px; }
+
+.main_elabTinto .titulo {
+  margin-bottom: 15px; }
 
 .proceso_tinto {
   display: flex;
@@ -131,21 +133,25 @@
     width: 70%; }
   .proceso_tinto .et_img.n1 {
     width: 70%; }
-  .proceso_tinto .et_tittle {
-    text-align: center;
-    width: auto;
-    height: 50px;
-    font-size: 1.5rem;
-    animation: moverTexto 5s infinite; }
   .proceso_tinto .et_info {
     margin: 0; }
+    .proceso_tinto .et_info .et_tittle {
+      text-align: center;
+      width: auto;
+      height: 50px;
+      font-size: 22px;
+      animation: moverTexto 5s infinite; }
+    .proceso_tinto .et_info .et_txt {
+      font-size: 16px;
+      width: 90%;
+      text-align: center;
+      margin: 0 20px; }
 
 .formulario {
-  margin-bottom: 2.8%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin: 0;
+  margin-bottom: 6.1%;
   width: 100%; }
   .formulario .indicacion {
     font-size: 25px;
@@ -223,7 +229,7 @@ footer {
 .proceso_tinto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "car1 info1" "info2 car2" "img1 info3" "info4 car3"; }
+  grid-template-areas: "info1 car1" "car2 info2" "info3 img1" "car3 info4"; }
   .proceso_tinto .et_info.n1 {
     grid-area: info1; }
   .proceso_tinto .ct1 {
@@ -469,7 +475,7 @@ footer {
       grid-area: proceso;
       display: flex;
       flex-flow: column nowrap; }
-      .main_elabTinto .proceso_tinto .et_tittle {
+      .main_elabTinto .proceso_tinto .et_info .et_tittle {
         font-size: 20px;
         width: auto;
         margin: 0;
@@ -598,12 +604,12 @@ header {
       color: white;
       text-decoration: none;
       font-weight: 800;
-      font-size: 17px;
+      font-size: 20px;
       margin: 0; }
       header nav .menu li .seccion:hover {
         color: #f80808dc;
-        transition: all .3s;
-        font-size: 20px; }
+        font-size: 24px;
+        transition: all .5s; }
     header nav .menu li .submenu {
       position: absolute;
       display: none;
@@ -624,10 +630,9 @@ header {
         padding: 15px 15px 15px 20px; }
       header nav .menu li .submenu li:hover {
         background-color: #0000008a;
-        transition: all .3s; }
+        transition: all .9s; }
     header nav .menu li:hover .submenu {
-      display: block;
-      transition: all .3s; }
+      display: block; }
 
 /* FOOTER */
 footer {
@@ -661,6 +666,6 @@ footer {
   text-align: center;
   font-family: 'merriweather';
   font-style: italic;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: underline;
-  margin: 30px; }
+  margin-top: 10px; }

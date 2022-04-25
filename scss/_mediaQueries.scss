@@ -304,28 +304,30 @@
             grid-area: proceso;
             display: flex;
             flex-flow: column nowrap;
-            .et_tittle{
-                font-size: 20px;
-                width: auto;
-                margin: 0;
-                height: 50px;
-                text-align: center;
-                // animation: moverTexto 5s infinite;
-                // @keyframes moverTexto{
-                //     0%{
-                //         color: red;
-                //         transform: translateX(-10%);
-                //         margin: 0;
-                //     }
-                //     50%{
-                //         transform: translatex(10%);
-                //         margin: 0;
-                //     }
-                //     100%{
-                //         transform: translateX(-10%);
-                //         margin: 0;
-                //     }
-                // }
+            .et_info{
+                .et_tittle{
+                    font-size: 20px;
+                    width: auto;
+                    margin: 0;
+                    height: 50px;
+                    text-align: center;
+                    // animation: moverTexto 5s infinite;
+                    // @keyframes moverTexto{
+                    //     0%{
+                    //         color: red;
+                    //         transform: translateX(-10%);
+                    //         margin: 0;
+                    //     }
+                    //     50%{
+                    //         transform: translatex(10%);
+                    //         margin: 0;
+                    //     }
+                    //     100%{
+                    //         transform: translateX(-10%);
+                    //         margin: 0;
+                    //     }
+                    // }
+                }
             }
         }
     }

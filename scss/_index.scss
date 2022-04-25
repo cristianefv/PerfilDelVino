@@ -11,9 +11,8 @@
             text-align: center;
             font-family: 'playfair display';
             font-style: italic;
-            font-size: 100px;
+            font-size: map-get($textSize , tituloPrincipal);
             font-weight: bolder ;
-            // width: 100vw;
             color: $colorTerciario;
         }
         .slogan{
@@ -23,7 +22,7 @@
             text-align: center;
             font-family: 'oswald';
             font-style: italic;
-            font-size: 25px;
+            font-size: map-get($textSize , Slogan);
             width: 90vw;
             color: $colorTerciario;
             margin: 0;
@@ -57,7 +56,7 @@
             align-items: center;
             .titulo_articulo-index{
                 font-weight: bolder;
-                font-size: 25px;
+                font-size: map-get($textSize , tituloArticulo);
                 text-indent: 30px;
                 margin: 60px 0px 20px;
                 text-decoration: underline;
@@ -69,13 +68,13 @@
                     list-style-type: upper-roman;
                     text-align: left;
                     font-weight: bold;
-                    font-size: 20px;
+                    font-size: map-get($textSize , itemLista);
                     text-indent: 40px;
                     width: auto;
                     p{
                         text-align: justify;
                         font-weight: 500;
-                        font-size: 16px;
+                        font-size: map-get($textSize , textInfo);
                         text-indent: 10px;
                         line-height: 1.5;
                         letter-spacing: 0.5px ;
@@ -92,7 +91,7 @@
             align-items: center;
             .titulo_articulo-index{
                 font-weight: bolder;
-                font-size: 25px;
+                font-size: map-get($textSize , tituloArticulo);
                 text-indent: 30px;
                 margin: 60px 0px 20px;
                 text-decoration: underline;
@@ -109,11 +108,10 @@
                     flex-direction: column;
                     height: 300px;
                     justify-content: space-evenly;
-                    font-weight: 500;
-                    font-size: x-large;
-                    width: 90%;
                     li{
-                        font-size: 16px;
+                        font-size: map-get($textSize , textInfo);
+                        font-weight: 500;
+                        width: 95%;
                     }
                 }
             }

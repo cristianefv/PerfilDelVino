@@ -24,12 +24,12 @@
             }
             .cepas_info{ /* SALTO DE LINEA SIN BR */
                 white-space: pre-line;
-                font-size: 20px;
+                font-size: map-get($textSize, textInfo);
                 line-height: 1.5;
                 letter-spacing: 0.5px ;
                 text-align: justify;
                 .cepa_name{
-                    font-size: 20px;
+                    font-size: map-get($textSize , tituloArticulo);
                     font-weight: 800;
                     text-decoration: underline;
                     color: black;
