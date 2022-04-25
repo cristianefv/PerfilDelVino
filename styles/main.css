@@ -96,7 +96,6 @@
     flex-flow: row nowrap;
     justify-content: left;
     margin-top: 30px;
-    /* height: 100%; */
     width: 95%; }
     .cepas_contenido ul li .cepas_img {
       height: 200px;
@@ -209,16 +208,16 @@ footer {
   .grid_cepas footer {
     grid-area: footer; }
 
-/* --------> GRIDS: ELABORACION - TINTO <------- */
-.grid_elaboracionTinto {
+/* --------> GRIDS: ELABORACION <------- */
+.grid_elaboracion {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .grid_elaboracionTinto header {
+  .grid_elaboracion header {
     grid-area: header; }
-  .grid_elaboracionTinto main {
+  .grid_elaboracion main {
     grid-area: main; }
-  .grid_elaboracionTinto footer {
+  .grid_elaboracion footer {
     grid-area: footer; }
 
 .proceso_tinto {
@@ -429,10 +428,6 @@ footer {
       grid-area: main; }
     .grid_cepas footer {
       grid-area: footer; }
-      .grid_cepas footer a img {
-        margin: 0; }
-      .grid_cepas footer .footer_txt {
-        margin-top: 5px; }
   .main_cepas {
     display: grid;
     grid-template-columns: 1fr;
@@ -454,15 +449,15 @@ footer {
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
-  .grid_elaboracionTinto {
+  .grid_elaboracion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
-    .grid_elaboracionTinto header {
+    .grid_elaboracion header {
       grid-area: nav; }
-    .grid_elaboracionTinto main {
+    .grid_elaboracion main {
       grid-area: main; }
-    .grid_elaboracionTinto footer {
+    .grid_elaboracion footer {
       grid-area: footer; }
   .main_elabTinto {
     display: grid;
@@ -484,19 +479,19 @@ footer {
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px) {
-  .grid_elaboracionTinto {
+  .grid_elaboracion {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
-    .grid_elaboracionTinto header {
+    .grid_elaboracion header {
       grid-area: nav;
       position: relative; }
-      .grid_elaboracionTinto header .menu {
+      .grid_elaboracion header .menu {
         display: flex;
-        flex-direction: column; }
-    .grid_elaboracionTinto main {
+        flex-flow: column nowrap; }
+    .grid_elaboracion main {
       grid-area: main; }
-    .grid_elaboracionTinto footer {
+    .grid_elaboracion footer {
       grid-area: footer; }
   .main_elabTinto {
     display: grid;
@@ -552,7 +547,7 @@ footer {
       position: relative; }
       .grid_contacto header .menu {
         display: flex;
-        flex-direction: column; }
+        flex-flow: column nowrap; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {

@@ -81,8 +81,8 @@ footer{
         grid-area: footer;
     }
 }
-/* --------> GRIDS: ELABORACION - TINTO <------- */
-.grid_elaboracionTinto{
+/* --------> GRIDS: ELABORACION <------- */
+.grid_elaboracion{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -99,6 +99,7 @@ footer{
         grid-area: footer;
     }
 }
+// ELABORACION TINTO
 .proceso_tinto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
