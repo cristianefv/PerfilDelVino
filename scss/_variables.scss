@@ -6,12 +6,16 @@ $colorTextoNav: white;
 // MAP FONT-SIZE
 $textSize: (
     tituloPrincipal: 100px,
-    Slogan: 25px,
+    Slogan: 32px,
     tituloPagina: 50px,
     tituloArticulo: 22px,
     textNav: 20px,
     itemLista: 18px,
     textInfo: 16px
 );
-
+// MIXIN
+@mixin flex($flex, $orientacion) {
+    display: $flex;
+    flex-flow: $orientacion;
+}
 

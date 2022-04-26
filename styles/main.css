@@ -3,9 +3,9 @@
   margin: 0;
   background-image: linear-gradient(black, #610808c4);
   z-index: 0; }
-  .main_index .titulo_slogan .titulo_principal {
+  .main_index .titulo_slogan .titulo_principal, .main_index .titulo_slogan .slogan {
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     justify-content: center;
     text-align: center;
     font-family: 'playfair display';
@@ -14,15 +14,9 @@
     font-weight: bolder;
     color: #EEEBDD; }
   .main_index .titulo_slogan .slogan {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
     font-family: 'oswald';
-    font-style: italic;
-    font-size: 25px;
+    font-size: 32px;
     width: 100vw;
-    color: #EEEBDD;
     margin: 0; }
 
 .main_index .portada_index .carousel.slider {
@@ -40,7 +34,7 @@
     text-decoration: underline; }
   .main_index .contenedor_articulos .articulo1 .primeros_pasos {
     display: flex;
-    flex-direction: column; }
+    flex-flow: column; }
     .main_index .contenedor_articulos .articulo1 .primeros_pasos li {
       list-style-type: upper-roman;
       text-align: left;
@@ -60,7 +54,7 @@
         width: 90%;
         margin: 2%; }
 
-.main_index .contenedor_articulos .articulo2 {
+.main_index .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
   display: flex;
   flex-flow: column nowrap;
   align-items: center; }
@@ -70,21 +64,17 @@
     text-indent: 30px;
     margin: 60px 0px 20px;
     text-decoration: underline; }
-  .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
+  .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta {
+    width: 40%; }
+  .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center; }
-    .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta {
-      width: 40%; }
-    .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items {
-      display: flex;
-      flex-direction: column;
-      height: 300px;
-      justify-content: space-evenly; }
-      .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items li {
-        font-size: 16px;
-        font-weight: 500;
-        width: 95%; }
+    flex-flow: column;
+    height: 300px;
+    justify-content: space-evenly; }
+    .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items li {
+      font-size: 16px;
+      font-weight: 500;
+      width: 95%; }
 
 .cepas_contenido ul {
   margin-bottom: 35px;
@@ -126,6 +116,7 @@
 
 .proceso_tinto {
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-items: center;
   margin-bottom: 2%; }
@@ -158,15 +149,15 @@
     margin: 10px 0px; }
 
 /* --------> GRIDS: INDEX <------- */
-.grid_index {
+.grid_index, .grid_cepas, .grid_elaboracion, .grid_contacto {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .grid_index header {
+  .grid_index header, .grid_cepas header, .grid_elaboracion header, .grid_contacto header {
     grid-area: header; }
-  .grid_index main {
+  .grid_index main, .grid_cepas main, .grid_elaboracion main, .grid_contacto main {
     grid-area: main; }
-  .grid_index footer {
+  .grid_index footer, .grid_cepas footer, .grid_elaboracion footer, .grid_contacto footer {
     grid-area: footer; }
 
 .main_index {
@@ -186,7 +177,7 @@
   grid-template-areas: "art1 art2" "art1 art2"; }
   .contenedor_articulos .articulo1 {
     grid-area: art1; }
-  .contenedor_articulos .articulo2 {
+  .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
     grid-area: art2; }
 
 footer {
@@ -203,29 +194,7 @@ footer {
     justify-self: center; }
 
 /* --------> GRIDS: CEPAS <------- */
-.grid_cepas {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .grid_cepas header {
-    grid-area: header; }
-  .grid_cepas main {
-    grid-area: main; }
-  .grid_cepas footer {
-    grid-area: footer; }
-
 /* --------> GRIDS: ELABORACION <------- */
-.grid_elaboracion {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .grid_elaboracion header {
-    grid-area: header; }
-  .grid_elaboracion main {
-    grid-area: main; }
-  .grid_elaboracion footer {
-    grid-area: footer; }
-
 .proceso_tinto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -248,17 +217,6 @@ footer {
     grid-area: car3; }
 
 /* --------> GRIDS: CONTACTO <------- */
-.grid_contacto {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .grid_contacto header {
-    grid-area: header; }
-  .grid_contacto main {
-    grid-area: main; }
-  .grid_contacto footer {
-    grid-area: footer; }
-
 .main_contacto {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -275,14 +233,14 @@ footer {
     font-size: 16px;
     display: flex;
     flex-flow: row nowrap; }
-  .grid_index {
+  .grid_index, .grid_cepas, .grid_elaboracion, .grid_contacto {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
-    .grid_index header {
+    .grid_index header, .grid_cepas header, .grid_elaboracion header, .grid_contacto header {
       grid-area: nav; }
-    .grid_index main {
+    .grid_index main, .grid_cepas main, .grid_elaboracion main, .grid_contacto main {
       grid-area: main; }
-    .grid_index footer {
+    .grid_index footer, .grid_cepas footer, .grid_elaboracion footer, .grid_contacto footer {
       grid-area: footer; }
   .main_index {
     display: grid;
@@ -290,7 +248,7 @@ footer {
     grid-template-areas: "titulo titulo" "portada portada" "arts arts"; }
     .main_index .titulo_slogan {
       grid-area: titulo; }
-      .main_index .titulo_slogan .titulo_principal {
+      .main_index .titulo_slogan .titulo_principal, .main_index .titulo_slogan .slogan {
         text-align: center;
         margin: 0;
         font-size: 70px; }
@@ -326,11 +284,11 @@ footer {
           letter-spacing: 0.5px;
           white-space: pre-line;
           /* SALTO DE LINEA */ }
-    .contenedor_articulos .articulo2 {
+    .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
       grid-area: art2; }
-      .contenedor_articulos .articulo2 .titulo_articulo-index {
+      .contenedor_articulos .articulo2 .titulo_articulo-index, .main_index .contenedor_articulos .articulo2 .etiqueta_vino .titulo_articulo-index {
         text-align: center; }
-      .contenedor_articulos .articulo2 .etiqueta_vino {
+      .contenedor_articulos .articulo2 .etiqueta_vino, .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_vino {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -345,19 +303,19 @@ footer {
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px) {
-  .grid_index {
+  .grid_index, .grid_cepas, .grid_elaboracion, .grid_contacto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
-    .grid_index header {
+    .grid_index header, .grid_cepas header, .grid_elaboracion header, .grid_contacto header {
       grid-area: nav;
       position: relative; }
-      .grid_index header .menu {
+      .grid_index header .menu, .grid_cepas header .menu, .grid_elaboracion header .menu, .grid_contacto header .menu {
         display: flex;
         flex-flow: column nowrap; }
-    .grid_index main {
+    .grid_index main, .grid_cepas main, .grid_elaboracion main, .grid_contacto main {
       grid-area: main; }
-    .grid_index footer {
+    .grid_index footer, .grid_cepas footer, .grid_elaboracion footer, .grid_contacto footer {
       grid-area: footer; }
   .main_index {
     display: grid;
@@ -365,7 +323,7 @@ footer {
     grid-template-areas: "titulo" "portada" "arts"; }
     .main_index .titulo_slogan {
       grid-area: titulo; }
-      .main_index .titulo_slogan .titulo_principal {
+      .main_index .titulo_slogan .titulo_principal, .main_index .titulo_slogan .slogan {
         font-size: 40px; }
       .main_index .titulo_slogan .slogan {
         font-size: 12px;
@@ -388,11 +346,11 @@ footer {
         .contenedor_articulos .articulo1 .primeros_pasos li p {
           width: 90vw;
           margin: 5px; }
-    .contenedor_articulos .articulo2 {
+    .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
       grid-area: art2;
       display: flex;
       flex-flow: column nowrap; }
-      .contenedor_articulos .articulo2 .titulo_articulo-index {
+      .contenedor_articulos .articulo2 .titulo_articulo-index, .main_index .contenedor_articulos .articulo2 .etiqueta_vino .titulo_articulo-index {
         display: flex;
         justify-content: center; } }
 
@@ -657,7 +615,8 @@ footer {
   footer .footer_txt {
     margin: 0;
     padding: 0;
-    width: 380px; }
+    width: 100vw;
+    text-align: center; }
 
 /* TITULO DE CADA PAGINA */
 .titulo {

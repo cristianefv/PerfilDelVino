@@ -65,39 +65,11 @@ footer{
 }
 /* --------> GRIDS: CEPAS <------- */
 .grid_cepas{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
+    @extend .grid_index;
 }
 /* --------> GRIDS: ELABORACION <------- */
 .grid_elaboracion{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
+    @extend .grid_index;
 }
 // ELABORACION TINTO
 .proceso_tinto{
@@ -135,21 +107,7 @@ footer{
 }
 /* --------> GRIDS: CONTACTO <------- */
 .grid_contacto{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
+    @extend .grid_index;
 }
 .main_contacto{
     display: grid;

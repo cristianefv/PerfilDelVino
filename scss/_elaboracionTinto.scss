@@ -4,7 +4,7 @@
     }
 }
 .proceso_tinto{
-    display: flex;
+    @include flex(flex, column nowrap);
     align-items:  center;
     justify-items: center;
     margin-bottom: 2%;

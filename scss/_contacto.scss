@@ -1,6 +1,5 @@
 .formulario{
-    display: flex;
-    flex-flow: column nowrap;
+    @include flex(flex, column nowrap);
     align-items: center;
     margin-bottom: 6.1%;
     width: 100%;

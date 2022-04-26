@@ -5,8 +5,7 @@
         background-image: linear-gradient($colorPrincipal, $colorSecundario);
         z-index: 0;
         .titulo_principal{
-            display: flex;
-            flex-direction: row;
+            @include flex(flex, row);
             justify-content: center;
             text-align: center;
             font-family: 'playfair display';
@@ -16,15 +15,10 @@
             color: $colorTerciario;
         }
         .slogan{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            text-align: center;
+            @extend .titulo_principal;
             font-family: 'oswald';
-            font-style: italic;
             font-size: map-get($textSize , Slogan);
             width: 100vw;
-            color: $colorTerciario;
             margin: 0;
             // animation-name: sloganTranslate;
             // animation-delay: 2s;
@@ -51,8 +45,7 @@
     }
     .contenedor_articulos{
         .articulo1{
-            display: flex;
-            flex-flow: column nowrap;
+            @include flex(flex, column nowrap);
             align-items: center;
             .titulo_articulo-index{
                 font-weight: bolder;
@@ -62,8 +55,7 @@
                 text-decoration: underline;
             }
             .primeros_pasos{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column);
                 li{
                     list-style-type: upper-roman;
                     text-align: left;
@@ -86,8 +78,7 @@
             }
         }
         .articulo2{
-            display: flex;
-            flex-flow: column nowrap;
+            @include flex(flex, column nowrap);
             align-items: center;
             .titulo_articulo-index{
                 font-weight: bolder;
@@ -97,15 +88,12 @@
                 text-decoration: underline;
             }
             .etiqueta_vino{
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
+                @extend .articulo2;
                 .etiqueta{
                     width: 40%;
                 }
                 .etiqueta_items{
-                    display: flex;
-                    flex-direction: column;
+                    @include flex(flex, column);
                     height: 300px;
                     justify-content: space-evenly;
                     li{
