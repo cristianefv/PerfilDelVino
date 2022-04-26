@@ -1,28 +1,8 @@
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px){
-    .menu{
-        .seccion{
-            font-size: 16px;
-            display: flex;
-            flex-flow: row nowrap;
-        }
-    }
     .grid_index{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-        header{
-            grid-area: nav;
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
+        @include grids_tablet;
     }
     .main_index{
         display: grid;
@@ -109,26 +89,7 @@
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px){
     .grid_index{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-        header{
-            grid-area: nav;
-            position: relative;
-            .menu{
-                display: flex;
-                flex-flow: column nowrap;
-            }
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
+        @include grids_celular;
     }
     .main_index{
         display: grid;
@@ -191,20 +152,7 @@
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_cepas{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-        header{
-            grid-area: nav;
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
+        @include grids_tablet;
     }
     .main_cepas{
         display: grid;
@@ -224,26 +172,7 @@
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px){
     .grid_cepas{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-        header{
-            grid-area: nav;
-            position: relative;
-            .menu{
-                display: flex;
-                flex-flow: column nowrap;
-            }
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
+        @include grids_celular;
     }
     .main_cepas{
         display: grid;
@@ -275,21 +204,7 @@
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_elaboracion{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-        header{
-            grid-area: nav;
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
+        @include grids_tablet;
     }
     .main_elabTinto{
         display: grid;
@@ -336,26 +251,7 @@
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px) {
     .grid_elaboracion{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-        header{
-            grid-area: nav;
-            position: relative;
-            .menu{
-                display: flex;
-                flex-flow: column nowrap;
-            }
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
+        @include grids_celular;
     }
     .main_elabTinto{
         display: grid;
@@ -408,26 +304,19 @@
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_contacto{
+        @include grids_tablet;
+    }
+    .main_contacto{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-        header{
-            grid-area: nav;
+        "titulo"
+        "cepas";
+        .titulo{
+            grid-area: titulo;
         }
-        main{
-            grid-area: main;
-            .formulario{
-                margin-bottom: 18.8%;
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-            }
-        }
-        footer{
-            grid-area: footer;
+        .formulario{
+            grid-area: cepas;
         }
     }
 }
@@ -435,26 +324,7 @@
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px){
     .grid_contacto{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-        header{
-            grid-area: nav;
-            position: relative;
-            .menu{
-                display: flex;
-                flex-flow: column nowrap;
-            }
-        }
-        main{
-            grid-area: main;
-        }
-        footer{
-            grid-area: footer;
-        }
+        @include grids_celular;
     }
     .main_contacto{
         display: grid;

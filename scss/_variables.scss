@@ -18,4 +18,73 @@ $textSize: (
     display: $flex;
     flex-flow: $orientacion;
 }
+@mixin grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+@mixin grids_tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    header{
+        grid-area: nav;
+        .menu{
+            .seccion{
+                font-size: 16px;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+@mixin grids_celular {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+    header{
+        grid-area: nav;
+        position: relative;
+        .menu{
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 0;
+            padding: 0;
+            li{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
 

@@ -149,15 +149,15 @@
     margin: 10px 0px; }
 
 /* --------> GRIDS: INDEX <------- */
-.grid_index, .grid_cepas, .grid_elaboracion, .grid_contacto {
+.grid_index {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .grid_index header, .grid_cepas header, .grid_elaboracion header, .grid_contacto header {
+  .grid_index header {
     grid-area: header; }
-  .grid_index main, .grid_cepas main, .grid_elaboracion main, .grid_contacto main {
+  .grid_index main {
     grid-area: main; }
-  .grid_index footer, .grid_cepas footer, .grid_elaboracion footer, .grid_contacto footer {
+  .grid_index footer {
     grid-area: footer; }
 
 .main_index {
@@ -194,7 +194,29 @@ footer {
     justify-self: center; }
 
 /* --------> GRIDS: CEPAS <------- */
+.grid_cepas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  .grid_cepas header {
+    grid-area: header; }
+  .grid_cepas main {
+    grid-area: main; }
+  .grid_cepas footer {
+    grid-area: footer; }
+
 /* --------> GRIDS: ELABORACION <------- */
+.grid_elaboracion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  .grid_elaboracion header {
+    grid-area: header; }
+  .grid_elaboracion main {
+    grid-area: main; }
+  .grid_elaboracion footer {
+    grid-area: footer; }
+
 .proceso_tinto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -217,6 +239,17 @@ footer {
     grid-area: car3; }
 
 /* --------> GRIDS: CONTACTO <------- */
+.grid_contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  .grid_contacto header {
+    grid-area: header; }
+  .grid_contacto main {
+    grid-area: main; }
+  .grid_contacto footer {
+    grid-area: footer; }
+
 .main_contacto {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -229,18 +262,19 @@ footer {
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
-  .menu .seccion {
-    font-size: 16px;
-    display: flex;
-    flex-flow: row nowrap; }
-  .grid_index, .grid_cepas, .grid_elaboracion, .grid_contacto {
+  .grid_index {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
-    .grid_index header, .grid_cepas header, .grid_elaboracion header, .grid_contacto header {
+    .grid_index header {
       grid-area: nav; }
-    .grid_index main, .grid_cepas main, .grid_elaboracion main, .grid_contacto main {
+      .grid_index header .menu .seccion {
+        font-size: 16px;
+        display: flex;
+        flex-flow: row nowrap; }
+    .grid_index main {
       grid-area: main; }
-    .grid_index footer, .grid_cepas footer, .grid_elaboracion footer, .grid_contacto footer {
+    .grid_index footer {
       grid-area: footer; }
   .main_index {
     display: grid;
@@ -303,19 +337,23 @@ footer {
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px) {
-  .grid_index, .grid_cepas, .grid_elaboracion, .grid_contacto {
+  .grid_index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
-    .grid_index header, .grid_cepas header, .grid_elaboracion header, .grid_contacto header {
+    .grid_index header {
       grid-area: nav;
       position: relative; }
-      .grid_index header .menu, .grid_cepas header .menu, .grid_elaboracion header .menu, .grid_contacto header .menu {
+      .grid_index header .menu {
         display: flex;
-        flex-flow: column nowrap; }
-    .grid_index main, .grid_cepas main, .grid_elaboracion main, .grid_contacto main {
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0; }
+        .grid_index header .menu li {
+          padding-bottom: 10px; }
+    .grid_index main {
       grid-area: main; }
-    .grid_index footer, .grid_cepas footer, .grid_elaboracion footer, .grid_contacto footer {
+    .grid_index footer {
       grid-area: footer; }
   .main_index {
     display: grid;
@@ -358,10 +396,15 @@ footer {
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
   .grid_cepas {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_cepas header {
       grid-area: nav; }
+      .grid_cepas header .menu .seccion {
+        font-size: 16px;
+        display: flex;
+        flex-flow: row nowrap; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -387,7 +430,11 @@ footer {
       position: relative; }
       .grid_cepas header .menu {
         display: flex;
-        flex-flow: column nowrap; }
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0; }
+        .grid_cepas header .menu li {
+          padding-bottom: 10px; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -419,6 +466,10 @@ footer {
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_elaboracion header {
       grid-area: nav; }
+      .grid_elaboracion header .menu .seccion {
+        font-size: 16px;
+        display: flex;
+        flex-flow: row nowrap; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -452,7 +503,11 @@ footer {
       position: relative; }
       .grid_elaboracion header .menu {
         display: flex;
-        flex-flow: column nowrap; }
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0; }
+        .grid_elaboracion header .menu li {
+          padding-bottom: 10px; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -489,15 +544,22 @@ footer {
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_contacto header {
       grid-area: nav; }
+      .grid_contacto header .menu .seccion {
+        font-size: 16px;
+        display: flex;
+        flex-flow: row nowrap; }
     .grid_contacto main {
       grid-area: main; }
-      .grid_contacto main .formulario {
-        margin-bottom: 18.8%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center; }
     .grid_contacto footer {
-      grid-area: footer; } }
+      grid-area: footer; }
+  .main_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "cepas"; }
+    .main_contacto .titulo {
+      grid-area: titulo; }
+    .main_contacto .formulario {
+      grid-area: cepas; } }
 
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> CELULAR <------------- */
@@ -511,7 +573,11 @@ footer {
       position: relative; }
       .grid_contacto header .menu {
         display: flex;
-        flex-flow: column nowrap; }
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0; }
+        .grid_contacto header .menu li {
+          padding-bottom: 10px; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {

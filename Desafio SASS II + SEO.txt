@@ -1,8 +1,7 @@
 - SEO: aplique todo lo correspondiente.
 - Mapa: de font-size en "_variables.scss" para los titulos y textos, los aplique en los font size de cada clase con map-get.
 - Extend: en "_index.scss": del titulo principal extendiendo los estilos al Slogan / Articulo2, extendiendo a .etiqueta_vino.
-		en "_grids.scss": extend de .grid_index al resto de los grids.
-- Mixin: aplicado a los display flex.
+- Mixin: aplicado a display Flex / Grids escritorio - tablet - celular.
 
 @mixin flex($flex, $orientacion) {
     display: $flex;

@@ -1,20 +1,6 @@
 /* --------> GRIDS: INDEX <------- */
 .grid_index{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
+    @include grids;
 }
 .main_index{
     display: grid;
@@ -65,11 +51,11 @@ footer{
 }
 /* --------> GRIDS: CEPAS <------- */
 .grid_cepas{
-    @extend .grid_index;
+    @include grids;
 }
 /* --------> GRIDS: ELABORACION <------- */
 .grid_elaboracion{
-    @extend .grid_index;
+    @include grids;
 }
 // ELABORACION TINTO
 .proceso_tinto{
@@ -107,7 +93,7 @@ footer{
 }
 /* --------> GRIDS: CONTACTO <------- */
 .grid_contacto{
-    @extend .grid_index;
+    @include grids;
 }
 .main_contacto{
     display: grid;
