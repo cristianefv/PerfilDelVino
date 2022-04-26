@@ -28,12 +28,12 @@ header{
             list-style: none;
             display: flex;
             justify-content: space-around;
-            flex-direction: row;
+            flex-flow: row nowrap;
             align-items: center;
             background-color: $colorPrincipal;
-            padding: 0;
-            margin: 0;
             li{
+                padding: 0;
+                margin: 0;
                 .logo{
                     padding: 0px;
                     .inicio{

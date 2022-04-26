@@ -21,7 +21,7 @@
     font-family: 'oswald';
     font-style: italic;
     font-size: 25px;
-    width: 90vw;
+    width: 100vw;
     color: #EEEBDD;
     margin: 0; }
 
@@ -589,50 +589,51 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: center;
-    background-color: black;
-    padding: 0;
-    margin: 0; }
-    header nav .menu li .logo {
-      padding: 0px; }
-      header nav .menu li .logo .inicio {
-        width: 85px;
-        height: 120px; }
-    header nav .menu li .seccion {
-      display: block;
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 20px;
+    background-color: black; }
+    header nav .menu li {
+      padding: 0;
       margin: 0; }
-      header nav .menu li .seccion:hover {
-        color: #f80808dc;
-        font-size: 24px;
-        transition: all .5s; }
-    header nav .menu li .submenu {
-      position: absolute;
-      display: none;
-      list-style: none;
-      width: 200px;
-      background-color: #383838;
-      z-index: 1;
-      padding-left: 0; }
-      header nav .menu li .submenu li .sm_item {
+      header nav .menu li .logo {
+        padding: 0px; }
+        header nav .menu li .logo .inicio {
+          width: 85px;
+          height: 120px; }
+      header nav .menu li .seccion {
         display: block;
         color: white;
-        text-align: left;
-        font-size: 17px;
-        font-weight: bold;
-        z-index: 1;
-        width: 100%;
         text-decoration: none;
-        padding: 15px 15px 15px 20px; }
-      header nav .menu li .submenu li:hover {
-        background-color: #0000008a;
-        transition: all .9s; }
-    header nav .menu li:hover .submenu {
-      display: block; }
+        font-weight: 800;
+        font-size: 20px;
+        margin: 0; }
+        header nav .menu li .seccion:hover {
+          color: #f80808dc;
+          font-size: 24px;
+          transition: all .5s; }
+      header nav .menu li .submenu {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: #383838;
+        z-index: 1;
+        padding-left: 0; }
+        header nav .menu li .submenu li .sm_item {
+          display: block;
+          color: white;
+          text-align: left;
+          font-size: 17px;
+          font-weight: bold;
+          z-index: 1;
+          width: 100%;
+          text-decoration: none;
+          padding: 15px 15px 15px 20px; }
+        header nav .menu li .submenu li:hover {
+          background-color: #0000008a;
+          transition: all .9s; }
+      header nav .menu li:hover .submenu {
+        display: block; }
 
 /* FOOTER */
 footer {
@@ -666,6 +667,6 @@ footer {
   text-align: center;
   font-family: 'merriweather';
   font-style: italic;
-  font-size: 30px;
+  font-size: 50px;
   text-decoration: underline;
   margin-top: 10px; }
