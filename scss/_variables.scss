@@ -14,10 +14,12 @@ $textSize: (
     textInfo: 16px
 );
 // MIXIN
+// flex
 @mixin flex($flex, $orientacion) {
     display: $flex;
     flex-flow: $orientacion;
 }
+// grids escritorio
 @mixin grids {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -35,6 +37,7 @@ $textSize: (
         grid-area: footer;
     }
 }
+// grids tablet
 @mixin grids_tablet {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -59,6 +62,7 @@ $textSize: (
         grid-area: footer;
     }
 }
+// grids celular
 @mixin grids_celular {
     display: grid;
     grid-template-columns: 1fr;
