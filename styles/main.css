@@ -145,7 +145,7 @@
   margin-bottom: 6.1%;
   width: 100%; }
   .formulario .indicacion {
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px 0px; }
 
 /* --------> GRIDS: INDEX <------- */
@@ -351,6 +351,10 @@ footer {
         padding: 0; }
         .grid_index header .menu li {
           padding-bottom: 10px; }
+          .grid_index header .menu li .submenu {
+            width: 40%; }
+            .grid_index header .menu li .submenu .sm_item {
+              font-size: 15px; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -435,6 +439,10 @@ footer {
         padding: 0; }
         .grid_cepas header .menu li {
           padding-bottom: 10px; }
+          .grid_cepas header .menu li .submenu {
+            width: 40%; }
+            .grid_cepas header .menu li .submenu .sm_item {
+              font-size: 15px; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -508,6 +516,10 @@ footer {
         padding: 0; }
         .grid_elaboracion header .menu li {
           padding-bottom: 10px; }
+          .grid_elaboracion header .menu li .submenu {
+            width: 40%; }
+            .grid_elaboracion header .menu li .submenu .sm_item {
+              font-size: 15px; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -578,6 +590,10 @@ footer {
         padding: 0; }
         .grid_contacto header .menu li {
           padding-bottom: 10px; }
+          .grid_contacto header .menu li .submenu {
+            width: 40%; }
+            .grid_contacto header .menu li .submenu .sm_item {
+              font-size: 15px; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {
@@ -608,14 +624,16 @@ header {
   top: 0;
   z-index: 1;
   background-color: black;
-  padding: 10px 0px 0px 0px; }
+  padding: 10px 0px 5px 0px; }
   header nav .menu {
     list-style: none;
     display: flex;
     justify-content: space-around;
     flex-flow: row nowrap;
     align-items: center;
-    background-color: black; }
+    background-color: black;
+    margin: 0;
+    padding: 0; }
     header nav .menu li {
       padding: 0;
       margin: 0; }

@@ -1,9 +1,11 @@
-// VARIABLE COLORES
+// VARIABLE
+// colores
 $colorPrincipal: black;
 $colorSecundario: #610808c4;
 $colorTerciario: #EEEBDD;
 $colorTextoNav: white;
-// MAP FONT-SIZE
+// MAP 
+// font-size
 $textSize: (
     tituloPrincipal: 100px,
     Slogan: 32px,
@@ -80,6 +82,12 @@ $textSize: (
             padding: 0;
             li{
                 padding-bottom: 10px;
+                .submenu{
+                    width: 40%;
+                    .sm_item{
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
