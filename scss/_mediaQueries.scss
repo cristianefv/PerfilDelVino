@@ -104,7 +104,7 @@
                 font-size: 40px;
             }
             .slogan{
-                font-size: 12px;
+                font-size: 14px;
                 width: auto;
             }
         }
@@ -182,6 +182,7 @@
         "cepas";
         .titulo{
             grid-area: titulo;
+            font-size: map-get($textSize, titPagCelular);
         }
         .cepas_contenido{
             grid-area: cepas;
@@ -261,7 +262,7 @@
         "proceso";
         .titulo{
             grid-area: titulo;
-            font-size: 20px;
+            font-size: 31px;
         }
         .proceso_tinto{
             grid-area: proceso;
@@ -334,6 +335,7 @@
         "formulario";
         .titulo{
             grid-area: titulo;
+            font-size: map-get($textSize, titPagCelular);
         }
         .formulario{
             grid-area: formulario;

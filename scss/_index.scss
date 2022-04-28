@@ -48,11 +48,7 @@
             @include flex(flex, column nowrap);
             align-items: center;
             .titulo_articulo-index{
-                font-weight: bolder;
-                font-size: map-get($textSize , tituloArticulo);
-                text-indent: 30px;
-                margin: 60px 0px 20px;
-                text-decoration: underline;
+                @include titulo_articulo;
             }
             .primeros_pasos{
                 @include flex(flex, column);
@@ -81,11 +77,7 @@
             @include flex(flex, column nowrap);
             align-items: center;
             .titulo_articulo-index{
-                font-weight: bolder;
-                font-size: map-get($textSize , tituloArticulo);
-                text-indent: 30px;
-                margin: 60px 0px 20px;
-                text-decoration: underline;
+                @include titulo_articulo;
             }
             .etiqueta_vino{
                 @extend .articulo2;

@@ -10,12 +10,21 @@ $textSize: (
     tituloPrincipal: 100px,
     Slogan: 32px,
     tituloPagina: 50px,
+    titPagCelular: 35px,
     tituloArticulo: 22px,
     textNav: 20px,
     itemLista: 18px,
-    textInfo: 16px
+    textInfo: 16px,
 );
 // MIXIN
+// titulos articulos index
+@mixin titulo_articulo {
+    font-weight: bolder;
+    font-size: map-get($textSize , tituloArticulo);
+    margin: 20px 0px 20px 0px;
+    text-decoration: underline;
+    text-align: center;
+}
 // flex
 @mixin flex($flex, $orientacion) {
     display: $flex;

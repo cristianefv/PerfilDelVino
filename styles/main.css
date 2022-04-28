@@ -29,9 +29,9 @@
   .main_index .contenedor_articulos .articulo1 .titulo_articulo-index {
     font-weight: bolder;
     font-size: 22px;
-    text-indent: 30px;
-    margin: 60px 0px 20px;
-    text-decoration: underline; }
+    margin: 20px 0px 20px 0px;
+    text-decoration: underline;
+    text-align: center; }
   .main_index .contenedor_articulos .articulo1 .primeros_pasos {
     display: flex;
     flex-flow: column; }
@@ -61,9 +61,9 @@
   .main_index .contenedor_articulos .articulo2 .titulo_articulo-index {
     font-weight: bolder;
     font-size: 22px;
-    text-indent: 30px;
-    margin: 60px 0px 20px;
-    text-decoration: underline; }
+    margin: 20px 0px 20px 0px;
+    text-decoration: underline;
+    text-align: center; }
   .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta {
     width: 40%; }
   .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items {
@@ -368,7 +368,7 @@ footer {
       .main_index .titulo_slogan .titulo_principal, .main_index .titulo_slogan .slogan {
         font-size: 40px; }
       .main_index .titulo_slogan .slogan {
-        font-size: 12px;
+        font-size: 14px;
         width: auto; }
     .main_index .portada_index {
       grid-area: portada; }
@@ -452,7 +452,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "cepas"; }
     .main_cepas .titulo {
-      grid-area: titulo; }
+      grid-area: titulo;
+      font-size: 35px; }
     .main_cepas .cepas_contenido {
       grid-area: cepas; }
       .main_cepas .cepas_contenido ul li {
@@ -530,7 +531,7 @@ footer {
     grid-template-areas: "titulo" "proceso"; }
     .main_elabTinto .titulo {
       grid-area: titulo;
-      font-size: 20px; }
+      font-size: 31px; }
     .main_elabTinto .proceso_tinto {
       grid-area: proceso;
       display: flex;
@@ -603,7 +604,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "formulario"; }
     .main_contacto .titulo {
-      grid-area: titulo; }
+      grid-area: titulo;
+      font-size: 35px; }
     .main_contacto .formulario {
       grid-area: formulario; } }
 
