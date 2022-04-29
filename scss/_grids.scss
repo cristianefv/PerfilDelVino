@@ -65,7 +65,11 @@ footer{
     "info1 car1"
     "car2 info2"
     "info3 img1"
-    "car3 info4";
+    "car3 info4"
+    "info5 img2"
+    "car4 info6"
+    "info7 car5"
+    "img3 info8";
     .et_info.n1{
         grid-area: info1;
     }
@@ -89,6 +93,30 @@ footer{
     }
     .ct3{
         grid-area: car3;
+    }
+    .et_info.n5{
+        grid-area: info5;
+    }
+    .et_img.n2{
+        grid-area: img2;
+    }
+    .et_info.n6{
+        grid-area: info7;
+    }
+    .ct4{
+        grid-area: car5;
+    }
+    .et_info.n7{
+        grid-area: info6;
+    }
+    .ct5{
+        grid-area: car4;
+    }
+    .et_info.n8{
+        grid-area: info8;
+    }
+    .et_img.n3{
+        grid-area: img3;
     }
 }
 /* --------> GRIDS: CONTACTO <------- */

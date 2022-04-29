@@ -19,8 +19,9 @@
     width: 100vw;
     margin: 0; }
 
-.main_index .portada_index .carousel.slider {
-  width: 100vw; }
+.main_index .portada_index .carousel-inner .d-block {
+  width: 10vw;
+  height: 60%; }
 
 .main_index .contenedor_articulos .articulo1 {
   display: flex;
@@ -65,7 +66,7 @@
     text-decoration: underline;
     text-align: center; }
   .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta {
-    width: 40%; }
+    width: 50%; }
   .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items {
     display: flex;
     flex-flow: column;
@@ -76,42 +77,62 @@
       font-weight: 500;
       width: 95%; }
 
-.cepas_contenido ul {
+.main_cepas .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'merriweather';
+  font-style: italic;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-top: 10px; }
+
+.main_cepas .cepas_contenido ul {
   margin-bottom: 35px;
   list-style: none;
   padding: 0; }
-  .cepas_contenido ul li {
+  .main_cepas .cepas_contenido ul li {
     display: flex;
     flex-flow: row nowrap;
     justify-content: left;
     margin-top: 30px;
     width: 95%; }
-    .cepas_contenido ul li .cepas_img {
+    .main_cepas .cepas_contenido ul li .cepas_img {
       height: 200px;
       width: 200px;
       margin-left: 15px;
       margin-right: 15px;
       transition: all 2s; }
-      .cepas_contenido ul li .cepas_img:hover {
+      .main_cepas .cepas_contenido ul li .cepas_img:hover {
         /* EFECTO PARA LAS CEPAS */
         height: 270px;
         width: 270px; }
-    .cepas_contenido ul li .cepas_info {
+    .main_cepas .cepas_contenido ul li .cepas_info {
       /* SALTO DE LINEA SIN BR */
       white-space: pre-line;
       font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0.5px;
       text-align: justify; }
-      .cepas_contenido ul li .cepas_info .cepa_name {
+      .main_cepas .cepas_contenido ul li .cepas_info .cepa_name {
         font-size: 22px;
         font-weight: 800;
         text-decoration: underline;
         color: black; }
-      .cepas_contenido ul li .cepas_info .referencia {
+      .main_cepas .cepas_contenido ul li .cepas_info .referencia {
         width: 25px; }
 
 .main_elabTinto .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'merriweather';
+  font-style: italic;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-top: 10px;
   margin-bottom: 15px; }
 
 .proceso_tinto {
@@ -122,7 +143,7 @@
   margin-bottom: 2%; }
   .proceso_tinto .carousel.slide {
     width: 70%; }
-  .proceso_tinto .et_img.n1 {
+  .proceso_tinto .et_img {
     width: 70%; }
   .proceso_tinto .et_info {
     margin: 0; }
@@ -138,13 +159,35 @@
       text-align: center;
       margin: 0 20px; }
 
-.formulario {
+.main_elabBlanco .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'merriweather';
+  font-style: italic;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-top: 10px; }
+
+.main_contacto .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'merriweather';
+  font-style: italic;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-top: 10px; }
+
+.main_contacto .formulario {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin-bottom: 6.1%;
   width: 100%; }
-  .formulario .indicacion {
+  .main_contacto .formulario .indicacion {
     font-size: 20px;
     margin: 10px 0px; }
 
@@ -220,7 +263,7 @@ footer {
 .proceso_tinto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "info1 car1" "car2 info2" "info3 img1" "car3 info4"; }
+  grid-template-areas: "info1 car1" "car2 info2" "info3 img1" "car3 info4" "info5 img2" "car4 info6" "info7 car5" "img3 info8"; }
   .proceso_tinto .et_info.n1 {
     grid-area: info1; }
   .proceso_tinto .ct1 {
@@ -237,6 +280,22 @@ footer {
     grid-area: info4; }
   .proceso_tinto .ct3 {
     grid-area: car3; }
+  .proceso_tinto .et_info.n5 {
+    grid-area: info5; }
+  .proceso_tinto .et_img.n2 {
+    grid-area: img2; }
+  .proceso_tinto .et_info.n6 {
+    grid-area: info7; }
+  .proceso_tinto .ct4 {
+    grid-area: car5; }
+  .proceso_tinto .et_info.n7 {
+    grid-area: info6; }
+  .proceso_tinto .ct5 {
+    grid-area: car4; }
+  .proceso_tinto .et_info.n8 {
+    grid-area: info8; }
+  .proceso_tinto .et_img.n3 {
+    grid-area: img3; }
 
 /* --------> GRIDS: CONTACTO <------- */
 .grid_contacto {
@@ -267,7 +326,8 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_index header {
-      grid-area: nav; }
+      grid-area: nav;
+      padding: 10px 0px 5px 0px; }
       .grid_index header .menu .seccion {
         font-size: 16px;
         display: flex;
@@ -287,7 +347,6 @@ footer {
         margin: 0;
         font-size: 70px; }
       .main_index .titulo_slogan .slogan {
-        width: 700px;
         font-size: 20px; }
     .main_index .portada_index {
       grid-area: portada; }
@@ -385,9 +444,6 @@ footer {
         justify-content: center; }
       .contenedor_articulos .articulo1 .primeros_pasos li {
         width: 100vw; }
-        .contenedor_articulos .articulo1 .primeros_pasos li p {
-          width: 90vw;
-          margin: 5px; }
     .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
       grid-area: art2;
       display: flex;
@@ -404,7 +460,8 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_cepas header {
-      grid-area: nav; }
+      grid-area: nav;
+      padding: 10px 0px 5px 0px; }
       .grid_cepas header .menu .seccion {
         font-size: 16px;
         display: flex;
@@ -418,7 +475,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "cepas"; }
     .main_cepas .titulo {
-      grid-area: titulo; }
+      grid-area: titulo;
+      font-size: 40px; }
     .main_cepas .cepas_contenido {
       grid-area: cepas; } }
 
@@ -474,7 +532,8 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_elaboracion header {
-      grid-area: nav; }
+      grid-area: nav;
+      padding: 10px 0px 5px 0px; }
       .grid_elaboracion header .menu .seccion {
         font-size: 16px;
         display: flex;
@@ -488,13 +547,14 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "proceso"; }
     .main_elabTinto .titulo {
-      grid-area: titulo; }
+      grid-area: titulo;
+      font-size: 40px; }
     .main_elabTinto .proceso_tinto {
       grid-area: proceso;
       display: flex;
       flex-flow: column nowrap; }
       .main_elabTinto .proceso_tinto .et_info .et_tittle {
-        font-size: 20px;
+        font-size: 25px;
         width: auto;
         margin: 0;
         height: 50px;
@@ -531,7 +591,7 @@ footer {
     grid-template-areas: "titulo" "proceso"; }
     .main_elabTinto .titulo {
       grid-area: titulo;
-      font-size: 31px; }
+      font-size: 28px; }
     .main_elabTinto .proceso_tinto {
       grid-area: proceso;
       display: flex;
@@ -546,7 +606,20 @@ footer {
         text-align: center; }
       .main_elabTinto .proceso_tinto .et_info {
         width: 90vw;
-        margin: 0; } }
+        margin: 0; }
+  .main_elabBlanco {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "proceso"; }
+    .main_elabBlanco .titulo {
+      grid-area: titulo;
+      font-size: 28px; }
+    .main_elabBlanco .proceso_blanco {
+      grid-area: proceso;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      width: 100vw; } }
 
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> TABLET <------------- */
@@ -554,9 +627,11 @@ footer {
   .grid_contacto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+    height: 100vh; }
     .grid_contacto header {
-      grid-area: nav; }
+      grid-area: nav;
+      padding: 10px 0px 5px 0px; }
       .grid_contacto header .menu .seccion {
         font-size: 16px;
         display: flex;
@@ -570,7 +645,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "cepas"; }
     .main_contacto .titulo {
-      grid-area: titulo; }
+      grid-area: titulo;
+      font-size: 40px; }
     .main_contacto .formulario {
       grid-area: cepas; } }
 
@@ -703,15 +779,3 @@ footer {
     padding: 0;
     width: 100vw;
     text-align: center; }
-
-/* TITULO DE CADA PAGINA */
-.titulo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  font-family: 'merriweather';
-  font-style: italic;
-  font-size: 50px;
-  text-decoration: underline;
-  margin-top: 10px; }

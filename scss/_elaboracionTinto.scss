@@ -1,5 +1,6 @@
 .main_elabTinto{
     .titulo{
+        @include titulo;
         margin-bottom: 15px;
     }
 }
@@ -11,7 +12,7 @@
     .carousel.slide{
         width: 70%;
     }
-    .et_img.n1{
+    .et_img{
         width: 70%;
     }
     .et_info{

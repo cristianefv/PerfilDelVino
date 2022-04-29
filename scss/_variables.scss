@@ -17,6 +17,18 @@ $textSize: (
     textInfo: 16px,
 );
 // MIXIN
+// titulo de cada pagina
+@mixin titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'merriweather';
+    font-style: italic;
+    font-size: map-get($textSize , tituloPagina);
+    text-decoration: underline;
+    margin-top: 10px;
+}
 // titulos articulos index
 @mixin titulo_articulo {
     font-weight: bolder;
@@ -58,6 +70,7 @@ $textSize: (
     "footer footer footer";
     header{
         grid-area: nav;
+        padding: 10px 0px 5px 0px;
         .menu{
             .seccion{
                 font-size: 16px;

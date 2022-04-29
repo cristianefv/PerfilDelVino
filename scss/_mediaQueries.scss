@@ -19,7 +19,6 @@
                 font-size: 70px;
             }
             .slogan{
-                width: 700px;
                 font-size: 20px;
             }
         }
@@ -130,10 +129,6 @@
             .primeros_pasos{
                 li{
                     width: 100vw;
-                    p{
-                        width: 90vw;
-                        margin: 5px;
-                    }
                 }
             }
         }
@@ -162,6 +157,7 @@
         "cepas";
         .titulo{
             grid-area: titulo;
+            font-size: 40px;
         }
         .cepas_contenido{
             grid-area: cepas;
@@ -215,6 +211,7 @@
         "proceso";
         .titulo{
             grid-area: titulo;
+            font-size: 40px;
         }
         .proceso_tinto{
             grid-area: proceso;
@@ -222,7 +219,7 @@
             flex-flow: column nowrap;
             .et_info{
                 .et_tittle{
-                    font-size: 20px;
+                    font-size: 25px;
                     width: auto;
                     margin: 0;
                     height: 50px;
@@ -250,10 +247,12 @@
 }
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
+
 @media screen and (max-width: 480px) {
     .grid_elaboracion{
         @include grids_celular;
     }
+    // tinto
     .main_elabTinto{
         display: grid;
         grid-template-columns: 1fr;
@@ -262,7 +261,7 @@
         "proceso";
         .titulo{
             grid-area: titulo;
-            font-size: 31px;
+            font-size: 28px;
         }
         .proceso_tinto{
             grid-area: proceso;
@@ -300,12 +299,33 @@
             
         }
     }
+// blanco
+    .main_elabBlanco{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "proceso";
+        .titulo{
+            grid-area: titulo;
+            font-size: 28px;
+        }
+        .proceso_blanco{
+            grid-area: proceso;
+            display: flex;
+            align-items:  center;
+            justify-items: center;
+            width: 100vw;
+        }
+    }
 }
+
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_contacto{
         @include grids_tablet;
+        height: 100vh;
     }
     .main_contacto{
         display: grid;
@@ -315,6 +335,7 @@
         "cepas";
         .titulo{
             grid-area: titulo;
+            font-size: 40px;
         }
         .formulario{
             grid-area: cepas;

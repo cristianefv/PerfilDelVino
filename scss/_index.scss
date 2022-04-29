@@ -39,8 +39,11 @@
         }
     }
     .portada_index{
-        .carousel.slider{
-        width: 100vw;
+        .carousel-inner{
+            .d-block{
+                width: 10vw;
+                height: 60%;
+            }
         }
     }
     .contenedor_articulos{
@@ -82,7 +85,7 @@
             .etiqueta_vino{
                 @extend .articulo2;
                 .etiqueta{
-                    width: 40%;
+                    width: 50%;
                 }
                 .etiqueta_items{
                     @include flex(flex, column);

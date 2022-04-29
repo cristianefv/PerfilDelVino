@@ -2,6 +2,7 @@
 @import "index";
 @import "cepas";
 @import "elaboracionTinto";
+@import "elaboracionBlanco";
 @import "contacto";
 @import "grids";
 @import "mediaQueries";
@@ -117,15 +118,4 @@ footer {
         text-align: center;
     }
 }
-/* TITULO DE CADA PAGINA */
-.titulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-family: 'merriweather';
-    font-style: italic;
-    font-size: map-get($textSize , tituloPagina);
-    text-decoration: underline;
-    margin-top: 10px;
-}
+
