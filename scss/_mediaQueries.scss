@@ -212,6 +212,7 @@
         .titulo{
             grid-area: titulo;
             font-size: 40px;
+            margin: 10px 0px 35px;
         }
         .proceso_tinto{
             grid-area: proceso;
@@ -224,22 +225,6 @@
                     margin: 0;
                     height: 50px;
                     text-align: center;
-                    // animation: moverTexto 5s infinite;
-                    // @keyframes moverTexto{
-                    //     0%{
-                    //         color: red;
-                    //         transform: translateX(-10%);
-                    //         margin: 0;
-                    //     }
-                    //     50%{
-                    //         transform: translatex(10%);
-                    //         margin: 0;
-                    //     }
-                    //     100%{
-                    //         transform: translateX(-10%);
-                    //         margin: 0;
-                    //     }
-                    // }
                 }
             }
         }
@@ -262,6 +247,7 @@
         .titulo{
             grid-area: titulo;
             font-size: 28px;
+            margin: 10px 0px 35px;
         }
         .proceso_tinto{
             grid-area: proceso;
@@ -269,34 +255,23 @@
             align-items:  center;
             justify-items: center;
             width: 100vw;
-            .et_tittle{
-                font-size: 20px;
-                width: auto;
-                margin: 0;
-                height: 50px;
-                text-align: center;
-                // animation: moverTexto 5s infinite;
-                // @keyframes moverTexto{
-                //     0%{
-                //         color: red;
-                //         transform: translateX(-10%);
-                //         margin: 0;
-                //     }
-                //     50%{
-                //         transform: translatex(10%);
-                //         margin: 0;
-                //     }
-                //     100%{
-                //         transform: translateX(-10%);
-                //         margin: 0;
-                //     }
-                // }
-            }
             .et_info{
                 width: 90vw;
                 margin: 0;
+                .et_tittle{
+                    font-size: 20px;
+                    width: auto;
+                    margin: 0;
+                    height: 30px;
+                    text-align: center;
+                }
             }
-            
+            .carousel-inner{
+                margin-bottom: 50px;
+            }
+            .et_img{
+                margin-bottom: 50px;
+            }
         }
     }
 // blanco

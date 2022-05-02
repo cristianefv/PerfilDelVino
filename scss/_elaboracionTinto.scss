@@ -15,35 +15,25 @@
     .et_img{
         width: 70%;
     }
+    .et_info.n7{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     .et_info{
         margin: 0;
         .et_tittle{
             text-align: center;
             width: auto;
+            margin: auto;
             height: 50px;
             font-size: map-get($textSize, tituloArticulo);
             animation: moverTexto 5s infinite;
-            // @keyframes moverTexto{
-            //     0%{
-            //         color: red;
-            //         transform: translateX(-10%);
-            //         margin: 0;
-            //     }
-            //     50%{
-            //         transform: translatex(10%);
-            //         margin: 0;
-            //     }
-            //     100%{
-            //         transform: translateX(-10%);
-            //         margin: 0;
-            //     }
-            // }
         }
         .et_txt{
             font-size: map-get($textSize , textInfo);
             width: 90%;
-            text-align: center;
-            margin: 0 20px;
+            text-align: justify;
+            margin: auto;
         }
     }
 }

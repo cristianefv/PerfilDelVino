@@ -19,9 +19,9 @@
     width: 100vw;
     margin: 0; }
 
-.main_index .portada_index .carousel-inner .d-block {
-  width: 10vw;
-  height: 60%; }
+.main_index .carousel-inner .carousel-item img.d-block.w-100 {
+  width: 100%;
+  height: auto; }
 
 .main_index .contenedor_articulos .articulo1 {
   display: flex;
@@ -41,19 +41,19 @@
       text-align: left;
       font-weight: bold;
       font-size: 18px;
-      text-indent: 40px;
       width: auto; }
       .main_index .contenedor_articulos .articulo1 .primeros_pasos li p {
         text-align: justify;
         font-weight: 500;
         font-size: 16px;
         text-indent: 10px;
-        line-height: 1.5;
-        letter-spacing: 0.5px;
         white-space: pre-line;
         /* SALTO DE LINEA */
         width: 90%;
         margin: 2%; }
+      .main_index .contenedor_articulos .articulo1 .primeros_pasos li ul {
+        font-size: 16px;
+        font-weight: 500; }
 
 .main_index .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
   display: flex;
@@ -145,19 +145,23 @@
     width: 70%; }
   .proceso_tinto .et_img {
     width: 70%; }
+  .proceso_tinto .et_info.n7 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
   .proceso_tinto .et_info {
     margin: 0; }
     .proceso_tinto .et_info .et_tittle {
       text-align: center;
       width: auto;
+      margin: auto;
       height: 50px;
       font-size: 22px;
       animation: moverTexto 5s infinite; }
     .proceso_tinto .et_info .et_txt {
       font-size: 16px;
       width: 90%;
-      text-align: center;
-      margin: 0 20px; }
+      text-align: justify;
+      margin: auto; }
 
 .main_elabBlanco .titulo {
   display: flex;
@@ -263,39 +267,59 @@ footer {
 .proceso_tinto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "info1 car1" "car2 info2" "info3 img1" "car3 info4" "info5 img2" "car4 info6" "info7 car5" "img3 info8"; }
+  grid-template-areas: "cose car1" "car2 cyt" "rece img1" "car3 despa" "pren car5" "car4 ferm" "mace img2" "img3 descu" "clari img4" "img5 estab" "fil img6" "car6 crian" "embo img7"; }
   .proceso_tinto .et_info.n1 {
-    grid-area: info1; }
+    grid-area: cose; }
   .proceso_tinto .ct1 {
     grid-area: car1; }
   .proceso_tinto .et_info.n2 {
-    grid-area: info2; }
+    grid-area: cyt; }
   .proceso_tinto .ct2 {
     grid-area: car2; }
   .proceso_tinto .et_info.n3 {
-    grid-area: info3; }
+    grid-area: rece; }
   .proceso_tinto .et_img.n1 {
     grid-area: img1; }
   .proceso_tinto .et_info.n4 {
-    grid-area: info4; }
+    grid-area: despa; }
   .proceso_tinto .ct3 {
     grid-area: car3; }
   .proceso_tinto .et_info.n5 {
-    grid-area: info5; }
+    grid-area: mace; }
   .proceso_tinto .et_img.n2 {
     grid-area: img2; }
   .proceso_tinto .et_info.n6 {
-    grid-area: info7; }
+    grid-area: pren; }
   .proceso_tinto .ct4 {
     grid-area: car5; }
   .proceso_tinto .et_info.n7 {
-    grid-area: info6; }
+    grid-area: ferm; }
   .proceso_tinto .ct5 {
     grid-area: car4; }
   .proceso_tinto .et_info.n8 {
-    grid-area: info8; }
+    grid-area: descu; }
   .proceso_tinto .et_img.n3 {
     grid-area: img3; }
+  .proceso_tinto .et_info.n9 {
+    grid-area: clari; }
+  .proceso_tinto .et_img.n4 {
+    grid-area: img4; }
+  .proceso_tinto .et_info.n10 {
+    grid-area: estab; }
+  .proceso_tinto .et_img.n5 {
+    grid-area: img5; }
+  .proceso_tinto .et_info.n11 {
+    grid-area: fil; }
+  .proceso_tinto .et_img.n6 {
+    grid-area: img6; }
+  .proceso_tinto .et_info.n12 {
+    grid-area: crian; }
+  .proceso_tinto .ct6 {
+    grid-area: car6; }
+  .proceso_tinto .et_info.n13 {
+    grid-area: embo; }
+  .proceso_tinto .et_img.n7 {
+    grid-area: img7; }
 
 /* --------> GRIDS: CONTACTO <------- */
 .grid_contacto {
@@ -548,7 +572,8 @@ footer {
     grid-template-areas: "titulo" "proceso"; }
     .main_elabTinto .titulo {
       grid-area: titulo;
-      font-size: 40px; }
+      font-size: 40px;
+      margin: 10px 0px 35px; }
     .main_elabTinto .proceso_tinto {
       grid-area: proceso;
       display: flex;
@@ -591,22 +616,27 @@ footer {
     grid-template-areas: "titulo" "proceso"; }
     .main_elabTinto .titulo {
       grid-area: titulo;
-      font-size: 28px; }
+      font-size: 28px;
+      margin: 10px 0px 35px; }
     .main_elabTinto .proceso_tinto {
       grid-area: proceso;
       display: flex;
       align-items: center;
       justify-items: center;
       width: 100vw; }
-      .main_elabTinto .proceso_tinto .et_tittle {
-        font-size: 20px;
-        width: auto;
-        margin: 0;
-        height: 50px;
-        text-align: center; }
       .main_elabTinto .proceso_tinto .et_info {
         width: 90vw;
         margin: 0; }
+        .main_elabTinto .proceso_tinto .et_info .et_tittle {
+          font-size: 20px;
+          width: auto;
+          margin: 0;
+          height: 30px;
+          text-align: center; }
+      .main_elabTinto .proceso_tinto .carousel-inner {
+        margin-bottom: 50px; }
+      .main_elabTinto .proceso_tinto .et_img {
+        margin-bottom: 50px; }
   .main_elabBlanco {
     display: grid;
     grid-template-columns: 1fr;
