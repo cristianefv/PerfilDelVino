@@ -41,7 +41,8 @@
       text-align: left;
       font-weight: bold;
       font-size: 18px;
-      width: auto; }
+      width: auto;
+      color: #610808c4; }
       .main_index .contenedor_articulos .articulo1 .primeros_pasos li p {
         text-align: justify;
         font-weight: 500;
@@ -50,10 +51,12 @@
         white-space: pre-line;
         /* SALTO DE LINEA */
         width: 90%;
-        margin: 2%; }
+        margin: 2%;
+        color: black; }
       .main_index .contenedor_articulos .articulo1 .primeros_pasos li ul {
         font-size: 16px;
-        font-weight: 500; }
+        font-weight: 500;
+        color: black; }
 
 .main_index .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
   display: flex;
