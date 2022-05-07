@@ -165,7 +165,8 @@ footer{
     "cb3 despa"
     "pren cb4"
     "cb5 ferm"
-    "fil img2";
+    "fil img2"
+    "cb6 emb";
     .et_info.n1{
         grid-area: cose;
     }
@@ -207,6 +208,12 @@ footer{
     }
     .et_img.n2{
         grid-area: img2;
+    }
+    .et_info.n8{
+        grid-area: emb;
+    }
+    .cb6{
+        grid-area: cb6;
     }
 }
 /* --------> GRIDS: CONTACTO <------- */

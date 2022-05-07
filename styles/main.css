@@ -348,7 +348,7 @@ footer {
 .proceso_blanco {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "cose cb1" "cb2 cyt" "rece img1" "cb3 despa" "pren cb4" "cb5 ferm" "fil img2"; }
+  grid-template-areas: "cose cb1" "cb2 cyt" "rece img1" "cb3 despa" "pren cb4" "cb5 ferm" "fil img2" "cb6 emb"; }
   .proceso_blanco .et_info.n1 {
     grid-area: cose; }
   .proceso_blanco .cb1 {
@@ -377,6 +377,10 @@ footer {
     grid-area: fil; }
   .proceso_blanco .et_img.n2 {
     grid-area: img2; }
+  .proceso_blanco .et_info.n8 {
+    grid-area: emb; }
+  .proceso_blanco .cb6 {
+    grid-area: cb6; }
 
 /* --------> GRIDS: CONTACTO <------- */
 .grid_contacto {
