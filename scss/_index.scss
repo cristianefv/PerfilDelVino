@@ -18,7 +18,6 @@
             @extend .titulo_principal;
             font-family: 'oswald';
             font-size: map-get($textSize , Slogan);
-            width: 100vw;
             margin: 0;
         }
     }
@@ -44,7 +43,6 @@
                     text-align: left;
                     font-weight: bold;
                     font-size: map-get($textSize , itemLista);
-                    // text-indent: 40px;
                     width: auto;
                     color: #610808c4;
                     p{
@@ -52,8 +50,6 @@
                         font-weight: 500;
                         font-size: map-get($textSize , textInfo);
                         text-indent: 10px;
-                        // line-height: 1.5;
-                        // letter-spacing: 0.5px ;
                         white-space: pre-line; /* SALTO DE LINEA */
                         width: 90%;
                         margin: 2%;
