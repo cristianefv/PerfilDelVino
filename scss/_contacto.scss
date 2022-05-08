@@ -5,7 +5,8 @@
     .formulario{
         @include flex(flex, column nowrap);
         align-items: center;
-        margin-bottom: 8.7%;
+        // margin-bottom: 8.7%;
+        height: 70vh;
         width: 100%;
         .indicacion{
             font-size: 20px;
