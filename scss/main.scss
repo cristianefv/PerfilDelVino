@@ -18,27 +18,40 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 /* HEADER */
-.navbar{
-    .menu-contenedor{
-        .logo-index{
-            width: 150px;
-        }
-        .contenedor-lista{
-            .lista-nav{
-                .nav-item{
-                    .link-pagina{
-                        color: white;
-                        font-size: 20px;
-                        &:hover{
-                            color: red;
+header{
+    // width: 100vw;
+    .navbar{
+        .menu-contenedor{
+            padding: 0;
+            .logo-index{
+                width: 150px;
+            }
+            .contenedor-lista{
+                .lista-nav{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .nav-item{
+                        .link-pagina{
+                            color: white;
+                            font-size: 20px;
+                            &:hover{
+                                color: red;
+                            }
                         }
-                    }
-                    .nav-seccion{
-                        background-color: darkgray;
-                        li{
-                            .seccion-link{
-                                &:hover{
-                                    background-color: white;
+                        .nav-seccion{
+                            background-color: darkgray;
+                            li{
+                                .seccion-link{
+                                    color: black;
+                                    &:hover{
+                                        color: white;
+                                        background-color: #383838;
+                                    }
+                                    &:active{
+                                        background-color: $colorSecundario;
+                                        color: white;
+                                    }
                                 }
                             }
                         }
@@ -52,7 +65,14 @@ body{
 
 
 
-
+// color: white;
+// &:hover{
+//     color: ;
+// }
+// &:active{
+//     background-color: $colorSecundario;
+//     color: white;
+// }
 
 
 

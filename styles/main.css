@@ -387,7 +387,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .grid_contacto nav {
+  .grid_contacto header {
     grid-area: header; }
   .grid_contacto main {
     grid-area: main; }
@@ -785,19 +785,29 @@ body {
   font-family: 'Oswald', sans-serif; }
 
 /* HEADER */
-.navbar .menu-contenedor .logo-index {
-  width: 150px; }
-
-.navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina {
-  color: white;
-  font-size: 20px; }
-  .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina:hover {
-    color: red; }
-
-.navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion {
-  background-color: darkgray; }
-  .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link:hover {
-    background-color: white; }
+header .navbar .menu-contenedor {
+  padding: 0; }
+  header .navbar .menu-contenedor .logo-index {
+    width: 150px; }
+  header .navbar .menu-contenedor .contenedor-lista .lista-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+    header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina {
+      color: white;
+      font-size: 20px; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina:hover {
+        color: red; }
+    header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion {
+      background-color: darkgray; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link {
+        color: black; }
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link:hover {
+          color: white;
+          background-color: #383838; }
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link:active {
+          background-color: #5f091c;
+          color: white; }
 
 /* FOOTER */
 footer {
