@@ -32,10 +32,15 @@ body{
                         &:hover{
                             color: red;
                         }
-                        .nav-seccion{
+                    }
+                    .nav-seccion{
+                        background-color: darkgray;
+                        li{
                             .seccion-link{
-                                
-                            } 
+                                &:hover{
+                                    background-color: white;
+                                }
+                            }
                         }
                     }
                 }

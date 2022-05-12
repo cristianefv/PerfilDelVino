@@ -794,6 +794,11 @@ body {
   .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina:hover {
     color: red; }
 
+.navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion {
+  background-color: darkgray; }
+  .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link:hover {
+    background-color: white; }
+
 /* FOOTER */
 footer {
   bottom: 0px;
