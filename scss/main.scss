@@ -23,6 +23,24 @@ body{
         .logo-index{
             width: 150px;
         }
+        .contenedor-lista{
+            .lista-nav{
+                .nav-item{
+                    .link-pagina{
+                        color: white;
+                        font-size: 20px;
+                        &:hover{
+                            color: red;
+                        }
+                        .nav-seccion{
+                            .seccion-link{
+                                
+                            } 
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

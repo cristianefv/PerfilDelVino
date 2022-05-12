@@ -788,6 +788,12 @@ body {
 .navbar .menu-contenedor .logo-index {
   width: 150px; }
 
+.navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina {
+  color: white;
+  font-size: 20px; }
+  .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina:hover {
+    color: red; }
+
 /* FOOTER */
 footer {
   bottom: 0px;
