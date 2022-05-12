@@ -299,7 +299,29 @@
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_contacto{
-        @include grids_tablet;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    nav{
+        grid-area: nav;
+        padding: 10px 0px 5px 0px;
+        .menu{
+            .seccion{
+                font-size: 16px;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        }
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
         height: 100vh;
     }
     .main_contacto{
@@ -321,7 +343,37 @@
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px){
     .grid_contacto{
-        @include grids_celular;
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+    nav{
+        grid-area: nav;
+        padding-bottom: 20px;
+        .menu-contenedor{
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 0;
+            padding: 0;
+            .logo-index{
+                padding-bottom: 20px;
+            }
+            .boton-nav{
+                color: $colorSecundario;
+                .icono-nav{
+                    
+                }
+            }
+        }
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
     }
     .main_contacto{
         display: grid;
