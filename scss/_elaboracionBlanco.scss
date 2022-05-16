@@ -10,12 +10,12 @@
         .carousel.slide{
             width: 70%;
         }
-        .et_img{
+        .eb_img{
             width: 70%;
         }
-        .et_info{
+        .eb_info{
             margin: 0;
-            .et_tittle{
+            .eb_tittle{
                 text-align: center;
                 width: auto;
                 margin: auto;
@@ -23,7 +23,7 @@
                 font-size: map-get($textSize, tituloArticulo);
                 animation: moverTexto 5s infinite;
             }
-            .et_txt{
+            .eb_txt{
                 font-size: map-get($textSize , textInfo);
                 width: 90%;
                 text-align: justify;
