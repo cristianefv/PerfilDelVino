@@ -421,7 +421,8 @@ footer {
           width: 100%;
           text-align: center; }
           .grid_index header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
-            text-align: center; }
+            text-align: center;
+            font-size: 20px; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -564,7 +565,8 @@ footer {
           width: 100%;
           text-align: center; }
           .grid_cepas header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
-            text-align: center; }
+            text-align: center;
+            font-size: 20px; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -646,7 +648,8 @@ footer {
           width: 100%;
           text-align: center; }
           .grid_elaboracion header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
-            text-align: center; }
+            text-align: center;
+            font-size: 20px; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -791,7 +794,8 @@ footer {
           width: 100%;
           text-align: center; }
           .grid_contacto header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
-            text-align: center; }
+            text-align: center;
+            font-size: 20px; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {
