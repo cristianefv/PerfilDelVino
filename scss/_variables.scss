@@ -79,6 +79,16 @@ $textSize: (
                 flex-flow: column nowrap;
                 .contenedor-lista{
                     width: 100%;
+                    text-align: center;
+                    .lista-nav{
+                        .nav-seccion{
+                            li{
+                                .seccion-link{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

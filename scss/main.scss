@@ -47,6 +47,7 @@ header{
                             li{
                                 .seccion-link.vt{
                                     color: black;
+                                    font-weight: 700;
                                     &:hover{
                                         color: white;
                                         background-color: #383838;
@@ -57,7 +58,7 @@ header{
                                     }
                                 }
                                 .seccion-link.vb{
-                                    color: black;
+                                    @extend .seccion-link.vt;
                                     &:hover{
                                         color: white;
                                         background-color: #383838;

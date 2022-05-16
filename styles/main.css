@@ -418,7 +418,10 @@ footer {
         display: flex;
         flex-flow: column nowrap; }
         .grid_index header nav .menu-contenedor .contenedor-lista {
-          width: 100%; }
+          width: 100%;
+          text-align: center; }
+          .grid_index header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -558,7 +561,10 @@ footer {
         display: flex;
         flex-flow: column nowrap; }
         .grid_cepas header nav .menu-contenedor .contenedor-lista {
-          width: 100%; }
+          width: 100%;
+          text-align: center; }
+          .grid_cepas header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -637,7 +643,10 @@ footer {
         display: flex;
         flex-flow: column nowrap; }
         .grid_elaboracion header nav .menu-contenedor .contenedor-lista {
-          width: 100%; }
+          width: 100%;
+          text-align: center; }
+          .grid_elaboracion header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -779,7 +788,10 @@ footer {
         display: flex;
         flex-flow: column nowrap; }
         .grid_contacto header nav .menu-contenedor .contenedor-lista {
-          width: 100%; }
+          width: 100%;
+          text-align: center; }
+          .grid_contacto header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {
@@ -862,22 +874,21 @@ header .navbar .menu-contenedor {
         color: red; }
     header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion {
       background-color: darkgray; }
-      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et {
-        color: black; }
-        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:hover {
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et {
+        color: black;
+        font-weight: 700; }
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:hover {
           color: white;
           background-color: #383838; }
-        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:active {
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:active {
           background-color: #5f091c;
           color: white; }
-      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb {
-        color: black; }
-        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:hover {
-          color: white;
-          background-color: #383838; }
-        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:active {
-          background-color: #5e7943;
-          color: white; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:hover {
+        color: white;
+        background-color: #383838; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:active {
+        background-color: #5e7943;
+        color: white; }
 
 /* FOOTER */
 footer {
