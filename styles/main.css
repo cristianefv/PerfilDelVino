@@ -190,8 +190,7 @@
       width: auto;
       margin: auto;
       height: 50px;
-      font-size: 22px;
-      animation: moverTexto 5s infinite; }
+      font-size: 22px; }
     .main_elabBlanco .proceso_blanco .eb_info .eb_txt {
       font-size: 16px;
       width: 90%;
@@ -648,6 +647,24 @@ footer {
       display: flex;
       flex-flow: column nowrap; }
       .main_elabTinto .proceso_tinto .et_info .et_tittle {
+        font-size: 25px;
+        width: auto;
+        margin: 0;
+        height: 50px;
+        text-align: center; }
+  .main_elabBlanco {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "proceso"; }
+    .main_elabBlanco .titulo {
+      grid-area: titulo;
+      font-size: 40px;
+      margin: 10px 0px 35px; }
+    .main_elabBlanco .proceso_blanco {
+      grid-area: proceso;
+      display: flex;
+      flex-flow: column nowrap; }
+      .main_elabBlanco .proceso_blanco .eb_info .eb_tittle {
         font-size: 25px;
         width: auto;
         margin: 0;

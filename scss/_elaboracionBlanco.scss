@@ -21,7 +21,6 @@
                 margin: auto;
                 height: 50px;
                 font-size: map-get($textSize, tituloArticulo);
-                animation: moverTexto 5s infinite;
             }
             .eb_txt{
                 font-size: map-get($textSize , textInfo);

@@ -203,6 +203,7 @@
     .grid_elaboracion{
         @include grids_tablet;
     }
+    // tinto
     .main_elabTinto{
         display: grid;
         grid-template-columns: 1fr;
@@ -220,6 +221,33 @@
             flex-flow: column nowrap;
             .et_info{
                 .et_tittle{
+                    font-size: 25px;
+                    width: auto;
+                    margin: 0;
+                    height: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // blanco
+    .main_elabBlanco{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "proceso";
+        .titulo{
+            grid-area: titulo;
+            font-size: 40px;
+            margin: 10px 0px 35px;
+        }
+        .proceso_blanco{
+            grid-area: proceso;
+            display: flex;
+            flex-flow: column nowrap;
+            .eb_info{
+                .eb_tittle{
                     font-size: 25px;
                     width: auto;
                     margin: 0;
