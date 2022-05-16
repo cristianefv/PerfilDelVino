@@ -460,8 +460,7 @@ footer {
           margin: 5px 20px 20px;
           line-height: 1.5;
           letter-spacing: 0.5px;
-          white-space: pre-line;
-          /* SALTO DE LINEA */ }
+          white-space: pre-line; }
     .contenedor_articulos .articulo2, .main_index .contenedor_articulos .articulo2 .etiqueta_vino {
       grid-area: art2; }
       .contenedor_articulos .articulo2 .titulo_articulo-index, .main_index .contenedor_articulos .articulo2 .etiqueta_vino .titulo_articulo-index {
