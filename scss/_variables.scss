@@ -108,11 +108,25 @@ $textSize: (
                 flex-flow: column nowrap;
                 margin: 0;
                 padding: 0;
-                .logo-index{
-                    padding-bottom: 20px;
+                .logo{
+                    .logo-index{
+                        padding-bottom: 20px;
+                    }
                 }
                 .boton-nav{
                     color: $colorSecundario;
+                }
+                .contenedor-lista{
+                    text-align: center;
+                    .lista-nav{
+                        .nav-seccion{
+                            li{
+                                .seccion-link{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

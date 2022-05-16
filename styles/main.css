@@ -496,10 +496,14 @@ footer {
           flex-flow: column nowrap;
           margin: 0;
           padding: 0; }
-          .grid_index header nav .menu-contenedor .logo-index {
+          .grid_index header nav .menu-contenedor .logo .logo-index {
             padding-bottom: 20px; }
           .grid_index header nav .menu-contenedor .boton-nav {
             color: #5f091c; }
+          .grid_index header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_index header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -586,10 +590,14 @@ footer {
           flex-flow: column nowrap;
           margin: 0;
           padding: 0; }
-          .grid_cepas header nav .menu-contenedor .logo-index {
+          .grid_cepas header nav .menu-contenedor .logo .logo-index {
             padding-bottom: 20px; }
           .grid_cepas header nav .menu-contenedor .boton-nav {
             color: #5f091c; }
+          .grid_cepas header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_cepas header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -688,10 +696,14 @@ footer {
           flex-flow: column nowrap;
           margin: 0;
           padding: 0; }
-          .grid_elaboracion header nav .menu-contenedor .logo-index {
+          .grid_elaboracion header nav .menu-contenedor .logo .logo-index {
             padding-bottom: 20px; }
           .grid_elaboracion header nav .menu-contenedor .boton-nav {
             color: #5f091c; }
+          .grid_elaboracion header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_elaboracion header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -799,10 +811,14 @@ footer {
           flex-flow: column nowrap;
           margin: 0;
           padding: 0; }
-          .grid_contacto header nav .menu-contenedor .logo-index {
+          .grid_contacto header nav .menu-contenedor .logo .logo-index {
             padding-bottom: 20px; }
           .grid_contacto header nav .menu-contenedor .boton-nav {
             color: #5f091c; }
+          .grid_contacto header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_contacto header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {
