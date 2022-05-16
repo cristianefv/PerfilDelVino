@@ -719,10 +719,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     height: 100vh; }
-    .grid_contacto nav {
+    .grid_contacto header {
       grid-area: nav;
-      padding: 10px 0px 5px 0px; }
-      .grid_contacto nav .menu .seccion {
+      padding: 0; }
+      .grid_contacto header .menu .seccion {
         font-size: 16px;
         display: flex;
         flex-flow: row nowrap; }
@@ -747,17 +747,17 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
-    .grid_contacto nav {
+    .grid_contacto header {
       grid-area: nav;
-      padding-bottom: 20px; }
-      .grid_contacto nav .menu-contenedor {
+      padding: 0; }
+      .grid_contacto header .menu-contenedor {
         display: flex;
         flex-flow: column nowrap;
         margin: 0;
         padding: 0; }
-        .grid_contacto nav .menu-contenedor .logo-index {
+        .grid_contacto header .menu-contenedor .logo-index {
           padding-bottom: 20px; }
-        .grid_contacto nav .menu-contenedor .boton-nav {
+        .grid_contacto header .menu-contenedor .boton-nav {
           color: #5f091c; }
     .grid_contacto main {
       grid-area: main; }
@@ -787,8 +787,10 @@ body {
 /* HEADER */
 header .navbar .menu-contenedor {
   padding: 0; }
-  header .navbar .menu-contenedor .logo-index {
-    width: 150px; }
+  header .navbar .menu-contenedor .logo {
+    margin: 0no; }
+    header .navbar .menu-contenedor .logo .logo-index {
+      width: 150px; }
   header .navbar .menu-contenedor .contenedor-lista .lista-nav {
     width: 100%;
     display: flex;
@@ -800,13 +802,21 @@ header .navbar .menu-contenedor {
         color: red; }
     header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion {
       background-color: darkgray; }
-      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link {
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et {
         color: black; }
-        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link:hover {
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:hover {
           color: white;
           background-color: #383838; }
-        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link:active {
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:active {
           background-color: #5f091c;
+          color: white; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb {
+        color: black; }
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:hover {
+          color: white;
+          background-color: #383838; }
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:active {
+          background-color: #5e7943;
           color: white; }
 
 /* FOOTER */

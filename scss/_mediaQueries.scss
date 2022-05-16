@@ -305,9 +305,9 @@
     "nav nav nav"
     "main main main"
     "footer footer footer";
-    nav{
+    header{
         grid-area: nav;
-        padding: 10px 0px 5px 0px;
+        padding: 0;
         .menu{
             .seccion{
                 font-size: 16px;
@@ -343,15 +343,15 @@
 /* -------------> CELULAR <------------- */
 @media screen and (max-width: 480px){
     .grid_contacto{
-        display: grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
     "nav"
     "main"
     "footer";
-    nav{
+    header{
         grid-area: nav;
-        padding-bottom: 20px;
+        padding: 0;
         .menu-contenedor{
             display: flex;
             flex-flow: column nowrap;
@@ -362,9 +362,6 @@
             }
             .boton-nav{
                 color: $colorSecundario;
-                .icono-nav{
-                    
-                }
             }
         }
     }
