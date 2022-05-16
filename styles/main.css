@@ -1,7 +1,7 @@
 /* MAIN */
 .main_index .titulo_slogan {
   margin: 0;
-  background-image: linear-gradient(black, #610808c4);
+  background-image: linear-gradient(black, #5f091c);
   z-index: 0; }
   .main_index .titulo_slogan .titulo_principal, .main_index .titulo_slogan .slogan {
     display: flex;
@@ -181,18 +181,17 @@
   margin-bottom: 2%; }
   .main_elabBlanco .proceso_blanco .carousel.slide {
     width: 70%; }
-  .main_elabBlanco .proceso_blanco .et_img {
+  .main_elabBlanco .proceso_blanco .eb_img {
     width: 70%; }
-  .main_elabBlanco .proceso_blanco .et_info {
+  .main_elabBlanco .proceso_blanco .eb_info {
     margin: 0; }
-    .main_elabBlanco .proceso_blanco .et_info .et_tittle {
+    .main_elabBlanco .proceso_blanco .eb_info .eb_tittle {
       text-align: center;
       width: auto;
       margin: auto;
       height: 50px;
-      font-size: 22px;
-      animation: moverTexto 5s infinite; }
-    .main_elabBlanco .proceso_blanco .et_info .et_txt {
+      font-size: 22px; }
+    .main_elabBlanco .proceso_blanco .eb_info .eb_txt {
       font-size: 16px;
       width: 90%;
       text-align: justify;
@@ -223,9 +222,9 @@
 .grid_index {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav" "main main main main" "footer footer footer footer"; }
   .grid_index header {
-    grid-area: header; }
+    grid-area: nav; }
   .grid_index main {
     grid-area: main; }
   .grid_index footer {
@@ -268,9 +267,9 @@ footer {
 .grid_cepas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav" "main main main main" "footer footer footer footer"; }
   .grid_cepas header {
-    grid-area: header; }
+    grid-area: nav; }
   .grid_cepas main {
     grid-area: main; }
   .grid_cepas footer {
@@ -280,9 +279,9 @@ footer {
 .grid_elaboracion {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav" "main main main main" "footer footer footer footer"; }
   .grid_elaboracion header {
-    grid-area: header; }
+    grid-area: nav; }
   .grid_elaboracion main {
     grid-area: main; }
   .grid_elaboracion footer {
@@ -349,35 +348,35 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "cose cb1" "cb2 cyt" "rece img1" "cb3 despa" "pren cb4" "cb5 ferm" "fil img2" "cb6 emb"; }
-  .proceso_blanco .et_info.n1 {
+  .proceso_blanco .eb_info.n1 {
     grid-area: cose; }
   .proceso_blanco .cb1 {
     grid-area: cb1; }
-  .proceso_blanco .et_info.n2 {
+  .proceso_blanco .eb_info.n2 {
     grid-area: cyt; }
   .proceso_blanco .cb2 {
     grid-area: cb2; }
-  .proceso_blanco .et_info.n3 {
+  .proceso_blanco .eb_info.n3 {
     grid-area: rece; }
-  .proceso_blanco .et_img.n1 {
+  .proceso_blanco .eb_img.n1 {
     grid-area: img1; }
-  .proceso_blanco .et_info.n4 {
+  .proceso_blanco .eb_info.n4 {
     grid-area: despa; }
   .proceso_blanco .cb3 {
     grid-area: cb3; }
-  .proceso_blanco .et_info.n5 {
+  .proceso_blanco .eb_info.n5 {
     grid-area: pren; }
   .proceso_blanco .cb4 {
     grid-area: cb4; }
-  .proceso_blanco .et_info.n6 {
+  .proceso_blanco .eb_info.n6 {
     grid-area: ferm; }
   .proceso_blanco .cb5 {
     grid-area: cb5; }
-  .proceso_blanco .et_info.n7 {
+  .proceso_blanco .eb_info.n7 {
     grid-area: fil; }
-  .proceso_blanco .et_img.n2 {
+  .proceso_blanco .eb_img.n2 {
     grid-area: img2; }
-  .proceso_blanco .et_info.n8 {
+  .proceso_blanco .eb_info.n8 {
     grid-area: emb; }
   .proceso_blanco .cb6 {
     grid-area: cb6; }
@@ -411,12 +410,18 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_index header {
+      position: relative;
       grid-area: nav;
-      padding: 10px 0px 5px 0px; }
-      .grid_index header .menu .seccion {
+      padding: 0; }
+      .grid_index header nav .menu-contenedor {
         font-size: 16px;
         display: flex;
-        flex-flow: row nowrap; }
+        flex-flow: column nowrap; }
+        .grid_index header nav .menu-contenedor .contenedor-lista {
+          width: 100%;
+          text-align: center; }
+          .grid_index header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -479,25 +484,29 @@ footer {
 
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .grid_index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
     .grid_index header {
       grid-area: nav;
-      position: relative; }
-      .grid_index header .menu {
-        display: flex;
-        flex-flow: column nowrap;
-        margin: 0;
-        padding: 0; }
-        .grid_index header .menu li {
-          padding-bottom: 10px; }
-          .grid_index header .menu li .submenu {
-            width: 40%; }
-            .grid_index header .menu li .submenu .sm_item {
-              font-size: 15px; }
+      padding: 0; }
+      .grid_index header nav {
+        padding-bottom: 20px; }
+        .grid_index header nav .menu-contenedor {
+          display: flex;
+          flex-flow: column nowrap;
+          margin: 0;
+          padding: 0; }
+          .grid_index header nav .menu-contenedor .logo .logo-index {
+            padding-bottom: 20px; }
+          .grid_index header nav .menu-contenedor .boton-nav {
+            color: #5f091c; }
+          .grid_index header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_index header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_index main {
       grid-area: main; }
     .grid_index footer {
@@ -544,12 +553,18 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_cepas header {
+      position: relative;
       grid-area: nav;
-      padding: 10px 0px 5px 0px; }
-      .grid_cepas header .menu .seccion {
+      padding: 0; }
+      .grid_cepas header nav .menu-contenedor {
         font-size: 16px;
         display: flex;
-        flex-flow: row nowrap; }
+        flex-flow: column nowrap; }
+        .grid_cepas header nav .menu-contenedor .contenedor-lista {
+          width: 100%;
+          text-align: center; }
+          .grid_cepas header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -566,25 +581,29 @@ footer {
 
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .grid_cepas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
     .grid_cepas header {
       grid-area: nav;
-      position: relative; }
-      .grid_cepas header .menu {
-        display: flex;
-        flex-flow: column nowrap;
-        margin: 0;
-        padding: 0; }
-        .grid_cepas header .menu li {
-          padding-bottom: 10px; }
-          .grid_cepas header .menu li .submenu {
-            width: 40%; }
-            .grid_cepas header .menu li .submenu .sm_item {
-              font-size: 15px; }
+      padding: 0; }
+      .grid_cepas header nav {
+        padding-bottom: 20px; }
+        .grid_cepas header nav .menu-contenedor {
+          display: flex;
+          flex-flow: column nowrap;
+          margin: 0;
+          padding: 0; }
+          .grid_cepas header nav .menu-contenedor .logo .logo-index {
+            padding-bottom: 20px; }
+          .grid_cepas header nav .menu-contenedor .boton-nav {
+            color: #5f091c; }
+          .grid_cepas header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_cepas header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_cepas main {
       grid-area: main; }
     .grid_cepas footer {
@@ -616,12 +635,18 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_elaboracion header {
+      position: relative;
       grid-area: nav;
-      padding: 10px 0px 5px 0px; }
-      .grid_elaboracion header .menu .seccion {
+      padding: 0; }
+      .grid_elaboracion header nav .menu-contenedor {
         font-size: 16px;
         display: flex;
-        flex-flow: row nowrap; }
+        flex-flow: column nowrap; }
+        .grid_elaboracion header nav .menu-contenedor .contenedor-lista {
+          width: 100%;
+          text-align: center; }
+          .grid_elaboracion header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -643,29 +668,51 @@ footer {
         width: auto;
         margin: 0;
         height: 50px;
+        text-align: center; }
+  .main_elabBlanco {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "proceso"; }
+    .main_elabBlanco .titulo {
+      grid-area: titulo;
+      font-size: 40px;
+      margin: 10px 0px 35px; }
+    .main_elabBlanco .proceso_blanco {
+      grid-area: proceso;
+      display: flex;
+      flex-flow: column nowrap; }
+      .main_elabBlanco .proceso_blanco .eb_info .eb_tittle {
+        font-size: 25px;
+        width: auto;
+        margin: 0;
+        height: 50px;
         text-align: center; } }
 
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .grid_elaboracion {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
     .grid_elaboracion header {
       grid-area: nav;
-      position: relative; }
-      .grid_elaboracion header .menu {
-        display: flex;
-        flex-flow: column nowrap;
-        margin: 0;
-        padding: 0; }
-        .grid_elaboracion header .menu li {
-          padding-bottom: 10px; }
-          .grid_elaboracion header .menu li .submenu {
-            width: 40%; }
-            .grid_elaboracion header .menu li .submenu .sm_item {
-              font-size: 15px; }
+      padding: 0; }
+      .grid_elaboracion header nav {
+        padding-bottom: 20px; }
+        .grid_elaboracion header nav .menu-contenedor {
+          display: flex;
+          flex-flow: column nowrap;
+          margin: 0;
+          padding: 0; }
+          .grid_elaboracion header nav .menu-contenedor .logo .logo-index {
+            padding-bottom: 20px; }
+          .grid_elaboracion header nav .menu-contenedor .boton-nav {
+            color: #5f091c; }
+          .grid_elaboracion header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_elaboracion header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_elaboracion main {
       grid-area: main; }
     .grid_elaboracion footer {
@@ -703,13 +750,27 @@ footer {
     grid-template-areas: "titulo" "proceso"; }
     .main_elabBlanco .titulo {
       grid-area: titulo;
-      font-size: 28px; }
+      font-size: 28px;
+      margin: 10px 0px 35px; }
     .main_elabBlanco .proceso_blanco {
       grid-area: proceso;
       display: flex;
       align-items: center;
       justify-items: center;
-      width: 100vw; } }
+      width: 100vw; }
+      .main_elabBlanco .proceso_blanco .eb_info {
+        width: 90vw;
+        margin: 0; }
+        .main_elabBlanco .proceso_blanco .eb_info .eb_tittle {
+          font-size: 20px;
+          width: auto;
+          margin: 0;
+          height: 30px;
+          text-align: center; }
+      .main_elabBlanco .proceso_blanco .carousel-inner {
+        margin-bottom: 50px; }
+      .main_elabBlanco .proceso_blanco .eb_img {
+        margin-bottom: 50px; } }
 
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> TABLET <------------- */
@@ -717,15 +778,20 @@ footer {
   .grid_contacto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
-    height: 100vh; }
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
     .grid_contacto header {
+      position: relative;
       grid-area: nav;
-      padding: 10px 0px 5px 0px; }
-      .grid_contacto header .menu .seccion {
+      padding: 0; }
+      .grid_contacto header nav .menu-contenedor {
         font-size: 16px;
         display: flex;
-        flex-flow: row nowrap; }
+        flex-flow: column nowrap; }
+        .grid_contacto header nav .menu-contenedor .contenedor-lista {
+          width: 100%;
+          text-align: center; }
+          .grid_contacto header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {
@@ -733,34 +799,38 @@ footer {
   .main_contacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "cepas"; }
+    grid-template-areas: "titulo" "form"; }
     .main_contacto .titulo {
       grid-area: titulo;
       font-size: 40px; }
     .main_contacto .formulario {
-      grid-area: cepas; } }
+      grid-area: form; } }
 
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .grid_contacto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "main" "footer"; }
     .grid_contacto header {
       grid-area: nav;
-      position: relative; }
-      .grid_contacto header .menu {
-        display: flex;
-        flex-flow: column nowrap;
-        margin: 0;
-        padding: 0; }
-        .grid_contacto header .menu li {
-          padding-bottom: 10px; }
-          .grid_contacto header .menu li .submenu {
-            width: 40%; }
-            .grid_contacto header .menu li .submenu .sm_item {
-              font-size: 15px; }
+      padding: 0; }
+      .grid_contacto header nav {
+        padding-bottom: 20px; }
+        .grid_contacto header nav .menu-contenedor {
+          display: flex;
+          flex-flow: column nowrap;
+          margin: 0;
+          padding: 0; }
+          .grid_contacto header nav .menu-contenedor .logo .logo-index {
+            padding-bottom: 20px; }
+          .grid_contacto header nav .menu-contenedor .boton-nav {
+            color: #5f091c; }
+          .grid_contacto header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_contacto header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center; }
     .grid_contacto main {
       grid-area: main; }
     .grid_contacto footer {
@@ -768,12 +838,12 @@ footer {
   .main_contacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "formulario"; }
+    grid-template-areas: "titulo" "form"; }
     .main_contacto .titulo {
       grid-area: titulo;
       font-size: 35px; }
     .main_contacto .formulario {
-      grid-area: formulario; } }
+      grid-area: form; } }
 
 * {
   margin: 0;
@@ -787,63 +857,38 @@ body {
   font-family: 'Oswald', sans-serif; }
 
 /* HEADER */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: black;
-  padding: 10px 0px 5px 0px; }
-  header nav .menu {
-    list-style: none;
+header .navbar .menu-contenedor {
+  padding: 0; }
+  header .navbar .menu-contenedor .logo {
+    margin: 0; }
+    header .navbar .menu-contenedor .logo .logo-index {
+      width: 150px; }
+  header .navbar .menu-contenedor .contenedor-lista .lista-nav {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-    align-items: center;
-    background-color: black;
-    margin: 0;
-    padding: 0; }
-    header nav .menu li {
-      padding: 0;
-      margin: 0; }
-      header nav .menu li .logo {
-        padding: 0px; }
-        header nav .menu li .logo .inicio {
-          width: 85px;
-          height: 120px; }
-      header nav .menu li .seccion {
-        display: block;
-        color: white;
-        text-decoration: none;
-        font-weight: 800;
-        font-size: 20px;
-        margin: 0; }
-        header nav .menu li .seccion:hover {
-          color: #f80808dc;
-          font-size: 24px;
-          transition: all .5s; }
-      header nav .menu li .submenu {
-        position: absolute;
-        display: none;
-        list-style: none;
-        width: 200px;
-        background-color: #383838;
-        z-index: 1;
-        padding-left: 0; }
-        header nav .menu li .submenu li .sm_item {
-          display: block;
+    justify-content: space-evenly; }
+    header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina {
+      color: white;
+      font-size: 20px; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .link-pagina:hover {
+        color: red; }
+    header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion {
+      background-color: darkgray; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et {
+        color: black;
+        font-weight: 700; }
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:hover {
           color: white;
-          text-align: left;
-          font-size: 17px;
-          font-weight: bold;
-          z-index: 1;
-          width: 100%;
-          text-decoration: none;
-          padding: 15px 15px 15px 20px; }
-        header nav .menu li .submenu li:hover {
-          background-color: #0000008a;
-          transition: all .9s; }
-      header nav .menu li:hover .submenu {
-        display: block; }
+          background-color: #383838; }
+        header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vt:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.et:active {
+          background-color: #5f091c;
+          color: white; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:hover, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:hover {
+        color: white;
+        background-color: #383838; }
+      header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.vb:active, header .navbar .menu-contenedor .contenedor-lista .lista-nav .nav-item .nav-seccion li .seccion-link.eb:active {
+        background-color: #5e7943;
+        color: white; }
 
 /* FOOTER */
 footer {

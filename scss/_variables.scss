@@ -1,7 +1,7 @@
 // VARIABLE
 // colores
 $colorPrincipal: black;
-$colorSecundario: #610808c4;
+$colorSecundario: #5f091c;
 $colorTerciario: #EEEBDD;
 $colorTextoNav: white;
 // MAP 
@@ -47,11 +47,11 @@ $textSize: (
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-    "header header header header"
+    "nav nav nav nav"
     "main main main main"
     "footer footer footer footer";
     header{
-        grid-area: header;
+        grid-area: nav;
     }
     main{
         grid-area: main;
@@ -69,13 +69,27 @@ $textSize: (
     "main main main"
     "footer footer footer";
     header{
+        position: relative;
         grid-area: nav;
-        padding: 10px 0px 5px 0px;
-        .menu{
-            .seccion{
+        padding: 0;
+        nav{
+            .menu-contenedor{
                 font-size: 16px;
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: column nowrap;
+                .contenedor-lista{
+                    width: 100%;
+                    text-align: center;
+                    .lista-nav{
+                        .nav-seccion{
+                            li{
+                                .seccion-link{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -96,18 +110,32 @@ $textSize: (
     "footer";
     header{
         grid-area: nav;
-        position: relative;
-        .menu{
-            display: flex;
-            flex-flow: column nowrap;
-            margin: 0;
-            padding: 0;
-            li{
-                padding-bottom: 10px;
-                .submenu{
-                    width: 40%;
-                    .sm_item{
-                        font-size: 15px;
+        padding: 0;
+        nav{
+            padding-bottom: 20px;
+            .menu-contenedor{
+                display: flex;
+                flex-flow: column nowrap;
+                margin: 0;
+                padding: 0;
+                .logo{
+                    .logo-index{
+                        padding-bottom: 20px;
+                    }
+                }
+                .boton-nav{
+                    color: $colorSecundario;
+                }
+                .contenedor-lista{
+                    text-align: center;
+                    .lista-nav{
+                        .nav-seccion{
+                            li{
+                                .seccion-link{
+                                    text-align: center;
+                                }
+                            }
+                        }
                     }
                 }
             }

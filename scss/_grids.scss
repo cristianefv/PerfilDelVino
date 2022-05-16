@@ -167,49 +167,49 @@ footer{
     "cb5 ferm"
     "fil img2"
     "cb6 emb";
-    .et_info.n1{
+    .eb_info.n1{
         grid-area: cose;
     }
     .cb1{
         grid-area: cb1;
     }
-    .et_info.n2{
+    .eb_info.n2{
         grid-area: cyt;
     }
     .cb2{
         grid-area: cb2;
     }
-    .et_info.n3{
+    .eb_info.n3{
         grid-area: rece;
     }
-    .et_img.n1{
+    .eb_img.n1{
         grid-area: img1;
     }
-    .et_info.n4{
+    .eb_info.n4{
         grid-area: despa;
     }
     .cb3{
         grid-area: cb3;
     }
-    .et_info.n5{
+    .eb_info.n5{
         grid-area: pren;
     }
     .cb4{
         grid-area: cb4;
     }
-    .et_info.n6{
+    .eb_info.n6{
         grid-area: ferm;
     }
     .cb5{
         grid-area: cb5;
     }
-    .et_info.n7{
+    .eb_info.n7{
         grid-area: fil;
     }
-    .et_img.n2{
+    .eb_img.n2{
         grid-area: img2;
     }
-    .et_info.n8{
+    .eb_info.n8{
         grid-area: emb;
     }
     .cb6{
@@ -218,8 +218,23 @@ footer{
 }
 /* --------> GRIDS: CONTACTO <------- */
 .grid_contacto{
-    @include grids;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
 }
+
 .main_contacto{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

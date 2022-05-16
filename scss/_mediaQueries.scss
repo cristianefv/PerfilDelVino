@@ -86,7 +86,7 @@
 }
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 575px){
     .grid_index{
         @include grids_celular;
     }
@@ -166,7 +166,7 @@
 }
 /* --------> MEDIA QUERY: CEPAS <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 575px){
     .grid_cepas{
         @include grids_celular;
     }
@@ -203,6 +203,7 @@
     .grid_elaboracion{
         @include grids_tablet;
     }
+    // tinto
     .main_elabTinto{
         display: grid;
         grid-template-columns: 1fr;
@@ -229,11 +230,38 @@
             }
         }
     }
+    // blanco
+    .main_elabBlanco{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo"
+        "proceso";
+        .titulo{
+            grid-area: titulo;
+            font-size: 40px;
+            margin: 10px 0px 35px;
+        }
+        .proceso_blanco{
+            grid-area: proceso;
+            display: flex;
+            flex-flow: column nowrap;
+            .eb_info{
+                .eb_tittle{
+                    font-size: 25px;
+                    width: auto;
+                    margin: 0;
+                    height: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
     .grid_elaboracion{
         @include grids_celular;
     }
@@ -284,6 +312,7 @@
         .titulo{
             grid-area: titulo;
             font-size: 28px;
+            margin: 10px 0px 35px;
         }
         .proceso_blanco{
             grid-area: proceso;
@@ -291,35 +320,50 @@
             align-items:  center;
             justify-items: center;
             width: 100vw;
+            .eb_info{
+                width: 90vw;
+                margin: 0;
+                .eb_tittle{
+                    font-size: 20px;
+                    width: auto;
+                    margin: 0;
+                    height: 30px;
+                    text-align: center;
+                }
+            }
+            .carousel-inner{
+                margin-bottom: 50px;
+            }
+            .eb_img{
+                margin-bottom: 50px;
+            }
         }
     }
 }
-
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_contacto{
         @include grids_tablet;
-        height: 100vh;
     }
     .main_contacto{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
         "titulo"
-        "cepas";
+        "form";
         .titulo{
             grid-area: titulo;
             font-size: 40px;
         }
         .formulario{
-            grid-area: cepas;
+            grid-area: form;
         }
     }
 }
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> CELULAR <------------- */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 575px){
     .grid_contacto{
         @include grids_celular;
     }
@@ -328,13 +372,13 @@
         grid-template-columns: 1fr;
         grid-template-areas:
         "titulo"
-        "formulario";
+        "form";
         .titulo{
             grid-area: titulo;
             font-size: map-get($textSize, titPagCelular);
         }
         .formulario{
-            grid-area: formulario;
+            grid-area: form;
         }
     }
 }
