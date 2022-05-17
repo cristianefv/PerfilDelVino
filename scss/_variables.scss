@@ -9,7 +9,7 @@ $colorTextoNav: white;
 $textSize: (
     tituloPrincipal: 100px,
     Slogan: 32px,
-    tituloPagina: 50px,
+    tituloPagina: 70px,
     titPagCelular: 35px,
     tituloArticulo: 22px,
     textNav: 20px,
@@ -27,7 +27,7 @@ $textSize: (
     font-style: italic;
     font-size: map-get($textSize , tituloPagina);
     text-decoration: underline;
-    margin-top: 10px;
+    margin: 4% 0;
 }
 // titulos articulos index
 @mixin titulo_articulo {

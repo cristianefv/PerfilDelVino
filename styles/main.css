@@ -87,9 +87,9 @@
     text-align: center;
     font-family: 'merriweather';
     font-style: italic;
-    font-size: 50px;
+    font-size: 70px;
     text-decoration: underline;
-    margin-top: 10px; }
+    margin: 4% 0; }
   .main_cepas .cepas_contenido ul {
     margin-bottom: 35px;
     list-style: none;
@@ -134,10 +134,9 @@
     text-align: center;
     font-family: 'merriweather';
     font-style: italic;
-    font-size: 50px;
+    font-size: 70px;
     text-decoration: underline;
-    margin-top: 10px;
-    margin-bottom: 15px; }
+    margin: 4% 0; }
   .main_elabTinto .proceso_tinto {
     align-items: center;
     justify-items: center;
@@ -153,8 +152,7 @@
         width: auto;
         margin: auto;
         height: 50px;
-        font-size: 22px;
-        animation: moverTexto 5s infinite; }
+        font-size: 22px; }
       .main_elabTinto .proceso_tinto .et_info .et_txt {
         font-size: 16px;
         width: 90%;
@@ -170,9 +168,9 @@
     text-align: center;
     font-family: 'merriweather';
     font-style: italic;
-    font-size: 50px;
+    font-size: 70px;
     text-decoration: underline;
-    margin-top: 10px;
+    margin: 4% 0;
     margin-bottom: 15px; }
   .main_elabBlanco .proceso_blanco {
     align-items: center;
@@ -205,9 +203,9 @@
     text-align: center;
     font-family: 'merriweather';
     font-style: italic;
-    font-size: 50px;
+    font-size: 70px;
     text-decoration: underline;
-    margin-top: 10px; }
+    margin: 4% 0; }
   .main_contacto .formulario {
     display: flex;
     flex-flow: column nowrap;
