@@ -288,7 +288,7 @@ footer {
 .proceso_tinto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 3%;
+  grid-row-gap: 100px;
   grid-template-areas: "cose car1" "car2 cyt" "rece img1" "car3 despa" "pren car5" "car4 ferm" "mace img2" "img3 descu" "clari img4" "img5 estab" "fil img6" "car6 crian" "embo img7"; }
   .proceso_tinto .et_info.n1 {
     grid-area: cose; }
@@ -346,6 +346,7 @@ footer {
 .proceso_blanco {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 100px;
   grid-template-areas: "cose cb1" "cb2 cyt" "rece img1" "cb3 despa" "pren cb4" "cb5 ferm" "fil img2" "cb6 emb"; }
   .proceso_blanco .eb_info.n1 {
     grid-area: cose; }
@@ -395,11 +396,13 @@ footer {
 .main_contacto {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "titulo titulo titulo titulo" "form form form form"; }
+  grid-template-areas: "titulo titulo titulo titulo" "form form form form" "map map map map"; }
   .main_contacto .titulo {
     grid-area: titulo; }
   .main_contacto .formulario {
     grid-area: form; }
+  .main_contacto iframe {
+    grid-area: map; }
 
 /* --------> MEDIA QUERY: INDEX <------- */
 /* -------------> TABLET <------------- */

@@ -61,6 +61,7 @@ footer{
 .proceso_tinto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
     grid-template-areas: 
     "cose car1"
     "car2 cyt"
@@ -158,6 +159,7 @@ footer{
 .proceso_blanco{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
     grid-template-areas:
     "cose cb1"
     "cb2 cyt"
@@ -234,17 +236,20 @@ footer{
         grid-area: footer;
     }
 }
-
 .main_contacto{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
     "titulo titulo titulo titulo"
-    "form form form form";
+    "form form form form"
+    "map map map map";
     .titulo{
         grid-area: titulo;
     }
     .formulario{
         grid-area: form;
+    }
+    iframe{
+        grid-area: map;
     }
 }
