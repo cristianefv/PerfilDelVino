@@ -20,12 +20,11 @@
                     margin-right: 15px;
                     transition: all 2s;
                     &:hover{
-                        /* EFECTO PARA LAS CEPAS */
                             height: 270px;
                             width: 270px;
                     }
                 }
-                .cepas_info{ /* SALTO DE LINEA SIN BR */
+                .cepas_info{
                     white-space: pre-line;
                     font-size: map-get($textSize, textInfo);
                     line-height: 1.5;

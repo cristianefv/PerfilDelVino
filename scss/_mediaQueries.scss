@@ -260,7 +260,6 @@
 }
 /* --------> MEDIA QUERY: ELABORACION <------- */
 /* -------------> CELULAR <------------- */
-
 @media screen and (max-width: 575px) {
     .grid_elaboracion{
         @include grids_celular;

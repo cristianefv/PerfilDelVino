@@ -48,7 +48,6 @@
           font-size: 16px;
           text-indent: 10px;
           white-space: pre-line;
-          /* SALTO DE LINEA */
           width: 90%;
           margin: 2%;
           color: black; }
@@ -107,11 +106,9 @@
         margin-right: 15px;
         transition: all 2s; }
         .main_cepas .cepas_contenido ul li .cepas_img:hover {
-          /* EFECTO PARA LAS CEPAS */
           height: 270px;
           width: 270px; }
       .main_cepas .cepas_contenido ul li .cepas_info {
-        /* SALTO DE LINEA SIN BR */
         white-space: pre-line;
         font-size: 16px;
         line-height: 1.5;
@@ -152,7 +149,8 @@
         width: auto;
         margin: auto;
         height: 50px;
-        font-size: 22px; }
+        font-size: 22px;
+        text-decoration: underline; }
       .main_elabTinto .proceso_tinto .et_info .et_txt {
         font-size: 16px;
         width: 90%;
@@ -187,7 +185,8 @@
         width: auto;
         margin: auto;
         height: 50px;
-        font-size: 22px; }
+        font-size: 22px;
+        text-decoration: underline; }
       .main_elabBlanco .proceso_blanco .eb_info .eb_txt {
         font-size: 16px;
         width: 90%;
