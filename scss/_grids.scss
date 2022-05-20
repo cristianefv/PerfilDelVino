@@ -242,6 +242,7 @@ footer{
     grid-template-areas:
     "titulo titulo titulo titulo"
     "form form form form"
+    "sub sub sub sub"
     "map map map map";
     .titulo{
         grid-area: titulo;
@@ -249,7 +250,10 @@ footer{
     .formulario{
         grid-area: form;
     }
-    iframe{
+    .subtitulo{
+        grid-area: sub;
+    }
+    .mapa{
         grid-area: map;
     }
 }

@@ -6,13 +6,26 @@
     .formulario{
         @include flex(flex, column nowrap);
         align-items: center;
-        // margin-bottom: 8.7%;
-        height: 100vh;
+        // height: 100vh;
         width: 100%;
         .indicacion{
             font-size: 20px;
             margin: 10px 0px;
         }
+    }
+    .subtitulo{
+        text-decoration: underline;
+        text-align: center;
+        font-size: 40px;
+        margin: 40px 0;
+        color: $colorSecundario;
+    }
+    .mapa{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
     }
 }
 
