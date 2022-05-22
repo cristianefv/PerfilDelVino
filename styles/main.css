@@ -827,7 +827,8 @@ footer {
     .main_contacto .formulario {
       grid-area: form; }
     .main_contacto .subtitulo {
-      grid-area: sub; }
+      grid-area: sub;
+      font-size: 32px; }
     .main_contacto .mapa {
       grid-area: map; } }
 
