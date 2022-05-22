@@ -870,10 +870,20 @@ footer {
       font-size: 35px; }
     .main_contacto .formulario {
       grid-area: form; }
+      .main_contacto .formulario .comentario {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .main_contacto .formulario .comentario .text-comentario {
+          width: 80%; }
     .main_contacto .subtitulo {
-      grid-area: sub; }
+      grid-area: sub;
+      font-size: 26px; }
     .main_contacto .mapa {
-      grid-area: "map"; } }
+      grid-area: "map";
+      width: 100%; }
+      .main_contacto .mapa .map {
+        width: 80%; } }
 
 * {
   margin: 0;

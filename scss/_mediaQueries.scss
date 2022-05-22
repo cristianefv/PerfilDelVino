@@ -388,12 +388,25 @@
         }
         .formulario{
             grid-area: form;
+            .comentario{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .text-comentario{
+                    width: 80%;
+                }
+            }
         }
         .subtitulo{
             grid-area: sub;
+            font-size: 26px;
         }
         .mapa{
             grid-area: "map";
+            width: 100%;
+            .map{
+                width: 80%;
+            }
         }
     }
 }
