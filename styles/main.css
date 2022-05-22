@@ -820,12 +820,16 @@ footer {
   .main_contacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "form"; }
+    grid-template-areas: "titulo" "form" "sub" "map"; }
     .main_contacto .titulo {
       grid-area: titulo;
       font-size: 40px; }
     .main_contacto .formulario {
-      grid-area: form; } }
+      grid-area: form; }
+    .main_contacto .subtitulo {
+      grid-area: sub; }
+    .main_contacto .mapa {
+      grid-area: map; } }
 
 /* --------> MEDIA QUERY: CONTACTO <------- */
 /* -------------> CELULAR <------------- */
@@ -860,12 +864,16 @@ footer {
   .main_contacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "form"; }
+    grid-template-areas: "titulo" "form" "sub" "map"; }
     .main_contacto .titulo {
       grid-area: titulo;
       font-size: 35px; }
     .main_contacto .formulario {
-      grid-area: form; } }
+      grid-area: form; }
+    .main_contacto .subtitulo {
+      grid-area: sub; }
+    .main_contacto .mapa {
+      grid-area: "map"; } }
 
 * {
   margin: 0;

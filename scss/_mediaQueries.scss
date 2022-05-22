@@ -350,13 +350,21 @@
         grid-template-columns: 1fr;
         grid-template-areas:
         "titulo"
-        "form";
+        "form"
+        "sub"
+        "map";
         .titulo{
             grid-area: titulo;
             font-size: 40px;
         }
         .formulario{
             grid-area: form;
+        }
+        .subtitulo{
+            grid-area: sub;
+        }
+        .mapa{
+            grid-area: map;
         }
     }
 }
@@ -371,13 +379,21 @@
         grid-template-columns: 1fr;
         grid-template-areas:
         "titulo"
-        "form";
+        "form"
+        "sub"
+        "map";
         .titulo{
             grid-area: titulo;
             font-size: map-get($textSize, titPagCelular);
         }
         .formulario{
             grid-area: form;
+        }
+        .subtitulo{
+            grid-area: sub;
+        }
+        .mapa{
+            grid-area: "map";
         }
     }
 }
