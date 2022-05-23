@@ -213,6 +213,15 @@
     .main_contacto .formulario .indicacion {
       font-size: 20px;
       margin: 10px 0px; }
+    .main_contacto .formulario .comentario {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      justify-content: center; }
+      .main_contacto .formulario .comentario .text-comentario {
+        width: 40%;
+        height: 100%;
+        align-items: center; }
   .main_contacto .subtitulo {
     text-decoration: underline;
     text-align: center;
@@ -826,6 +835,12 @@ footer {
       font-size: 40px; }
     .main_contacto .formulario {
       grid-area: form; }
+      .main_contacto .formulario .comentario {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .main_contacto .formulario .comentario .text-comentario {
+          width: 60%; }
     .main_contacto .subtitulo {
       grid-area: sub;
       font-size: 32px; }
@@ -876,7 +891,7 @@ footer {
         display: flex;
         justify-content: center; }
         .main_contacto .formulario .comentario .text-comentario {
-          width: 80%; }
+          width: 60%; }
     .main_contacto .subtitulo {
       grid-area: sub;
       font-size: 26px; }

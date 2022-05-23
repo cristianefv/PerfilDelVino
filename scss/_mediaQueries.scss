@@ -359,6 +359,14 @@
         }
         .formulario{
             grid-area: form;
+            .comentario{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .text-comentario{
+                    width: 60%;
+                }
+            }
         }
         .subtitulo{
             grid-area: sub;
@@ -394,7 +402,7 @@
                 display: flex;
                 justify-content: center;
                 .text-comentario{
-                    width: 80%;
+                    width: 60%;
                 }
             }
         }
