@@ -1,4 +1,3 @@
-/* --------> GRIDS: INDEX <------- */
 .grid_index{
     @include grids;
 }
@@ -49,15 +48,12 @@ footer{
         justify-self: center;
     }
 }
-/* --------> GRIDS: CEPAS <------- */
 .grid_cepas{
     @include grids;
 }
-/* --------> GRIDS: ELABORACION <------- */
 .grid_elaboracion{
     @include grids;
 }
-// ELABORACION TINTO
 .proceso_tinto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -155,7 +151,6 @@ footer{
         grid-area: img7;
     }
 }
-// ELABORACION BLANCO
 .proceso_blanco{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -218,7 +213,6 @@ footer{
         grid-area: cb6;
     }
 }
-/* --------> GRIDS: CONTACTO <------- */
 .grid_contacto{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

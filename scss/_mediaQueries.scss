@@ -1,5 +1,3 @@
-/* --------> MEDIA QUERY: INDEX <------- */
-/* -------------> TABLET <------------- */
 @media screen and (max-width: 768px){
     .grid_index{
         @include grids_tablet;
@@ -84,8 +82,6 @@
         }
     }
 }
-/* --------> MEDIA QUERY: INDEX <------- */
-/* -------------> CELULAR <------------- */
 @media screen and (max-width: 575px){
     .grid_index{
         @include grids_celular;
@@ -143,8 +139,6 @@
         }
     }
 }
-/* --------> MEDIA QUERY: CEPAS <------- */
-/* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_cepas{
         @include grids_tablet;
@@ -164,8 +158,6 @@
         }
     }
 }
-/* --------> MEDIA QUERY: CEPAS <------- */
-/* -------------> CELULAR <------------- */
 @media screen and (max-width: 575px){
     .grid_cepas{
         @include grids_celular;
@@ -197,13 +189,10 @@
         }
     }
 }
-/* --------> MEDIA QUERY: ELABORACION <------- */
-/* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_elaboracion{
         @include grids_tablet;
     }
-    // tinto
     .main_elabTinto{
         display: grid;
         grid-template-columns: 1fr;
@@ -230,7 +219,6 @@
             }
         }
     }
-    // blanco
     .main_elabBlanco{
         display: grid;
         grid-template-columns: 1fr;
@@ -258,13 +246,10 @@
         }
     }
 }
-/* --------> MEDIA QUERY: ELABORACION <------- */
-/* -------------> CELULAR <------------- */
 @media screen and (max-width: 575px) {
     .grid_elaboracion{
         @include grids_celular;
     }
-    // tinto
     .main_elabTinto{
         display: grid;
         grid-template-columns: 1fr;
@@ -301,7 +286,6 @@
             }
         }
     }
-// blanco
     .main_elabBlanco{
         display: grid;
         grid-template-columns: 1fr;
@@ -339,8 +323,6 @@
         }
     }
 }
-/* --------> MEDIA QUERY: CONTACTO <------- */
-/* -------------> TABLET <------------- */
 @media screen and (max-width: 768px) {
     .grid_contacto{
         @include grids_tablet;
@@ -377,8 +359,6 @@
         }
     }
 }
-/* --------> MEDIA QUERY: CONTACTO <------- */
-/* -------------> CELULAR <------------- */
 @media screen and (max-width: 575px){
     .grid_contacto{
         @include grids_celular;

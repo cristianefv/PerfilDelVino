@@ -1,11 +1,7 @@
-// VARIABLE
-// colores
 $colorPrincipal: black;
 $colorSecundario: #5f091c;
 $colorTerciario: #EEEBDD;
 $colorTextoNav: white;
-// MAP 
-// font-size
 $textSize: (
     tituloPrincipal: 100px,
     Slogan: 32px,
@@ -16,8 +12,6 @@ $textSize: (
     itemLista: 18px,
     textInfo: 16px,
 );
-// MIXIN
-// titulo de cada pagina
 @mixin titulo{
     display: flex;
     flex-direction: row;
@@ -29,7 +23,6 @@ $textSize: (
     text-decoration: underline;
     margin: 4% 0;
 }
-// titulos articulos index
 @mixin titulo_articulo {
     font-weight: bolder;
     font-size: map-get($textSize , tituloArticulo);
@@ -37,12 +30,10 @@ $textSize: (
     text-decoration: underline;
     text-align: center;
 }
-// flex
 @mixin flex($flex, $orientacion) {
     display: $flex;
     flex-flow: $orientacion;
 }
-// grids escritorio
 @mixin grids {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -60,7 +51,6 @@ $textSize: (
         grid-area: footer;
     }
 }
-// grids tablet
 @mixin grids_tablet {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -101,7 +91,6 @@ $textSize: (
         grid-area: footer;
     }
 }
-// grids celular
 @mixin grids_celular {
     display: grid;
     grid-template-columns: 1fr;
