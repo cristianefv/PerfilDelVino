@@ -73,7 +73,7 @@
             .etiqueta_vino{
                 @extend .articulo2;
                 .etiqueta{
-                    width: 50%;
+                    width: 30%;
                 }
                 .etiqueta_items{
                     @include flex(flex, column);

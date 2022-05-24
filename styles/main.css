@@ -66,7 +66,7 @@
       text-decoration: underline;
       text-align: center; }
     .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta {
-      width: 50%; }
+      width: 30%; }
     .main_index .contenedor_articulos .articulo2 .etiqueta_vino .etiqueta_items {
       display: flex;
       flex-flow: column;
