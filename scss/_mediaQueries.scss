@@ -328,7 +328,12 @@
         @include grids_tablet;
     }
     .main_tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo";
         .titulo{
+            grid-area: titulo;
             font-size: 40px;
         }
     }
@@ -338,7 +343,12 @@
         @include grids_celular;
     }
     .main_tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titulo";
         .titulo{
+            grid-area: titulo;
             font-size: map-get($textSize, titPagCelular);
         }
     }

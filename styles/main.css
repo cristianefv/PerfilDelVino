@@ -831,8 +831,13 @@ footer {
       grid-area: main; }
     .grid_tienda footer {
       grid-area: footer; }
-  .main_tienda .titulo {
-    font-size: 40px; } }
+  .main_tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo"; }
+    .main_tienda .titulo {
+      grid-area: titulo;
+      font-size: 40px; } }
 
 @media screen and (max-width: 575px) {
   .grid_tienda {
@@ -862,8 +867,13 @@ footer {
       grid-area: main; }
     .grid_tienda footer {
       grid-area: footer; }
-  .main_tienda .titulo {
-    font-size: 35px; } }
+  .main_tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo"; }
+    .main_tienda .titulo {
+      grid-area: titulo;
+      font-size: 35px; } }
 
 @media screen and (max-width: 768px) {
   .grid_contacto {
