@@ -213,6 +213,9 @@ footer{
         grid-area: cb6;
     }
 }
+.grid_tienda{
+    @include grids;
+}
 .grid_contacto{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
