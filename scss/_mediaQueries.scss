@@ -324,6 +324,26 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .grid_tienda{
+        @include grids_tablet;
+    }
+    .main_tienda{
+        .titulo{
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width: 575px){
+    .grid_tienda{
+        @include grids_celular;
+    }
+    .main_tienda{
+        .titulo{
+            font-size: map-get($textSize, titPagCelular);
+        }
+    }
+}
+@media screen and (max-width: 768px) {
     .grid_contacto{
         @include grids_tablet;
     }

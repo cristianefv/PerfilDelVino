@@ -809,6 +809,63 @@ footer {
         margin-bottom: 50px; } }
 
 @media screen and (max-width: 768px) {
+  .grid_tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer"; }
+    .grid_tienda header {
+      position: relative;
+      grid-area: nav;
+      padding: 0; }
+      .grid_tienda header nav .menu-contenedor {
+        font-size: 16px;
+        display: flex;
+        flex-flow: column nowrap; }
+        .grid_tienda header nav .menu-contenedor .contenedor-lista {
+          width: 100%;
+          text-align: center; }
+          .grid_tienda header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+            text-align: center;
+            font-size: 20px; }
+    .grid_tienda main {
+      grid-area: main; }
+    .grid_tienda footer {
+      grid-area: footer; }
+  .main_tienda .titulo {
+    font-size: 40px; } }
+
+@media screen and (max-width: 575px) {
+  .grid_tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer"; }
+    .grid_tienda header {
+      grid-area: nav;
+      padding: 0; }
+      .grid_tienda header nav {
+        padding-bottom: 20px; }
+        .grid_tienda header nav .menu-contenedor {
+          display: flex;
+          flex-flow: column nowrap;
+          margin: 0;
+          padding: 0; }
+          .grid_tienda header nav .menu-contenedor .logo .logo-index {
+            padding-bottom: 20px; }
+          .grid_tienda header nav .menu-contenedor .boton-nav {
+            color: #5f091c; }
+          .grid_tienda header nav .menu-contenedor .contenedor-lista {
+            text-align: center; }
+            .grid_tienda header nav .menu-contenedor .contenedor-lista .lista-nav .nav-seccion li .seccion-link {
+              text-align: center;
+              font-size: 20px; }
+    .grid_tienda main {
+      grid-area: main; }
+    .grid_tienda footer {
+      grid-area: footer; }
+  .main_tienda .titulo {
+    font-size: 35px; } }
+
+@media screen and (max-width: 768px) {
   .grid_contacto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
