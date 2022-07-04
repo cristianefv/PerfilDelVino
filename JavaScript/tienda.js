@@ -14,6 +14,9 @@ const vino3 = new Vinos("3", "El Relator", "Sauvignon Blanc", "2020", 1800);
 const vino4 = new Vinos("4", "Ben Marco", "Cabernet Franc", "2017", 2120);
 const vino5 = new Vinos("5", "A Lisa", "Malbec", "2021", 2890);
 
+const listaVinos = [vino1, vino2, vino3, vino4, vino5]
+
+
 let costoTotal = 0;
 
 const sumar = (producto) => (costoTotal = costoTotal + producto);
@@ -27,11 +30,11 @@ function comprar() {
         Seleccione el id que corresponda al vino que desee.
 
         Lista de vinos:
-        ${vino1.id}) ${vino1.etiqueta}, ${vino1.varietal}, ${vino1.anada} - $${vino1.precio} 
-        ${vino2.id}) ${vino2.etiqueta}, ${vino2.varietal}, ${vino2.anada} - $${vino2.precio} 
-        ${vino3.id}) ${vino3.etiqueta}, ${vino3.varietal}, ${vino3.anada} - $${vino3.precio} 
-        ${vino4.id}) ${vino4.etiqueta}, ${vino4.varietal}, ${vino4.anada} - $${vino4.precio} 
-        ${vino5.id}) ${vino5.etiqueta}, ${vino5.varietal}, ${vino5.anada} - $${vino5.precio}  
+        ${listaVinos[0].id}) ${listaVinos[0].etiqueta}, ${listaVinos[0].varietal}, ${listaVinos[0].anada} - $${listaVinos[0].precio} 
+        ${listaVinos[1].id}) ${listaVinos[1].etiqueta}, ${listaVinos[1].varietal}, ${listaVinos[1].anada} - $${listaVinos[1].precio} 
+        ${listaVinos[2].id}) ${listaVinos[2].etiqueta}, ${listaVinos[2].varietal}, ${listaVinos[2].anada} - $${listaVinos[2].precio} 
+        ${listaVinos[3].id}) ${listaVinos[3].etiqueta}, ${listaVinos[3].varietal}, ${listaVinos[3].anada} - $${listaVinos[3].precio} 
+        ${listaVinos[4].id}) ${listaVinos[4].etiqueta}, ${listaVinos[4].varietal}, ${listaVinos[4].anada} - $${listaVinos[4].precio}  
 
         6) Terminar compra
 
@@ -39,19 +42,19 @@ function comprar() {
 
         switch (producto) {
             case "1":
-                sumar(vino1.precio);
+                sumar(listaVinos[0].precio);
                 break;
             case "2":
-                sumar(vino2.precio);
+                sumar(listaVinos[1].precio);
                 break;
             case "3":
-                sumar(vino3.precio);
+                sumar(listaVinos[2].precio);
                 break;
             case "4":
-                sumar(vino4.precio);
+                sumar(listaVinos[3].precio);
                 break;
             case "5":
-                sumar(vino5.precio);
+                sumar(listaVinos[4].precio);
                 break;
             case "6":
                 continuar = false;
