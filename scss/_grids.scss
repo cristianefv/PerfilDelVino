@@ -1,0 +1,227 @@
+.grid_index {
+  @include grids;
+}
+.main_index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'titulo titulo'
+    'carousel carousel'
+    'arts arts';
+  .titulo_slogan {
+    grid-area: titulo;
+  }
+  .portada_index {
+    grid-area: carousel;
+  }
+  .contenedor_articulos {
+    grid-area: arts;
+  }
+}
+.contenedor_articulos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'art1 art2'
+    'art1 art2';
+  .articulo1 {
+    grid-area: art1;
+  }
+  .articulo2 {
+    grid-area: art2;
+  }
+}
+.grid_cepas {
+  @include grids;
+}
+.grid_elaboracion {
+  @include grids;
+}
+.proceso_tinto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 100px;
+  grid-template-areas:
+    'cose car1'
+    'car2 cyt'
+    'rece img1'
+    'car3 despa'
+    'pren car5'
+    'car4 ferm'
+    'mace img2'
+    'img3 descu'
+    'clari img4'
+    'img5 estab'
+    'fil img6'
+    'car6 crian'
+    'embo img7';
+  .et_info.n1 {
+    grid-area: cose;
+  }
+  .ct1 {
+    grid-area: car1;
+  }
+  .et_info.n2 {
+    grid-area: cyt;
+  }
+  .ct2 {
+    grid-area: car2;
+  }
+  .et_info.n3 {
+    grid-area: rece;
+  }
+  .et_img.n1 {
+    grid-area: img1;
+  }
+  .et_info.n4 {
+    grid-area: despa;
+  }
+  .ct3 {
+    grid-area: car3;
+  }
+  .et_info.n5 {
+    grid-area: mace;
+  }
+  .et_img.n2 {
+    grid-area: img2;
+  }
+  .et_info.n6 {
+    grid-area: pren;
+  }
+  .ct4 {
+    grid-area: car5;
+  }
+  .et_info.n7 {
+    grid-area: ferm;
+  }
+  .ct5 {
+    grid-area: car4;
+  }
+  .et_info.n8 {
+    grid-area: descu;
+  }
+  .et_img.n3 {
+    grid-area: img3;
+  }
+  .et_info.n9 {
+    grid-area: clari;
+  }
+  .et_img.n4 {
+    grid-area: img4;
+  }
+  .et_info.n10 {
+    grid-area: estab;
+  }
+  .et_img.n5 {
+    grid-area: img5;
+  }
+  .et_info.n11 {
+    grid-area: fil;
+  }
+  .et_img.n6 {
+    grid-area: img6;
+  }
+  .et_info.n12 {
+    grid-area: crian;
+  }
+  .ct6 {
+    grid-area: car6;
+  }
+  .et_info.n13 {
+    grid-area: embo;
+  }
+  .et_img.n7 {
+    grid-area: img7;
+  }
+}
+.proceso_blanco {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 100px;
+  grid-template-areas:
+    'cose cb1'
+    'cb2 cyt'
+    'rece img1'
+    'cb3 despa'
+    'pren cb4'
+    'cb5 ferm'
+    'fil img2'
+    'cb6 emb';
+  .eb_info.n1 {
+    grid-area: cose;
+  }
+  .cb1 {
+    grid-area: cb1;
+  }
+  .eb_info.n2 {
+    grid-area: cyt;
+  }
+  .cb2 {
+    grid-area: cb2;
+  }
+  .eb_info.n3 {
+    grid-area: rece;
+  }
+  .eb_img.n1 {
+    grid-area: img1;
+  }
+  .eb_info.n4 {
+    grid-area: despa;
+  }
+  .cb3 {
+    grid-area: cb3;
+  }
+  .eb_info.n5 {
+    grid-area: pren;
+  }
+  .cb4 {
+    grid-area: cb4;
+  }
+  .eb_info.n6 {
+    grid-area: ferm;
+  }
+  .cb5 {
+    grid-area: cb5;
+  }
+  .eb_info.n7 {
+    grid-area: fil;
+  }
+  .eb_img.n2 {
+    grid-area: img2;
+  }
+  .eb_info.n8 {
+    grid-area: emb;
+  }
+  .cb6 {
+    grid-area: cb6;
+  }
+}
+.grid_tienda {
+  @include grids;
+}
+.grid_checkout {
+  @include grids;
+  .main_checkout {
+    #renderForm {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        'titulo titulo titulo'
+        'form form det'
+        'form form det'
+        'form form det';
+      .titulo {
+        grid-area: titulo;
+      }
+      .formulario {
+        grid-area: form;
+      }
+      .detalle {
+        grid-area: det;
+      }
+    }
+  }
+}
+.grid_purchase {
+  @include grids;
+}

@@ -1,0 +1,141 @@
+$colorPrincipal: black;
+$colorSecundario: #5f091c;
+$colorTerciario: #eeebdd;
+$colorTextoNav: white;
+$textSize: (
+  tituloPrincipal: 100px,
+  Slogan: 32px,
+  tituloPagina: 70px,
+  titPagCelular: 35px,
+  tituloArticulo: 22px,
+  textNav: 20px,
+  itemLista: 18px,
+  textInfo: 16px,
+);
+@mixin titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'merriweather';
+  font-style: italic;
+  font-size: map-get($textSize, tituloPagina);
+  text-decoration: underline;
+  margin: 4% 0;
+}
+@mixin titulo_articulo {
+  font-weight: bolder;
+  font-size: map-get($textSize, tituloArticulo);
+  margin: 20px 0px 20px 0px;
+  text-decoration: underline;
+  text-align: center;
+}
+@mixin flex($flex, $orientacion) {
+  display: $flex;
+  flex-flow: $orientacion;
+}
+@mixin grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'nav nav nav nav'
+    'main main main main'
+    'footer footer footer footer';
+  header {
+    grid-area: nav;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+@mixin grids_tablet {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'nav nav nav'
+    'main main main'
+    'footer footer footer';
+  header {
+    position: relative;
+    grid-area: nav;
+    padding: 0;
+    nav {
+      .menu-contenedor {
+        font-size: 16px;
+        display: flex;
+        flex-flow: column nowrap;
+        .contenedor-lista {
+          width: 100%;
+          text-align: center;
+          .lista-nav {
+            .nav-seccion {
+              li {
+                .seccion-link {
+                  text-align: center;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+@mixin grids_celular {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'nav'
+    'main'
+    'footer';
+  header {
+    grid-area: nav;
+    padding: 0;
+    nav {
+      padding-bottom: 20px;
+      .menu-contenedor {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0;
+        .logo {
+          .logo-index {
+            padding-bottom: 20px;
+          }
+        }
+        .boton-nav {
+          color: $colorSecundario;
+        }
+        .contenedor-lista {
+          text-align: center;
+          .lista-nav {
+            .nav-seccion {
+              li {
+                .seccion-link {
+                  text-align: center;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}

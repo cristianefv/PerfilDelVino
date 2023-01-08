@@ -1,0 +1,5 @@
+[
+    {"envio": "Retiro en Tienda - Villa del Parque" , "precio": "SIN COSTO", "pagos": ["Efectivo","Transferencia Bancaria - CBU: 9146632150246574500000", "Mercado Pago"]},
+    {"envio": "Reparto propio - CAPITAL FEDERAL" , "precio": 500, "pagos": ["Transferencia Bancaria - CBU: 9146632150246574500000", "Mercado Pago"]},
+    {"envio": "Envío por Correo - TODO EL PAIS", "precio": 700, "pagos": ["Transferencia Bancaria - CBU: 9146632150246574500000", "Mercado Pago"]}
+]

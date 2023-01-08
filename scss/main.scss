@@ -1,0 +1,134 @@
+@import 'variables';
+@import 'index';
+@import 'cepas';
+@import 'elaboracionTinto';
+@import 'elaboracionBlanco';
+@import 'elaboracionRosado';
+@import 'tienda';
+@import 'checkout';
+@import 'purchase';
+@import 'grids';
+@import 'mediaQueries';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $colorTerciario;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+header {
+  .navbar {
+    .menu-contenedor {
+      padding: 0;
+      .logo {
+        margin: 0;
+        .logo-index {
+          width: 150px;
+        }
+      }
+      .contenedor-lista {
+        .lista-nav {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          .nav-item {
+            .link-pagina {
+              color: white;
+              font-size: 20px;
+              &:hover {
+                color: red;
+              }
+            }
+            .nav-seccion {
+              background-color: darkgray;
+              li {
+                .seccion-link.vt {
+                  color: black;
+                  font-weight: 700;
+                  &:hover {
+                    color: white;
+                    background-color: #383838;
+                  }
+                  &:active {
+                    background-color: $colorSecundario;
+                    color: white;
+                  }
+                }
+                .seccion-link.vb {
+                  @extend .seccion-link.vt;
+                  &:hover {
+                    color: white;
+                    background-color: #383838;
+                  }
+                  &:active {
+                    background-color: rgb(94, 121, 67);
+                    color: white;
+                  }
+                }
+                .seccion-link.et {
+                  @extend .seccion-link.vt;
+                }
+                .seccion-link.eb {
+                  @extend .seccion-link.vb;
+                }
+                .seccion-link.er {
+                  color: black;
+                  font-weight: 700;
+                  &:hover {
+                    color: white;
+                    background-color: #383838;
+                  }
+                  &:active {
+                    background-color: #fca4a4;
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: bolder;
+  background-color: $colorPrincipal;
+  color: $colorTerciario;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'logo'
+    'txt';
+  a {
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+    width: 30px;
+    height: 40px;
+    padding: 0;
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .footer_txt {
+    grid-area: txt;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}

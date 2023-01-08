@@ -1,0 +1,575 @@
+@media screen and (max-width: 980px) {
+  .grid_index {
+    @include grids_tablet;
+    .main_index {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'titulo titulo'
+        'portada portada'
+        'arts arts';
+      .titulo_slogan {
+        grid-area: titulo;
+        .titulo_principal {
+          text-align: center;
+          margin: 0;
+          font-size: 70px;
+        }
+        .slogan {
+          font-size: 20px;
+        }
+      }
+      .portada_index {
+        grid-area: portada;
+      }
+      .contenedor_articulos {
+        grid-area: arts;
+      }
+    }
+    .contenedor_articulos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'art1 art2'
+        'art1 art2'
+        'art1 art2';
+      .articulo1 {
+        grid-area: art1;
+        .titulo_articulo-index {
+          text-align: center;
+        }
+        .primeros_pasos {
+          li {
+            list-style-type: upper-roman;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            text-indent: 0px;
+            p {
+              text-align: justify;
+              font-weight: 500;
+              font-size: 16px;
+              width: 90%;
+              text-indent: 0px;
+              margin: 5px 20px 20px;
+              line-height: 1.5;
+              letter-spacing: 0.5px;
+              white-space: pre-line;
+            }
+          }
+        }
+      }
+      .articulo2 {
+        grid-area: art2;
+        .titulo_articulo-index {
+          text-align: center;
+        }
+        .etiqueta_vino {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 30px;
+          .etiqueta_items {
+            margin-left: 20px;
+            margin-right: 20px;
+            li {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .grid_cepas {
+    @include grids_tablet;
+    .main_cepas {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'cepas';
+      .titulo {
+        grid-area: titulo;
+        font-size: 40px;
+      }
+      .cepas_contenido {
+        grid-area: cepas;
+      }
+    }
+  }
+  .grid_elaboracion {
+    @include grids_tablet;
+    .main_elabTinto {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'proceso';
+      .titulo {
+        grid-area: titulo;
+        font-size: 40px;
+        margin: 10px 0px 35px;
+      }
+      .proceso_tinto {
+        grid-area: proceso;
+        display: flex;
+        flex-flow: column nowrap;
+        .et_info {
+          .et_tittle {
+            font-size: 25px;
+            width: auto;
+            margin: 0;
+            height: 50px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .main_elabBlanco {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'proceso';
+      .titulo {
+        grid-area: titulo;
+        font-size: 40px;
+        margin: 10px 0px 35px;
+      }
+      .proceso_blanco {
+        grid-area: proceso;
+        display: flex;
+        flex-flow: column nowrap;
+        .eb_info {
+          .eb_tittle {
+            font-size: 25px;
+            width: auto;
+            margin: 0;
+            height: 50px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .grid_tienda {
+    @include grids_tablet;
+    .main_tienda {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'order'
+        'vinos';
+      .titulo {
+        grid-area: titulo;
+        font-size: 40px;
+      }
+      .dropdown {
+        grid-area: order;
+      }
+      .vinoteca {
+        grid-area: vinos;
+        display: flex;
+        justify-content: space-evenly;
+        .card {
+          margin: 20px;
+        }
+      }
+      .contenedorSelecciones {
+        .seleccionados {
+          font-size: 30px;
+        }
+      }
+      .finalizarCompra {
+        .btn {
+          font-size: 15px;
+          height: auto;
+        }
+      }
+    }
+  }
+  .grid_checkout {
+    @include grids_tablet;
+    .main_checkout {
+      #renderForm {
+        .titulo {
+          font-size: 40px;
+        }
+        .formulario {
+          .tituloForm {
+            font-size: 25px;
+          }
+        }
+        .accordion {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .grid_purchase {
+    @include grids_tablet;
+    #renderRecibo {
+      display: grid;
+      place-items: center;
+      .titulo {
+        font-size: 40px;
+      }
+      .instruccion {
+        i {
+          width: auto;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .pedidoDetallado {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          'recibo'
+          'detalles';
+        .recibo {
+          grid-area: recibo;
+        }
+        .detallesRecibo {
+          grid-area: detalles;
+          margin-bottom: 30px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            'otros'
+            'subtotal';
+          .otrosDetalles {
+            grid-area: otros;
+            margin-bottom: 30px;
+          }
+          .detalleSubtotal {
+            grid-area: subtotal;
+            width: auto;
+            .table {
+              width: 70%;
+              margin: auto;
+            }
+          }
+        }
+      }
+      .tituloAlternativo {
+        font-size: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .grid_index {
+    @include grids_celular;
+    .main_index {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'portada'
+        'arts';
+      .titulo_slogan {
+        grid-area: titulo;
+        .titulo_principal {
+          font-size: 40px;
+        }
+        .slogan {
+          font-size: 14px;
+          width: auto;
+        }
+      }
+      .portada_index {
+        grid-area: portada;
+      }
+      .contenedor_articulos {
+        grid-area: arts;
+      }
+    }
+    .contenedor_articulos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'art1'
+        'art2';
+      .articulo1 {
+        grid-area: art1;
+        .titulo_articulo-index {
+          display: flex;
+          justify-content: center;
+        }
+        .primeros_pasos {
+          .step {
+            display: flex;
+            justify-content: center;
+            width: auto;
+          }
+          li {
+            width: 100vw;
+          }
+        }
+      }
+      .articulo2 {
+        grid-area: art2;
+        display: flex;
+        flex-flow: column nowrap;
+        .titulo_articulo-index {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .grid_cepas {
+    @include grids_celular;
+    .main_cepas {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'cepas';
+      .titulo {
+        grid-area: titulo;
+        font-size: map-get($textSize, titPagCelular);
+      }
+      .cepas_contenido {
+        grid-area: cepas;
+        ul {
+          li {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: left;
+            margin-top: 30px;
+            height: 100%;
+            width: 90%;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  .grid_elaboracion {
+    @include grids_celular;
+    .main_elabTinto {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'proceso';
+      .titulo {
+        grid-area: titulo;
+        font-size: 28px;
+        margin: 10px 0px 35px;
+      }
+      .proceso_tinto {
+        grid-area: proceso;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 100vw;
+        .et_info {
+          width: 90vw;
+          margin: 0;
+          .et_tittle {
+            font-size: 20px;
+            width: auto;
+            margin: 0;
+            height: 30px;
+            text-align: center;
+          }
+        }
+        .carousel-inner {
+          margin-bottom: 50px;
+        }
+        .et_img {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .main_elabBlanco {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'proceso';
+      .titulo {
+        grid-area: titulo;
+        font-size: 28px;
+        margin: 10px 0px 35px;
+      }
+      .proceso_blanco {
+        grid-area: proceso;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 100vw;
+        .eb_info {
+          width: 90vw;
+          margin: 0;
+          .eb_tittle {
+            font-size: 20px;
+            width: auto;
+            margin: 0;
+            height: 30px;
+            text-align: center;
+          }
+        }
+        .carousel-inner {
+          margin-bottom: 50px;
+        }
+        .eb_img {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  .grid_tienda {
+    @include grids_celular;
+    .main_tienda {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'titulo'
+        'order'
+        'vinos';
+      .titulo {
+        grid-area: titulo;
+      }
+      .dropdown {
+        grid-area: order;
+      }
+      .vinoteca {
+        grid-area: vinos;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        .card {
+          margin: 10px;
+        }
+      }
+      .contenedorSelecciones {
+        .seleccionados {
+          font-size: 26px;
+        }
+      }
+      .carrito {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        .table {
+          width: 100%;
+          .contenedorEncabezado {
+            .encabezados {
+              .encabezado {
+                padding: 0;
+              }
+            }
+          }
+          #carritoLista {
+            .contenedorElementos {
+              width: 20px;
+              height: 20px;
+              .imgContenedor {
+                padding: 0;
+              }
+              .propiedades {
+                padding: 0;
+                margin-top: 15px;
+                .btn {
+                  margin-top: 15px;
+                  justify-content: center;
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .finalizarCompra {
+        .btn {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .grid_checkout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'form'
+      'resume';
+
+    @include grids_celular;
+    .main_checkout {
+      #renderForm {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          'titulo'
+          'resume'
+          'form';
+        .titulo {
+          grid-area: titulo;
+        }
+        .formulario {
+          grid-area: form;
+          width: 80%;
+          margin: auto;
+          .was-validated {
+            .indicaciones {
+              .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                #btnSubmit {
+                  margin-top: 30px;
+                  .btn {
+                    padding: 0;
+                    width: 150px;
+                    height: 45px;
+                    p {
+                      font-size: 12px;
+                      margin: auto;
+                    }
+                  }
+                }
+                .btnClean {
+                  @extend #btnSubmit;
+                }
+                .btnConfirm {
+                  margin: 0;
+                  @extend #btnSubmit;
+                }
+              }
+            }
+          }
+        }
+        .accordion {
+          grid-area: resume;
+          width: 70%;
+          .accordion-item {
+            .accordion-header2 {
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .grid_purchase {
+    @include grids_celular;
+    #renderRecibo {
+      display: grid;
+      place-items: center;
+      .titulo {
+        font-size: 30px;
+      }
+      .tituloAlternativo {
+        font-size: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./iconos/wine.png">
+    <title>Perfil del Vino: Menú principal</title>
+    <meta name="description" content="Guía para entender todo acerca del mundo del vino: su origen, forma de elaboracion, tiempo de guarda, y su forma de consumo.">
+    <meta name="keywords" content="perfil del vino, vino, tinto, vino tinto, uva, botella, varietal, blend, entender el vino, vino blanco, etiqueta de vino, añada, origen del vino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="grid_index">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand-xs navbar-dark bg-black">
+            <div class="container-fluid menu-contenedor">
+                <a class="navbar-brand logo" href="./index.html">
+                    <img src="./images/logo.svg" class="logo-index" alt="Logo PDV">
+                </a>
+                <button class="navbar-toggler boton-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icono-nav"></span>
+                </button>
+                <div class="collapse navbar-collapse contenedor-lista" id="navbarNavDropdown">
+                    <ul class="navbar-nav lista-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle link-pagina" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Variedades de uvas</a>
+                            <ul class="dropdown-menu nav-seccion" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item seccion-link vt" href="./pages/cepas_tintas.html">Tintas</a></li>
+                                <li><a class="dropdown-item seccion-link vb" href="./pages/cepas_blancas.html">Blancas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle link-pagina" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Elaboración del vino</a>
+                            <ul class="dropdown-menu nav-seccion" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item seccion-link et" href="./pages/elaboracion_tinto.html">Tinto</a></li>
+                                <li><a class="dropdown-item seccion-link eb" href="./pages/elaboracion_blanco.html">Blanco</a></li>
+                                <li><a class="dropdown-item seccion-link er" href="../pages/elaboracion_rosado.html">Rosado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-pagina" href="./pages/tienda.html">Tienda de vinos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main_index">
+        <section class="titulo_slogan">
+            <h1 class="titulo_principal animate__animated animate__backInLeft">PERFIL DEL VINO</h1>
+            <p class="slogan">&quotGUÍA PARA ENTENDER EL MUNDO DEL VINO&quot</p>
+        </section>
+        <div class="carousel slide portada_index" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./images/portada.jpg" class="d-block w-100" alt="Copas de vinos">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./images/mendoza_vinedos.jpg" class="d-block w-100" alt="Viñedos de mendoza">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./images/barricas.jpg" class="d-block w-100" alt="Vinos criados en barricas">
+                </div>
+            </div>
+        </div>
+        <section class="contenedor_articulos">
+            <article class="articulo1">
+                <p class="titulo_articulo-index">PRIMEROS PASOS</p>
+                <ol class="primeros_pasos">
+                    <li><p class="step">¿Qué es el vino?</p>
+                        <p>El vino es una bebida alcohólica elaborada con uvas fermentadas.
+                            Técnicamente, el vino se puede hacer con cualquier fruta, pero sólo puede denominarse "vino" en la etiqueta si hace con uvas para vino.</p>
+                    </li>
+                    <li><p class="step">Uvas para vino</p>
+                        <p>Las uvas de vino son diferentes a las uvas de mesa (las que encontramos en los mercados).
+                            Son más pequeñas, más dulces, contienen semillas y tienen una piel más gruesa.
+                            Estos rasgos han demostrado ser mejores para hacer vino.</p>
+                    </li>
+                    <li><p class="step">La vid</p>
+                        <p>La vid es la planta que produce las uvas. Existen muchas especies de vid, de las cuales, la Vitis Vinifera es la más importante para la elaboración de vinos.</p>
+                    </li>
+                    <li><p class="step">Vitis Vinifera</p>
+                        <p>Hay miles de variedades de vino diferentes y la mayoría son cultivares de una sola especie de vid: Vitis Vinifera.</p>
+                    </li>
+                    <li><p class="step">Característica principal</p>
+                        <p>Las vides son plantas leñosas que duran mucho tiempo y producen una cosecha una vez al año.
+                            Los diferentes climas donde crecen las uvas afectan el sabor dulce (o ácido) del vino resultante.</p>
+                    </li>
+                    <li><p class="step">Tipos de vinos</p>
+                        <ul><u>Varietal:</u> es un vino elaborado principalmente con una sola variedad de uva.</ul>
+                        <ul><u>Blend:</u> se elabora mezclando varios vinos varietales.</ul>
+                        <ul><u>Co-fermentado:</u> se elabora con diferentes variedades que se cosechan y vinifican juntas. </ul>
+                    </li>
+                </ol>
+            </article>
+            <div class="articulo2">
+                <p class="titulo_articulo-index">ENTENDIENDO LA ETIQUETA</p>
+                <div class="etiqueta_vino">
+                    <img class="etiqueta" src="./images/etiqueta.jpg"  alt="Etiqueta de vino">
+                    <ol class="etiqueta_items">
+                        <li><b><u>Variedad de uva:</u></b> Cepa utilizada para elaborar el vino.</li>
+                        <li><b><u>Añada:</u></b> Año en el que se cosechó la uva.</li>
+                        <li><b><u>Crianza:</u></b> Referencia para saber cuanto tiempo puede guardrase un vino antes de ser consumido.</li>
+                        <li><b><u>Región:</u></b> Orgien de procedencia de las uvas.</li>
+                        <li><b><u>Graduación alcoholica:</u></b> Indica el grado alcohólico del contenido.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <a href="https://www.instagram.com/perfildelvino/" target="_blank"><img src="./iconos/instagram.svg" alt="Logo de instagram"></a>
+            <p class="footer_txt">Copyright &copy; 2022 "Perfil del Vino" - Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>
